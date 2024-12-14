@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Favian Medina">
+  <meta name="description" content="Full Stack Web Developer con experiencia en HTML, CSS, JavaScript, PHP, MySQL, EasyUI y React. Experto en crear soluciones dinámicas y escalables.">
+  <meta name="keywords" content="Full Stack Developer, Web Developer, Javascript, PHP, React">
+  <!-- Fuente  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Marhey:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Iconos  -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ 
+  <!-- animate.css de https://animate.style/  -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <title>Portafolio Favian</title>
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+  <!-- estilos CSS   -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- js    -->
+  <script type="module" src="assets/js/main.js"></script>
+  <!-- EmailJS  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "ZckYQlgkevWbL3g3i",
+      });
+    })();
+  </script>  
+  
+</head>
+
+<body>
+ <!-- Loader -->
+ <div class="loader flex--container">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121 100" class="loader__logo" preserveAspectRatio="xMidYMid meet">
+    <g transform="translate(0,100) scale(0.1,-0.1)" fill="currentColor" stroke="none">
+      <path d="M539 691 c-15 -42 -55 -53 -78 -22 l-17 22 -29 -23 c-42 -32 -46 -40
+      -28 -60 25 -28 3 -68 -37 -68 -25 0 -30 -4 -30 -24 0 -13 -3 -32 -6 -40 -5
+      -12 2 -19 25 -27 42 -15 53 -55 22 -78 l-22 -17 23 -29 c32 -42 40 -46 60 -28
+      28 25 68 3 68 -37 0 -25 4 -30 24 -30 13 0 32 -3 40 -6 12 -5 19 2 27 25 15
+      42 55 53 78 22 l17 -22 29 23 c42 32 46 40 28 60 -25 28 -3 68 37 68 25 0 30
+      4 30 24 0 13 3 32 6 40 5 12 -2 19 -25 27 -42 15 -53 55 -22 78 l22 17 -23 29
+      c-32 42 -40 46 -60 28 -28 -25 -68 -3 -68 37 0 25 -4 30 -24 30 -13 0 -32 3
+      -40 6 -12 5 -19 -2 -27 -25z m81 -111 c40 -20 70 -69 70 -112 0 -39 -39 -97
+      -76 -113 -48 -20 -67 -19 -114 5 -40 20 -70 69 -70 112 0 36 40 98 73 112 45
+      20 72 19 117 -4z"/>
+    </g>
+  </svg>    
+</div>
+  <header class="header">
+    <nav class="navbar grid--container flex--container">
+      <a class="navbar__logo flex--container" href="#"><i class="bx bxs-registered"></i>Favian</a>
+
+      <div id="nav" class="navbar__menu">
+        <a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
+
+        <ul class="navbar__list flex--container">
+          <li class="navbar__item">
+            <a class="navbar__link active" href="#home">Inicio</a>
+          </li>                   
+          <li class="navbar__item">
+            <a class="navbar__link" href="#about">Acerca de MI</a>
+          </li>     
+          <li class="navbar__item">
+            <a class="navbar__link" href="#skills">Habilidades</a>
+          </li>  
+          <li class="navbar__item">
+            <a class="navbar__link" href="#projects">Portafolio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar__toggles flex--container">
+        <div class="navbar__toggle--darkmode flex--container">
+          <input type="checkbox" name="color-scheme" id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
+          <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+            <i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
+            <i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
+          </label>
+        </div>
+        <div class="navbar__toggle--language flex--container">
+          <input type="checkbox" name="language-toggle" id="language-toggle" class="navbar__toggle--language-input" />
+          <label for="language-toggle" class="navbar__toggle--language-label"></label>
+        </div>
+      </div>
+      <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="home">
+      <i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
+      <i class="bx bxl-javascript home__layer home__layer--2" data-speed="5"></i>
+      <i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
+      <i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
+      <i class="bx bxl-react home__layer home__layer--5" data-speed="8"></i>
+      <i class="bx bxl-tailwind-css home__layer home__layer--6" data-speed="-2"></i>
+      <i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
+      <i class="bx bxl-typescript home__layer home__layer--8" data-speed="-2"></i>
+      <i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
+      <i class="bx bxl-graphql home__layer home__layer--10" data-speed="-7"></i>
+      <i class="bx bx-code-alt home__layer home__layer--11" data-speed="-5"></i>
+      <div class="home__container grid--container">
+        <div class="home__image">
+          
+          <div class="box a">
+            <img src="https://hub.laboratoria.la/hubfs/HUB%20COVER%20%2815%29.jpg" alt="fs">
+          </div>
+
+        </div>
+
+        <ul class="home__social flex--container">
+          <li><a class="home__layer--20" href="mailto:favian.medina.gemio@gmail.com?subject=Consulta%20sobre%20tu%20proyecto" alt="Escribeme un correo"><i class='bx bxl-gmail ' > </i></a> </li>
+          <li><a class="home__layer--20" href="https://api.whatsapp.com/send?phone=+59167023053&text=Hola,%20quiero%20consultar%20sobre%20tus%20servicios" target="_blank"> <i class='bx bxl-whatsapp home__layer--20' ></i> </a> </li>
+            
+          <li><a class="home__layer--20" href="https://github.com/fabinnerself" target="_blank"> <i class='bx bxl-github home__layer--20' ></i> </a>   </li>
+          <li><a class="home__layer--20" href="https://www.linkedin.com/in/favian-medina-35a5471a4/" target="_blank"><i class='bx bxl-linkedin-square home__layer--20' ></i></a> </li>   
+        </ul>
+
+        <div class="home__info">
+          <h1 class="home__description  ">HOLA Bienvenido!!</h1>
+          <h1 class="animate__animated animate__fadeIn animate__infinite home__description ">Soy Favian Medina</h1>
+          <h1 class="animate__animated  animate__tada animate__infinite home__description ">Full stack web developer</h1>
+
+          <p class="home__description">"Diseño de sistemas y desarrollo web. Simple y efectivo."</p>
+          <p class="description_align_1">Soy un web developer con experiencia en el área informática de casi 17 años, destacando en la creación de aplicaciones web, análisis de datos para entidades públicas y como especialista en soporte técnico. Tengo destreza en solucionar problemas y en la atención al cliente.</p>
+        </div> 
+      </div>
+    </section>
+    <section id="about" class="about section">
+      <h2 class="section__title">Acerca de MI</h2>
+
+      <div class="about__container grid--container">
+        <div class="about__cards flex--container">
+        <div class="about__card">
+          <img src="assets/img/fmg.png" alt="myself fmg" title="myself">
+        </div> </div>
+        <p class="description_align">Ofrezco soluciones completas y efectivas en desarrollo web full stack, con tecnologías como React.js, Vue.js, HTML5, CSS3, JavaScript y PHP.
+        </p>          
+        <p class="description_align">Tengo experiencia en diseño, desarrollo y administración de bases de datos relacionales, utilizando tanto software libre como propietario. Mis habilidades incluyen la creación de consultas SQL avanzadas para análisis y generación de informes, así como la implementación de estrategias de respaldo y recuperación de datos. Asimismo tengo experiencia y conocimiento en  el consumo de APIs REST.
+      </p>
+      
+        <p class="description_align">Además, cuento con amplia experiencia en gestión de proyectos y colaboración técnica en entornos Linux, Windows y herramientas ofimáticas, integrando sistemas de control de versiones para garantizar procesos de desarrollo organizados. Mi enfoque está orientado a contribuir al crecimiento y éxito de empresas pequeñas y medianas, tanto del sector público como privado.</p>       
+        
+                <a class="btn btn--primary" href="assets/doc/cv fmg 2024.pdf" download="cv_fmg.pdf" target="_blank">Descargar mi Curriculum</a>  <br>
+        </p>
+  
+        <h3># Educación</h3>
+        <div class="skills__wrapper flex--container">
+          <div class="skills__cards flex--container">  
+            
+            <!--Card 3 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <img src="assets/img/estudios/certificado.png" alt="Gráfico certificado" title="certificado" width="70" height="70" > 
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Certificaciones</h3>
+
+                <p class="skills__card-description">
+                  LPIC-1 v5.0 101-500 Linux Administrator y LE-1 Linux Essentials / Linux Professional Institute -2021
+                </p>
+                <p class="flex--container"><a href="https://www.lpi.org/" target="_blank"><img src="assets/img/estudios/lpi.png" alt="Gráfico LPI"  class="umsa-img"></a></p>
+              </div>
+            </details>
+           
+            <!--Card 5 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <img src="assets/img/estudios/bootcamp.png" alt="Gráfico botcamp" title="bootcamp" width="170" height="100" > 
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Bootcams</h3>
+
+                <p class="skills__card-description">
+                  Desarrollo Web Full-Stack y Ciencias de Computación en Academlo - 2024.
+                </p>
+                <p class="flex--container"><a href="https://www.academlo.com/" target="_blank"><img src="assets/img/estudios/academlo.png" alt="Gráfico Academlo" class="umsa-img" title="academlo" ></a></p>
+              </div>
+            </details>              
+          </div>
+        </div>
+        <h3>  # Trayectoria Laboral</h3>
+        <p class="description_align">Tengo experiencia en soporte informático, gestión de bases de datos y desarrollo de sistemas, trabajando con diversas organizaciones como Niagara Technology Group (NTG)/CCW Technologies, la Autoridad de Supervisión y Control de Pensiones y Seguros (APS), el Ministerio de Planificación del Desarrollo, Sudamericana - Corredores de Seguros, y el Ministerio de Hacienda. Capacidad para ofrecer soluciones tanto en el sector público como en el privado de Bolivia de manera operativa.</p>
+        <div>
+          <div class="maincontainer">
+              <div class="back">                
+                  <p>2018-2019  Responsable de Operaciones, Gestora Pública de la Seguridad Social de Largo Plazo.</p>
+              </div>
+              <div class="front">                 
+                  <img src="assets/img/work/gestora.png" alt="gestora" title="gestora">
+                  <h2 >Back-end</h2>                
+              </div>
+          </div>
+          <div class="maincontainer">
+              <div class="back">                
+                  <p>2012-2017 Profesional Sénior de Coordinación EPI/Consultorías, Autoridad de Fiscalización y Control de Pensiones y Seguros -APS.</p>
+              </div>
+              <div class="front">                 
+                  <img src="assets/img/work/aps.png" alt="aps" title="aps">
+                  <h2  >Back-end</h2>                 
+              </div>
+          </div>
+          <div class="maincontainer">
+              <div class="back">                 
+                  <p>2022-2023 Especialista en soporte técnico Informático - trabajo a distancia en Inglés, Niagara Technology Group(NTG)/CCW Technologies.</p>
+              </div>
+              <div class="front">                 
+                  <img src="assets/img/work/ntg_ccw.png" alt="ntg"  title="ntg ">
+                  <h2>TI</h2>                
+              </div>
+          </div>        
+      </div>        
+        
+      </div>   
+    </section>
+    <section id="skills" class="skills section">
+      <h2 class="section__title">Habilidades</h2>
+      <div class="container">
+        <p class="skill_aling">Tecnologias</p>
+        <div class="top">         
+            <ul>
+              <li><div class="skill__image-item"><img src="assets/img/skill/tech/php.png" alt="grafico php" title="php"></div></li>   
+              <li><div class="skill__image-item"><img src="assets/img/skill/tech/easyui.png" alt="grafico easyui" title="easyui"></div></li>
+              <li><div class="skill__image-item"><img src="assets/img/skill/tech/react.png" alt="grafico reactjs" title="reactjs"></div></li>  
+              <li><div class="skill__image-item"><img src="assets/img/skill/tech/js_html_css.png" alt="grafico js html css" title="js html css"></div></li> 
+              </ul>                            
+          </div>
+      </div>       
+      <div class="container">
+        <p class="skill_aling">Herramientas</p>
+        <div class="top">
+            <ul>
+              <li><div class="skill__image-item"><img src="assets/img/skill/tool/git.png" alt="grafico git" title="git"></div></li>    
+              <li><div class="skill__image-item"><img src="assets/img/skill/tool/postman.png" alt="grafico postman" title="postman"></div></li>                                      
+              </ul>               
+          </div>
+      </div>       
+      <div class="container">
+        <p class="skill_aling">Bases de Datos</p>
+        <div class="top">
+            <ul>
+              <li><div class="skill__image-item"><img src="assets/img/skill/db/rest_api.png" alt="grafico rest api" title="rest api"></div></li>                  
+              <li><div class="skill__image-item"><img src="assets/img/skill/db/mysql.png" alt="grafico mysql" title="mysql">  </div></li>                  
+              <li><div class="skill__image-item"><img src="assets/img/skill/db/oracle.png" alt="grafico oracle" title="oracle"></div></li>                                
+              </ul>               
+          </div>
+      </div> 
+      <div class="container">
+        <p class="skill_aling">Sistema Operativo</p>
+        <div class="top">
+            <ul>
+              <li><div class="skill__image-item"><img src="assets/img/skill/so/ubuntu.png" alt="grafico ubuntu" title="ubuntu"></div></li>                 
+              <li><div class="skill__image-item"><img src="assets/img/skill/so/win10.png" alt="grafico win10" title="win10"></div></li>                  
+              </ul>               
+          </div>
+      </div>      
+      <div class="container">
+        <p class="skill_aling">Personales</p>
+        <div class="top">
+            <ul>
+                <li><div class="skill__image-item"><img src="assets/img/skill/soft/til.png"  alt="grafico soporte tecnico" title="soporte tecnico"></div> </li>
+                <li><div class="skill__image-item"><img src="assets/img/skill/soft/homenet.png" alt="grafico red hogar" title="red hogar"></div></li>                  
+                  <li><div class="skill__image-item"><img src="assets/img/skill/soft/proactive.png" alt="grafico proactivo" title="proactivo">  </div></li>                  
+                  <li><div class="skill__image-item"> <img src="assets/img/skill/soft/self-taught.png" alt="grafico autoenseñanza" title="autoenseñanza" ></div> </li>                  
+                  <li><div class="skill__image-item"><img src="assets/img/skill/soft/puntualidad.png" alt="grafico puntualidad" title="puntualidad"></div></li>
+              </ul>               
+          </div>
+      </div>          
+
+
+    </section>    
+    <section id="projects" class="projects section">
+      <h2 class="section__title">Proyectos</h2>
+ 
+      <div class="projects__inner grid--container" > 
+
+        <div class=" proy_align">
+          <a class="tabs"  onclick="showTab('featured')">Destacado </a>|
+          <a class="tabs"  onclick="showTab('all')"> Todo </a>|          
+          <a class="tabs"  onclick="showTab('crud')"> CRUDs </a>|
+          <a class="tabs"  onclick="showTab('systems')"> Sistemas </a>          
+        </div>
+      
+        <div id="content"></div>
+      
+        <!-- Plantillas HTML ocultas -->
+        <template id="template-all"    >
+          <h3>Todos los proyectos, en total 13</h3>            
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">ReactMySQLHub</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy1.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                  Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación en la tabla de productos y se conecta a una API RESTful.
+                </p>  
+                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
+                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span> 
+                    <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" />Easy-UI</span>
+                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button"  >
+                    <a href="https://github.com/fabinnerself/CORERA" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">AngularMySQLHub</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy2.png" alt="angularjs" title="angular myql hub" />
+              </div>  
+              <div class="projects__info">               
+                <p class="projects__description description_align_1">
+                  Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación en la tabla de productos y se conecta a una API RESTful.
+                </p>
+                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-angular proy_icon_color' ></i>  AngularJS</span>  
+                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span> 
+                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" />Easy-UI</span>
+                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>                
+  
+                <div class="projects__buttons proy_align">
+                  
+                  <button class="btn projects__button"  >
+                    <a href="https://github.com/fabinnerself/coapra" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">VueMySQLHub</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy3.png" alt="vuejs" title="vue mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                  Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación en la tabla de productos y se conecta a una API RESTful.
+                </p>
+                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-vuejs proy_icon_color' ></i>  AngularJS</span>  
+                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span> 
+                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" />Easy-UI</span>
+                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>  
+                <div class="projects__buttons proy_align">                   
+                  <button class="btn projects__button" type="button">
+                    <a href="https://github.com/fabinnerself/covepra" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Cursoteka</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy4.png" alt="cursoteka" title="E-Learning cursoteka" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                  Aplicación web full-stack de una Plataforma E-Learning para Cursos Online. Incluye CRUDs, filtrado, paginación sobre las tablas persona, usuario, cursos y recursos Finalmente tiene login y registro de estudiantes y administradores.
+                </p>
+                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color' ></i>  ReactJS</span>  
+                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span> 
+                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" />Easy-UI</span>
+                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>  
+                <div class="projects__buttons proy_align">
+                  <button class="btn projects__button "  > 
+                    <a href="https://test9-sepia.vercel.app/" target="_blank">VER DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/No-Country-simulation/c20-32-n-php-react" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Echelon</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy5.png" alt="echelon" title="echelon php bootstrap mysql" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                  Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación, login en la tabla de productos e usuario y se conecta a una API RESTful.
+                </p>
+                <p class="projects__description proy_tech proy_align"> 
+                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
+                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span>                  
+                  <span >  <i class='bx bxl-bootstrap proy_icon_color' ></i>  Bootrap</span>                  
+                </p> 
+                <div class="projects__buttons proy_align">                   
+                  <button class="btn projects__button" type="button">
+                    <a href="https://github.com/fabinnerself/echelon-b" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">ReactMySQLHub II</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy6.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                  Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación en la tabla de productos y se conecta a una API RESTful.
+                </p>  
+                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
+                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span>                     
+                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
+                    <span >  <i class='bx bxl-bootstrap proy_icon_color' ></i>  Bootrap</span>  </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button"  >
+                    <a href="https://github.com/fabinnerself/reactProdBootsHub" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>       
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Crud User APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy12.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">  
+                  Aplicación web full-stack diseñada para gestionar datos de manera eficiente. Implementa operaciones CRUD, filtros y paginación en una API RESTful de usuarios, validando los datos de entrada. Utiliza hooks de React (useState, useEffect, useRef), junto con validaciones mediante react-hook-form y Yup, así como un hook personalizado para gestionar la conexión a la API y la paginación. La interfaz se enriquece con iconos de react-icons y un diseño personalizado con CSS.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://crud-users-fmg.vercel.app/" target="_blank">VER DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/s04e04-crudUsers-fmg" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>   
+
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Portafolio Favian</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy7.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                  Aplicación web moderna y accesible ofrece una experiencia de usuario personalizada y fluida gracias a su diseño responsivo, modo claro y oscuro, y soporte multi-idioma. Desarrollada con las últimas tecnologías como CSS, JavaScript y frameworks populares, cuenta con animaciones atractivas, formularios interactivos y una navegación intuitiva. Optimizada para SEO y accesibilidad, esta aplicación garantiza una experiencia de usuario óptima en cualquier dispositivo. Además, su código bien estructurado facilita el mantenimiento y futuras actualizaciones.
+                </p>  
+                <p class="projects__description proy_tech proy_align"><span > <i class='bx bxl-html5 proy_icon_color' ></i>   Html</span>  
+                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span><img src="assets/img/emailJS_ico.png" height="20" width="20" class="projects__image1" />EmailJS</span> 
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button"  >
+                    <a href="https://github.com/fabinnerself/academlo_cv_fmg_page" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Ultimate Bruce Lee APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy8.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                  Aplicación web que genera frases aleatorias de Bruce Lee. Utiliza hooks (UseState) y componentes funcionales. El diseño es personalizado con CSS y los datos se cargan desde un archivo JSON local.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://e01-deivi-fmg.vercel.app/" target="_blank">VER DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/e01-deivi-fmg.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>        
+          
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Ultimate Weather APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy9.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                  Aplicación web meteorológica en tiempo real que utiliza React Hooks (useState y useEffect) para consumir la API de OpenWeatherMap. Permite búsquedas personalizadas de ciudades y cuenta con un diseño CSS personalizado.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://s02e02-weather-fmg.vercel.app/" target="_blank">VER DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/s02e02-weather-fmg" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button> 
+                </div>
+              </div>
+            </div>
+          </div>          
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Ultimate Rick and Morty APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy10.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                  Buscador de personajes y dimensiones de Rick y Morty. Utiliza React Hooks para consumir la API publica https://rickandmortyapi.com y mostrar datos como nombre, especie y dimensión. Diseño modular responsivo con paginación, componentes reutilizables y estilos personalizados (CSS, Google Fonts). Incluye gráficos e iconos temáticos para una experiencia inmersiva.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span>
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://s03e03-rm-fmg.vercel.app/" target="_blank">VER DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/s03e03-rm-fmg" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>                
+  
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Ultimate Pokedex APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy11.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">                  
+                  La aplicación web 'Buscador interactivo de personajes de la serie Pokémon' presenta información detallada, como nombre, tipo, estadísticas y movimientos, entre otros. Utiliza hooks avanzados (useContext, React Router Dom) para ofrecer una experiencia de usuario personalizada, responsiva y multilingüe (inglés, alemán, etc.), consumiendo datos de la API pública https://pokeapi.co. Además, cuenta con un diseño adaptable y responsivo, componentes reutilizables y opciones de personalización que permiten cambiar entre temas claros, oscuros y coloridos. Finalmente, incluye la función de paginación para facilitar la navegación.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://pokedex-fmg.vercel.app/" target="_blank">VER DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/E5-pokedex-fmg" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>          
+          
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Ultimate Booking APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy13.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1"> Esta aplicación web ofrece un buscador de hoteles intuitivo y personalizable. Permite filtrar resultados por ciudad y nombre, mostrando información detallada en múltiples idiomas, como alemán e inglés. Los usuarios pueden seleccionar la moneda local y elegir entre diferentes temas visuales, como claro y oscuro. Los datos de los hoteles se obtienen a través de una API REST. La aplicación gestiona tanto rutas públicas como privadas, utilizando componentes reutilizables para manejar el estado y los efectos secundarios, como notificaciones para todas las acciones. Además, cuenta con una amplia gama de íconos personalizados y un diseño moderno, adaptable y responsivo, lo que optimiza la experiencia del usuario.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span ><img src="assets/img/tailWind_ico.png" height="20" width="20" class="projects__image1" />TailWind CSS</span> </span>
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span>                   
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://6-booking-app-fmg.vercel.app/" target="_blank">VER DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/6BookingApp-fmg" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>             
+
+        </template>
+      
+        <template id="template-featured">
+          <h3>Destacado</h3>
+      
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Ultimate Booking APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy13.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1"> Esta aplicación web ofrece un buscador de hoteles intuitivo y personalizable. Permite filtrar resultados por ciudad y nombre, mostrando información detallada en múltiples idiomas, como alemán e inglés. Los usuarios pueden seleccionar la moneda local y elegir entre diferentes temas visuales, como claro y oscuro. Los datos de los hoteles se obtienen a través de una API REST. La aplicación gestiona tanto rutas públicas como privadas, utilizando componentes reutilizables para manejar el estado y los efectos secundarios, como notificaciones para todas las acciones. Además, cuenta con una amplia gama de íconos personalizados y un diseño moderno, adaptable y responsivo, lo que optimiza la experiencia del usuario.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span ><img src="assets/img/tailWind_ico.png" height="20" width="20" class="projects__image1" />TailWind CSS</span> </span>
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                     
+                  <button class="btn projects__button "  > 
+                    <a href="https://6-booking-app-fmg.vercel.app/" target="_blank">VER DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/6BookingApp-fmg" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>        
+          
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">MySQLHub</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy1.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                  Aplicación web full-stack que facilita la gestión de datos. Incorpora funcionalidades CRUD, filtros, paginación en la tabla de productos y se conecta a una API RESTful. También se cuenta con versiones que consumen JSON locales y utiliza diferentes frameworks de JavaScript, como AngularJS y VueJS.
+                </p>  
+                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
+                    <span >  <i class='bx bxl-angular proy_icon_color' ></i>  AngularJS</span>  
+                    <span >  <i class='bx bxl-vuejs proy_icon_color' ></i>  VueJS</span> 
+                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span> 
+                    <span><img src="assets/img/json_ico.png" height="20" width="20" class="projects__image1" />Json</span>
+                    <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" />Easy-UI</span>
+                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button"  >
+                    <a href="https://github.com/fabinnerself/CORERA" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>          
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Crud User APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy12.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">  
+                  Aplicación web full-stack diseñada para gestionar datos de manera eficiente. Implementa operaciones CRUD, filtros y paginación en una API RESTful de usuarios, validando los datos de entrada. Utiliza hooks de React (useState, useEffect, useRef), junto con validaciones mediante react-hook-form y Yup, así como un hook personalizado para gestionar la conexión a la API y la paginación. La interfaz se enriquece con iconos de react-icons y un diseño personalizado con CSS.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://crud-users-fmg.vercel.app/" target="_blank">VER DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/s04e04-crudUsers-fmg" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>     
+          
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Cursoteka</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy4.png" alt="cursoteka" title="E-Learning cursoteka" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                  Aplicación web full-stack de una Plataforma E-Learning para Cursos Online. Incluye CRUDs, filtrado, paginación sobre las tablas persona, usuario, cursos y recursos Finalmente tiene login y registro de estudiantes y administradores.
+                </p>
+                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color' ></i>  ReactJS</span>  
+                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span> 
+                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" />Easy-UI</span>
+                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>                  
+  
+                <div class="projects__buttons proy_align">
+                  <button class="btn projects__button "  > 
+                    <a href="https://test9-sepia.vercel.app/" target="_blank">VER DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/No-Country-simulation/c20-32-n-php-react" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>          
+                    
+           
+        </template>
+      
+        <template id="template-crud">
+          <h3>CRUD</h3> 
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Crud User APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy12.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">  
+                  Aplicación web full-stack diseñada para gestionar datos de manera eficiente. Implementa operaciones CRUD, filtros y paginación en una API RESTful de usuarios, validando los datos de entrada. Utiliza hooks de React (useState, useEffect, useRef), junto con validaciones mediante react-hook-form y Yup, así como un hook personalizado para gestionar la conexión a la API y la paginación. La interfaz se enriquece con iconos de react-icons y un diseño personalizado con CSS.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://crud-users-fmg.vercel.app/" target="_blank">VER DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/s04e04-crudUsers-fmg" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>    
+          
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">MySQLHub</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy1.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                  Aplicación web full-stack que facilita la gestión de datos. Incorpora funcionalidades CRUD, filtros, paginación en la tabla de productos y se conecta a una API RESTful. También se cuenta con versiones que consumen JSON locales y utiliza diferentes frameworks de JavaScript, como AngularJS y VueJS.
+                </p>  
+                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
+                    <span >  <i class='bx bxl-angular proy_icon_color' ></i>  AngularJS</span>  
+                    <span >  <i class='bx bxl-vuejs proy_icon_color' ></i>  VueJS</span> 
+                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span> 
+                    <span><img src="assets/img/json_ico.png" height="20" width="20" class="projects__image1" />Json</span>
+                    <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" />Easy-UI</span>
+                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button"  >
+                    <a href="https://github.com/fabinnerself/CORERA" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>            
+
+
+        </template>
+      
+        <template id="template-systems">          
+          <h3>Sistemas</h3>
+
+      
+
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Cursoteka</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy4.png" alt="cursoteka" title="E-Learning cursoteka" />
+              </div>
+  
+              <div class="projects__info">
+                
+                <p class="projects__description description_align_1">
+                  Aplicación web full-stack de una Plataforma E-Learning para Cursos Online. Incluye CRUDs, filtrado, paginación sobre las tablas persona, usuario, cursos y recursos Finalmente tiene login y registro de estudiantes y administradores.
+                </p>
+                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color' ></i>  ReactJS</span>  
+                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span> 
+                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" />Easy-UI</span>
+                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>                  
+  
+                <div class="projects__buttons proy_align">
+                  <button class="btn projects__button "  > 
+                    <a href="https://test9-sepia.vercel.app/" target="_blank">VER DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/No-Country-simulation/c20-32-n-php-react" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Ultimate Booking APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy13.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1"> Esta aplicación web ofrece un buscador de hoteles intuitivo y personalizable. Permite filtrar resultados por ciudad y nombre, mostrando información detallada en múltiples idiomas, como alemán e inglés. Los usuarios pueden seleccionar la moneda local y elegir entre diferentes temas visuales, como claro y oscuro. Los datos de los hoteles se obtienen a través de una API REST. La aplicación gestiona tanto rutas públicas como privadas, utilizando componentes reutilizables para manejar el estado y los efectos secundarios, como notificaciones para todas las acciones. Además, cuenta con una amplia gama de íconos personalizados y un diseño moderno, adaptable y responsivo, lo que optimiza la experiencia del usuario.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span ><img src="assets/img/tailWind_ico.png" height="20" width="20" class="projects__image1" />TailWind CSS</span> </span>
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span> 
+                  
+                        </p>
+                <div class="projects__buttons proy_align">   
+                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://6-booking-app-fmg.vercel.app/" target="_blank">VER DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/6BookingApp-fmg" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>           
+
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Echelon</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy5.png" alt="echelon" title="echelon php bootstrap mysql" />
+              </div>
+  
+              <div class="projects__info">
+                
+                <p class="projects__description description_align_1">
+                  Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación, login en la tabla de productos e usuario y se conecta a una API RESTful.
+                </p>
+
+                <p class="projects__description proy_tech proy_align"> 
+                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
+                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span>                  
+                  <span >  <i class='bx bxl-bootstrap proy_icon_color' ></i>  Bootrap</span>                 
+                  
+                </p> 
+                <div class="projects__buttons proy_align">
+                   
+                  <button class="btn projects__button" type="button">
+                    <a href="https://github.com/fabinnerself/echelon-b" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </template>      
+      </div>
+    </section>
+
+
+    <section id="skills" class="skills section">
+      <h2 class="section__title">Testimonios</h2>          
+ 
+<div class="containerTestimonial"> 
+     
+  <input type="radio" name="nav" id="first" checked/>
+  <input type="radio" name="nav" id="second" />
+  <input type="radio" name="nav" id="third" />
+  <input type="radio" name="nav" id="four" />
+
+  <label for="first" class="first"></label>
+  <label for="second"  class="second"></label>
+  <label for="third" class="third"></label>
+  <label for="four" class="four"></label>
+
+
+<div class="one slide">
+  <blockquote>
+      <h2>Steve Kruger</h2>
+      <h6>UI/UX Designer at Woof Design Studio</h6>
+      <h6><a href="#" target="_blank">@red</a> </h6>        
+      <span class="justifyText">EN CONSTRUCCION -He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I was pleased with his creative design and will definitely be hiring him again. </span>   
+  </blockquote>       
+</div>
+
+<div class="two slide">
+  <blockquote>
+      <h2>John Doe</h2>
+      <h6>Developer Relations at Woof Studios</h6>
+      <h6><a href="#" target="_blank">@red</a> </h6>
+      <span class="justifyText">EN CONSTRUCCION 2- He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I recommend him to anyone who wants their work done professionally. The project ...</span>
+  </blockquote>    
+</div>
+
+<div class="three slide">
+  <blockquote>
+      <h2>Steve Stevenson</h2>
+      <h6>CEO Woof Web Design Studios</h6>
+      <h6><a href="#" target="_blank">@red</a> </h6>
+    <span class="justifyText">EN CONSTRUCCION 3- He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I was pleased with his creative design and will definitely be hiring him again.</span>
+  </blockquote>   
+</div>
+
+<div class="four slide"> 
+  <blockquote>
+      <h2>Yecid</h2>
+      <h6>CEO market</h6>
+      <h6><a href="#" target="_blank">@redddo</a> </h6>
+    <span class="justifyText"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, quod veritatis, facere debitis quidem modi ea voluptatum obcaecati, excepturi omnis blanditiis rerum! Ea, commodi cupiditate libero quia odio voluptatum quis.</span>
+  </blockquote>   
+</div>  
+
+</div>
+  
+
+    </section>  
+
+
+    <section id="contact" class="contact section">
+      <h2 class="section__title">Contacto</h2>
+
+      <div class="contact__container grid--container">
+        <div class="contact__info">
+          <h3 class="contact__info-title">Ponte en contacto conmigo!</h3>
+          <p class="description_align">Soy muy accesible y me encantaría hablar contigo, no dudes en enviarme un correo electrónico, un mensaje a través de Whatsapp o simplemente rellena el formulario de consulta.</p>
+          <h3 class="contact__info-title">Información de contacto</h3>
+
+          <address class="contact__info-data">
+            <div class="contact__info-item">
+              <i class="bx bxl-whatsapp"></i>
+
+              <span class="contact__info-number">
+                <a href="https://api.whatsapp.com/send?phone=+59167023053&text=Hola,%20quiero%20consultar%20sobre%20tus%20servicios" target="_blank"
+                  rel="noreferrer nofollow">Enviame un mensaje a WhatsApp</a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-phone"></i>
+
+              <span class="contact__info-number">
+                <a href="tel:59122230740" target="_blank" rel="noreferrer nofollow">
+                  +591-22230740
+                </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bxs-envelope"></i>
+
+              <span class="contact__info-mail">
+                <a id="mail" href="mailto:favian.medina.gemio@gmail.com?subject=Consulta%20sobre%20tu%20proyecto" target="_blank" rel="noreferrer nofollow">
+                  favian.medina.gemio@gmail.com
+                </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-map"></i>
+
+              <span class="contact__info-map"> La Paz, Bolivia-SudAmerica.</span>
+            </div>
+          </address>
+        </div>
+
+        <div class="contact__form">
+          <h3 class="contact__form-title">Enviar mensaje</h3>
+
+
+          <form id="form" class="contact__form-container" novalidate>
+            <div class="contact__form-group">
+              <label for="name" class="contact__form-label">Nombre</label>
+              <input type="text" id="name" name="name" class="contact__form-input" placeholder="Ingresa tu nombre" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__form-label">Correo</label>
+              <input type="email" id="email" name="email" class="contact__form-input" placeholder="Ingresa tu correo electronico" pattern="^[a-z0-9.%_+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"  />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="subject" class="contact__form-label">Asunto</label>
+              <input type="text" id="subject" name="subject" class="contact__form-input" placeholder="Ingresa un asunto" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__form-label">Mensaje</label>
+              <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input" placeholder="Ingresa un mensaje"></textarea>
+            </div>
+            <dialog id="modal">
+              Formulario enviado con éxito!
+              <button type="reset" id="btn_close-modal">Cerrar</button>
+            </dialog>                    
+
+            <button type="submit" class="btn btn_container">
+              Enviar
+            </button>
+          </form>
+          <dialog id="modal_error">
+            <p id="error_message"></p>
+            <button id="btn_close-modal_error">Cerrar</button>
+          </dialog> 
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer section">
+    <div class="footer__container grid--container">
+      <div class="footer__info">
+        <h3 class="footer__title">Favian Medina</h3>
+        <p class="footer__description">
+          Diseño de sistemas y desarrollo web. Simple y efectivo.
+        </p>
+      </div>
+      <div class="footer__social">Sigueme en mis Redes Sociales</h3>
+
+        <ul class="footer__social-list">          
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://api.whatsapp.com/send?phone=+59167023053&text=Hola,%20quiero%20consultar%20sobre%20tus%20servicios" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-whatsapp"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="mailto:favian.medina.gemio@gmail.com?subject=Consulta%20sobre%20tu%20proyecto" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-gmail"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.linkedin.com/in/favian-medina-35a5471a4/" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__social">     
+        
+        <ul class="navbar__list ">
+          <li class="navbar__item">
+            <a class="navbar__link active" href="#home">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#about">Acerca de MI</a>
+          </li>           
+          <li class="navbar__item">
+            <a class="navbar__link" href="#skills">Habilidades</a>
+          </li>                    
+        </ul>         
+      </div>
+      <div class="footer__social">        
+        <ul class="navbar__list ">        
+          <li class="navbar__item">
+            <a class="navbar__link" href="#projects">Portafolio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact">Contacto</a>
+          </li>
+        </ul>  
+         
+      </div>       
+       
+    </div>
+
+    <p class="footer__copy"></p>
+  </footer>
+
+</body>
+
+</html>
