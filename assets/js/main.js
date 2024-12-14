@@ -6,6 +6,7 @@ import resetToHome from './helpers/reload_page.js';
 import sendEmail from './helpers/send_form.js';
 import fLanguajeSwitch from './helpers/idiom.js';
 import showTab from './helpers/tab.js';
+import showSuccessToast from './helpers/toast.js'
 
 loader();
 
@@ -21,6 +22,8 @@ sendEmail();
 
 fLanguajeSwitch();   
 
+// showSuccessToast();
+
 // Agregar eventos de clic a los enlaces
 document.querySelectorAll('.tabs').forEach(tab => {
     tab.addEventListener('click', function() {
@@ -32,3 +35,30 @@ document.querySelectorAll('.tabs').forEach(tab => {
 });
 
 showTab('featured');
+
+ 
+const showToastOnSkillsVisible = () => {
+    const skillsSection = document.getElementById('skills');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Check if the section is at least 50% visible
+                if (entry.intersectionRatio >= 0.5) {
+                    showSuccessToast();
+                    // Stop observing after showing the toast
+                    observer.unobserve(skillsSection);
+                }
+            }
+        });
+    }, {
+        // Trigger when at least 50% of the section is visible
+        threshold: 0.5
+    });
+
+    // Start observing the skills section
+    observer.observe(skillsSection);
+};
+
+
+showToastOnSkillsVisible();
