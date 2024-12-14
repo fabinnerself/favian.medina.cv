@@ -5,7 +5,7 @@
 
 Este proyecto implementa mi Curriculm con frontend responsive (HTML, CSS, JavaScript), ofreciendo una interfaz intuitiva y adaptable a diferentes dispositivos. Incluye funcionalidades como modo oscuro, carga dinámica, soporte para múltiples idiomas y envío de formularios. Utiliza CSS personalizado para crear un diseño atractivo y coherente, y JavaScript para agregar interactividad y mejorar la experiencia del usuario, fuente google fonts, variables CSS, finalmente tiene validacion del formulario con mensajes de error para cada campo.
 
-Puedes visitar la plataforma en línea en https://academlo-cv-fmg-page.vercel.app/
+Puedes visitar la plataforma en línea en https://favian-medina-cv.vercel.app/
 
 ### Requisitos del Sistema
 
@@ -24,7 +24,7 @@ El proyecto también ha sido probado en el siguiente entorno alternativo:
 
  
 ## Imagenes
-![crud](assets/img/page_cv_fmg.png)
+![crud](main_fmg.png)
 
 
 ## Comandos utiles
