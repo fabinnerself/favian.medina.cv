@@ -403,12 +403,12 @@ html {
 
 	.home__layer--4 {
 		top: 15%;
-		left: 70%;
+		left: 74%;
 	}
 
 	.home__layer--5 {
-		top: 20%;
-		left: 50%;
+		top: 45%;
+		left: 80%;
 	}
 
 	.home__layer--6 {
@@ -440,6 +440,22 @@ html {
 		top: 10%;
 		left: 20%;
 	}
+
+
+	.home__layer--12 {
+		top: 15%;
+		left: 15%;
+	}
+
+	.home__layer--13 {
+		top: 48%;
+		left: 85%;
+	}
+
+	.home__layer--14 {
+		top: 25%;
+		left: 10%;
+	}	
 
 	.home__container {
 		position: relative;
@@ -658,7 +674,7 @@ html {
 
 /* ============= Contact ============= */
 .contact {
-	background-color: var(--bg-color-section1);	
+	background-color: var(--bg-color-section2);	
 	font-family: "Marhey", sans-serif;	
 	.contact__container {
 		gap: 2rem;
@@ -947,23 +963,24 @@ html {
     gap: 20px;   
     text-align: center;
 }
-
 .skill__image-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 120px;  
-    height: 120px;  
-    justify-content: center;  
-}
-
-.skill__image-item img {
-    max-width: 100%;
-    max-height: 100%; 
-    object-fit: contain;  
-    height: auto;
-    width: auto;
-}
+	display: flex; 
+	justify-content: center;
+	align-items: center; 
+	width: 100%; 
+	height: 120px; 
+	overflow: hidden; 
+	box-sizing: border-box; 
+  }
+  
+  .skill__image-item img {
+	max-width: 100%; 
+	max-height: 100%;
+	object-fit: contain; 
+	margin: 0 auto; 
+	display: block; 
+  }
+  
 
 .about__image_container {
     display: flex;
@@ -1071,15 +1088,36 @@ html {
 		height: 299px;
 		margin: 10px;    
 		float: left; 
+	 
 	
 		img {    
-			align-items: center;
+			/* align-items: center;
+			justify-items: center; */
 			max-width: 90%;
 			height: auto;        
 		}     
 	}
 	
 	
+
+	.about_align {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	@media (width >= 768px) {
+
+		.about_align {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}		
+	}
+
 	
 	.back p	{
 		position: absolute;
@@ -1409,8 +1447,7 @@ html {
 	min-width: 550;
     min-height:300px;
     margin:0 auto;
-    position:relative;
-    /* padding-bottom:30px; */
+    position:relative;    
     overflow:hidden;   
 	font-family: inherit;
 
@@ -1436,7 +1473,7 @@ html {
         margin: -1px;
         border: 0;
         clip: rect(0 0 0 0);
-        /* overflow: hidden; */
+        
     }    
 
     label{
@@ -1639,7 +1676,7 @@ html {
   
   .toast__close {
     font-size: 20px;
-    color: rgba(0, 0, 0, 0.3);
+    color: #0000004d;
     cursor: pointer;
   }
   
@@ -1659,10 +1696,10 @@ html {
 	  .card {
 		height: 100%;
 		border-radius: 50px;
-		background: linear-gradient(135deg, rgb(0, 255, 214) 0%, rgb(8, 226, 96) 100%);
+		background: linear-gradient(135deg, #00ffd6 0%, #08e260 100%);
 		transition: all 0.5s ease-in-out;
 		transform-style: preserve-3d;
-		box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;
+		box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, #05471133 0px 25px 25px -5px;
 	  }
 	  
 	  .glass {
@@ -1671,9 +1708,7 @@ html {
 		inset: 8px;
 		border-radius: 55px;
 		border-top-right-radius: 100%;
-		background: linear-gradient(0deg, rgba(255, 255, 255, 0.349) 0%, rgba(255, 255, 255, 0.815) 100%);
-		/* -webkit-backdrop-filter: blur(5px);
-		backdrop-filter: blur(5px); */
+		background: linear-gradient(0deg, #ffffff59 0%, #ffffffd0 100%);		 
 		transform: translate3d(0px, 0px, 25px);
 		border-left: 1px solid white;
 		border-bottom: 1px solid white;
@@ -1870,16 +1905,32 @@ html {
 		transform: translate3d(0, 0, 100px);
 	  }
 	
-	
-	
+
 	  .proyect_list{
-		display: grid;
-		justify-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		align-items: center;
-		grid-template-columns: repeat(auto-fill,minmax(350px,1fr)); 
-		gap: 0.5em;
-		width: 100%;
-		max-width: 1200px;
-		margin: 0 auto;
-	  }
+		gap: 2.5em;
+	  } 
+
+	@media (width >= 768px) { 
+
+		.proyect_list{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			gap: 2.5em;
+		  }		
+	}
+
+
+	}
+  
+
+	
+	.align_graph {
+		display: flex; 
+		justify-content: center;		
 	}
