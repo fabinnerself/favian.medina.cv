@@ -5,18 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Favian Medina">
-  <meta name="description" content="Full Stack Web Developer con experiencia en HTML, CSS, JavaScript, PHP, MySQL, EasyUI y React. Experto en crear soluciones dinámicas y escalables.">
+  <meta name="description" content="Full Stack Web Developer con experiencia en HTML, CSS, JavaScript, PHP, MySQL, EasyUI y React. Expert in creating dynamic and scalable solutions.">
   <meta name="keywords" content="Full Stack Developer, Web Developer, Javascript, PHP, React">
-  <!-- Font  -->
+  <!-- Fuente  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Marhey:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <!-- Icons  -->
+  <!-- Iconos  -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ 
+  <!-- animate.css de https://animate.style/  -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
   <title>Portafolio Favian</title>
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+  <!-- estilos CSS   -->
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- js    -->
   <script type="module" src="assets/js/main.js"></script>
   <!-- EmailJS  -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -24,10 +34,11 @@
   <script type="text/javascript">
     (function () {
       emailjs.init({
-        publicKey: "enter you rown id",
+        publicKey: "ZckYQlgkevWbL3g3i",
       });
     })();
   </script>  
+  
 </head>
 
 <body>
@@ -50,7 +61,7 @@
 </div>
   <header class="header">
     <nav class="navbar grid--container flex--container">
-      <a class="navbar__logo flex--container" href="#"><i class="bx bxs-registered"></i>Favian</a>
+      <a class="navbar__logo flex--container" href="#">  <img src="assets/img/logo ico.png" height="60" width="60" class="projects__image1" />Favian</a>
 
       <div id="nav" class="navbar__menu">
         <a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
@@ -65,6 +76,9 @@
           <li class="navbar__item">
             <a class="navbar__link" href="#skills">Skills</a>
           </li>  
+          <li class="navbar__item">
+            <a class="navbar__link" href="#servicios">Services</a>
+          </li>                
           <li class="navbar__item">
             <a class="navbar__link" href="#projects">Portfolio</a>
           </li>
@@ -91,36 +105,46 @@
   </header>
 
   <main>
-    <section id="home" class="home">
-      <i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
-      <i class="bx bxl-javascript home__layer home__layer--2" data-speed="5"></i>
-      <i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
-      <i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
-      <i class="bx bxl-react home__layer home__layer--5" data-speed="8"></i>
-      <i class="bx bxl-tailwind-css home__layer home__layer--6" data-speed="-2"></i>
-      <i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
-      <i class="bx bxl-typescript home__layer home__layer--8" data-speed="-2"></i>
-      <i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
-      <i class="bx bxl-graphql home__layer home__layer--10" data-speed="-7"></i>
+    <section id="home" class="home">      
       <i class="bx bx-code-alt home__layer home__layer--11" data-speed="-5"></i>
+      <img src="assets/img/skill/tech/html.webp" height="90" width="90" class="bx  home__layer home__layer--1" data-speed="-5" />            
+      <img src="assets/img/skill/tech/js.webp" height="90" width="90" class="bx  home__layer home__layer--2" data-speed="5" />      
+      <img src="assets/img/skill/tech/css.png" height="90" width="90" class="bx  home__layer home__layer--3" data-speed="2" />
+      <img src="assets/img/skill/tech/react.png" height="90" width="90" class="bx  home__layer home__layer--4" data-speed="6" />      
+      <img src="assets/img/skill/tool/GitHub.png" height="90" width="90" class="bx  home__layer home__layer--9" data-speed="6" />
+      <img src="assets/img/skill/tech/tailWind.png" height="90" width="90" class="bx  home__layer home__layer--7" data-speed="4" />
+      <img src="assets/img/skill/tool/proxmox.png" height="90" width="90" class="bx  home__layer home__layer--10" data-speed="-7" />
+      <img src="assets/img/skill/tech/typescript-icon.png" height="100" width="100" class="bx  home__layer home__layer--8" data-speed="-3" />      
+      <img src="assets/img/skill/tech/php.png" height="90" width="90" class="bx  home__layer home__layer--5" data-speed="8" />
+      <img src="assets/img/skill/db/postgres.png" height="100" width="100" class="bx  home__layer home__layer--12" data-speed="8" />
+      <img src="assets/img/skill/db/json.png" height="100" width="100" class="bx  home__layer home__layer--13" data-speed="-4" />
+      <img src="assets/img/skill/so/debian.png" height="100" width="100" class="bx  home__layer home__layer--14" data-speed="-8" />
+ 
+
       <div class="home__container grid--container">
         <div class="home__image">
-          <img src="assets/img/stimulus.png" alt="profile photo" title="profile photo" />
+          
+          <div class="box a">
+            <img src="https://hub.laboratoria.la/hubfs/HUB%20COVER%20%2815%29.jpg" alt="fs">
+          </div>
+
         </div>
 
         <ul class="home__social flex--container">
-          <li><a class="home__layer--20" href="mailto:favian.medina.gemio@gmail.com?subject=Consult%20about%20your%20project" alt="Write to me an email"><i class='bx bxl-gmail ' > </i></a> </li>
-          <li><a class="home__layer--20" href="https://api.whatsapp.com/send?phone=+59167023053&text=Hey,%20I%20want%20to%20consult%20about%20your%20services" target="_blank"> <i class='bx bxl-whatsapp home__layer--20' ></i> </a> </li>
+          <li><a class="home__layer--20" href="mailto:favian.medina.gemio@gmail.com?subject=Consulta%20sobre%20tu%20proyecto" alt="Escribeme un correo"><i class='bx bxl-gmail ' > </i></a> </li>
+          <li><a class="home__layer--20" href="https://api.whatsapp.com/send?phone=+59167023053&text=Hello,%20I%20would%20like%20to%20inquire%20about%20your%20services" target="_blank"> <i class='bx bxl-whatsapp home__layer--20' ></i> </a> </li>
             
           <li><a class="home__layer--20" href="https://github.com/fabinnerself" target="_blank"> <i class='bx bxl-github home__layer--20' ></i> </a>   </li>
-          <li><a class="home__layer--20" href="https://www.linkedin.com/in/favian-medina-35a5471a4/?locale=en_US" target="_blank"><i class='bx bxl-linkedin-square home__layer--20' ></i></a> </li>   
+          <li><a class="home__layer--20" href="https://www.linkedin.com/in/favian-medina-35a5471a4/" target="_blank"><i class='bx bxl-linkedin-square home__layer--20' ></i></a> </li>   
         </ul>
 
         <div class="home__info">
-          <h1 class="home__title">Hey I'm Favian</h1>
+          <h1 class="home__description  ">Hi Welcome!!</h1>
+          <h1 class="animate__animated animate__fadeIn animate__infinite home__description ">I'm Favian </h1>
+          <h1 class="animate__animated  animate__tada animate__infinite home__description ">Full stack web developer</h1>
 
           <p class="home__description">"System design and web development. Simple and effective."</p>
-          <p class="description_align_1"> I am a web developer with almost 17 years of experience in the IT field, excelling in the creation of web applications, data analysis for public entities and as a technical support specialist. I am skilled in troubleshooting and customer support.</p>
+          <p class="description_align_1">I am a web developer with almost 17 years of experience in the IT field, excelling in the creation of web applications, data analysis for public entities in Bolivia and as a technical support specialist. I am skilled in troubleshooting and customer support.</p>
         </div> 
       </div>
     </section>
@@ -132,45 +156,37 @@
         <div class="about__card">
           <img src="assets/img/fmg.png" alt="myself fmg" title="myself">
         </div> </div>
-        <p class="description_align">I am a passionate IT professional with a background in various technical areas. My journey began in 2003 with a degree in Computer Science from the prestigious Universidad Mayor de San Andres (UMSA). Since then, I have continuously expanded my skill set through a wide range of courses and certifications.
-          </p>
-          <h3># Technical Expertise</h3>
-          <p class="description_align">Full-Stack Development: Proficient in both front-end and back-end technologies.
-            Network and Security Support: Experience in small network administration, cybersecurity awareness.
-            Relationship database management. Project management: Familiar with agile methodologies (Scrum) for efficient project execution.
-        </p>
-        <h3>  # Lifetime apprentice</h3>
-          <p class="description_align">Throughout my career, I have actively sought out additional certifications and courses to stay current with the latest advances in technology. In 2023, I completed a number of online courses on platforms such as Udemy.</p>
-          <p class="description_align">This constant learning approach ensures that I possess the skills and knowledge to tackle any project effectively.</p>            
-                <a class="btn btn--primary" href="assets/doc/cv_fmg_en.pdf" download="cv_fmg.pdf" target="_blank">Download my resume</a>  <br>
+
+        <h4>Comprehensive Web Development Solutions</h4>        
+        <p class="description_align">I provide complete and effective solutions in full stack web development, utilizing cutting-edge technologies such as React.js, Vue.js, HTML5, CSS3, JavaScript, and PHP.</p>          
+
+        <h4>Secure and Efficient Data Access</h4>
+        <p class="description_align">My proposed solutions ensure efficient and secure access to data, drawing on my extensive experience in designing, developing, and managing relational databases. I am proficient in both open-source and proprietary software, excelling in crafting advanced SQL queries for data analysis and report generation. Additionally, I implement robust backup and data recovery strategies to safeguard your information.</p>
+        
+        <h4>API Development and Integration</h4>
+        <p class="description_align">With experience in developing and consuming REST APIs, I facilitate seamless service integration and secure data exposure. This capability enhances the functionality of your applications while ensuring data integrity.</p>  
+
+        <h4>Industry-Standard Tools and Practices</h4>
+        <p class="description_align">The solutions I offer are supported by widely recommended professional tools and environments within the industry. I possess solid experience in project management and technical collaboration across both Linux and Windows platforms, complemented by proficiency in essential office tools. I integrate version control systems as a fundamental aspect of organized and collaborative development processes.</p>
+        
+        <h4>Commitment to Growth</h4>
+        <p class="description_align">My focus is on driving the growth and success of small to medium-sized enterprises in both the public and private sectors through the implementation of modern technologies and efficient development practices. Together, we can achieve your business objectives with innovative solutions tailored to your needs. This version enhances clarity, structure, and professionalism while maintaining the original message's intent.</p>
+        
+                <a class="btn btn--primary skills__description" href="assets/doc/cv_fmg_2024_en.pdf" download="favian.medina.gemio.pdf" target="_blank">Download my resume</a>  <br>
         </p>
   
+        <span>
+          <p class="description_align_1"> Every great project starts with an idea. If you have something in mind, don't hesitate to write me; I'll be happy to help you materialize it.
+            <a   href="#contact" class="projects__image1" > <img  src="./assets/img/getInContact.png" alt="Ponte en contacto" height="80" width="80"></a> 
+          </p>  
+          
+        </span>
+
+
+        <h3># Educación</h3>
         <div class="skills__wrapper flex--container">
           <div class="skills__cards flex--container">  
-            <!--Card 1 -->
-            <details class="skills__cards-container" name="moreInfo" open>
-              <summary class="skills__cards-title flex--container">
-                <img src="assets/img/estudios/am.png" alt="Gráfico alma mater" title="alma mater" width="70" height="70" >  
-              </summary>
-              <div class="skills__card-container">
-                <h3 class="skills__card-title">Alma Mater</h3>
-                <p class="skills__card-description">                       
-                    Bachelor's Degree in Computer Science, Faculty of Pure and Natural Sciences, Universidad Mayor de San Andres - 2003. </p>
-                 <p class="flex--container"> <a href="https://www.umsa.bo/" target="_blank"><img src="assets/img/estudios/UMSA Color.gif" alt="Gráfico UMSA" class="umsa-img" title="UMSA"></a>                         </p>
-                  
-              </div>
-            </details>
-            <!--Card 2 -->
-            <details class="skills__cards-container" name="moreInfo">
-              <summary class="skills__cards-title flex--container">
-                <img src="assets/img/estudios/diplomado.png" alt="Gráfico diplomado" width="70" height="70" title="diplomado" > 
-              </summary>
-              <div class="skills__card-container">
-                <h3 class="skills__card-title">Postgraduate</h3>
-                <p class="skills__card-description">                       
-                    Diploma in Free Software and GNU/LINUX - 2016.</p>
-                 <p class="flex--container"><a href="https://egpp.gob.bo/" target="_blank"><img src="assets/img/estudios/LogoEGPP10.png" alt="Gráfico EGPP" class="umsa-img" title="EGPP"></a> </p>                    
-            </details>
+            
             <!--Card 3 -->
             <details class="skills__cards-container" name="moreInfo">
               <summary class="skills__cards-title flex--container">
@@ -185,20 +201,7 @@
                 <p class="flex--container"><a href="https://www.lpi.org/" target="_blank"><img src="assets/img/estudios/lpi.png" alt="Gráfico LPI"  class="umsa-img"></a></p>
               </div>
             </details>
-            <!--Card 4 -->
-            <details class="skills__cards-container" name="moreInfo">
-              <summary class="skills__cards-title flex--container">
-                <img src="assets/img/estudios/cursos.png" alt="Gráfico curso" title="curso" width="70" height="70" > 
-              </summary>
-              <div class="skills__card-container">
-                <h3 class="skills__card-title">Courses</h3>
-
-                <p class="skills__card-description">
-                    Among others Vue, Dyango, PHP, etc. - 2023.
-                </p>
-                <p class="flex--container"><a href="https://www.udemy.com/" target="_blank"><img src="assets/img/estudios/udemy.png" alt="Gráfico Udemy"></a></p>
-              </div>
-            </details>
+           
             <!--Card 5 -->
             <details class="skills__cards-container" name="moreInfo">
               <summary class="skills__cards-title flex--container">
@@ -207,7 +210,8 @@
               <div class="skills__card-container">
                 <h3 class="skills__card-title">Bootcams</h3>
 
-                <p class="skills__card-description">Full-Stack Web Development and Computer Science at Academlo - 2024.
+                <p class="skills__card-description">
+                    Full-Stack Web Development and Computer Science in Academlo - 2024.
                 </p>
                 <p class="flex--container"><a href="https://www.academlo.com/" target="_blank"><img src="assets/img/estudios/academlo.png" alt="Gráfico Academlo" class="umsa-img" title="academlo" ></a></p>
               </div>
@@ -215,11 +219,11 @@
           </div>
         </div>
         <h3>  # Career Path</h3>
-        <p class="description_align">I have experience in IT support, database management and systems development, working with various organizations such as Niagara Technology Group (NTG)/CCW Technologies, the Authority of Supervision and Control of Pensions and Insurance (APS), the Ministry of Development Planning, Sudamericana - Insurance Brokers, and the Ministry of Finance. Ability to offer solutions to both the public and private sectors in Bolivia in an operational manner.</p>
-        <div>
+        <p class="description_align">I have experience in IT support, database management and systems development, working with various organizations such as Niagara Technology Group (NTG)/CCW Technologies, the Authority of Supervision and Control of Pensions and Insurance (APS), the Ministry of Development Planning, Sudamericana - Insurance Brokers, and the Ministry of Finance. Ability to offer solutions to both the public and private sectors in Bolivia in an operational manner..</p>
+        <div class="about_align">
           <div class="maincontainer">
               <div class="back">                
-                  <p>2018-2019   Operations Manager, Long-Term Public Social Security Management Company.</p>
+                  <p>2018-2019  Operations Manager, Long-Term Public Social Security Management Company.</p>
               </div>
               <div class="front">                 
                   <img src="assets/img/work/gestora.png" alt="gestora" title="gestora">
@@ -228,7 +232,7 @@
           </div>
           <div class="maincontainer">
               <div class="back">                
-                  <p>2012-2017 Senior EPI Coordination Professional/Consultings, Pension and Insurance Supervisory and Control Authority (Autoridad de Fiscalización y Control de Pensiones y Seguros -APS).</p>
+                  <p>2012-2017 Senior Professional, EPI/Consultancy Coordination, Pension and Insurance Supervisory and Control Authority (Autoridad de Fiscalización y Control de Pensiones y Seguros -APS).</p>
               </div>
               <div class="front">                 
                   <img src="assets/img/work/aps.png" alt="aps" title="aps">
@@ -237,7 +241,7 @@
           </div>
           <div class="maincontainer">
               <div class="back">                 
-                  <p>2022-2023  Computer Technical Support Specialist - telecommuting in English, Niagara Technology Group(NTG)/CCW Technologies.</p>
+                  <p>2022-2023 Computer Technical Support Specialist - telecommuting in English, Niagara Technology Group(NTG)/CCW Technologies.</p>
               </div>
               <div class="front">                 
                   <img src="assets/img/work/ntg_ccw.png" alt="ntg"  title="ntg ">
@@ -248,71 +252,53 @@
         
       </div>   
     </section>
+
     <section id="skills" class="skills section">
+      <div id="toast" ></div>
       <h2 class="section__title">Skills</h2>
       <div class="container">
         <p class="skill_aling">Technologies</p>
-        <div class="top">         
+        <div class="top ">         
             <ul>
               <li><div class="skill__image-item"><img src="assets/img/skill/tech/php.png" alt="grafico php" title="php"></div></li>   
               <li><div class="skill__image-item"><img src="assets/img/skill/tech/easyui.png" alt="grafico easyui" title="easyui"></div></li>
-              <li><div class="skill__image-item"><img src="assets/img/skill/tech/js_html_css.png" alt="grafico js html css" title="js html css"></div></li>                 
-                  <li><div class="skill__image-item"> <img src="assets/img/skill/tech/bootstrap.png" alt="grafico boorstrap" title="boorstrap" ></div> </li>
-                  <li><div class="skill__image-item"><img src="assets/img/skill/tech/docker.png" alt="grafico docker" title="docker">  </div></li>
-                  <li><div class="skill__image-item"><img src="assets/img/skill/tech/dyango.png" alt="grafico dyango" title="dyango"></div></li>                  
-                  <li><div class="skill__image-item"><img src="assets/img/skill/tech/jquery.png" alt="grafico jquery" title="jquery"></div></li>                    
-                  <li><div class="skill__image-item"><img src="assets/img/skill/tech/laravel.png" alt="grafico laravel" title="laravel"></div></li>   
-                  <li><div class="skill__image-item"><img src="assets/img/skill/tech/node.png" alt="grafico nodejs" title="nodejs"></div></li>                     
-                  <li><div class="skill__image-item"><img src="assets/img/skill/tech/python.png" alt="grafico python" title="python"></div></li>  
-                  <li><div class="skill__image-item"><img src="assets/img/skill/tech/angular.png" alt="grafico angularjs" title="angularjs" ></div> </li> 
-                  <li><div class="skill__image-item"><img src="assets/img/skill/tech/react.png" alt="grafico reactjs" title="reactjs"></div></li>   
-                  <li><div class="skill__image-item"><img src="assets/img/skill/tech/vue.png" alt="grafico vuejs" title="vuejs"></div></li>   
+              <li><div class="skill__image-item"><img src="assets/img/skill/tech/react.png" alt="grafico reactjs" title="reactjs"></div></li>  
+              <li><div class="skill__image-item"><img src="assets/img/skill/tech/js_html_css.png" alt="grafico js html css" title="js html css"></div></li> 
               </ul>                            
           </div>
       </div>       
       <div class="container">
         <p class="skill_aling">Tools</p>
         <div class="top">
-            <ul>
-              <li><div class="skill__image-item"><img src="assets/img/skill/tool/visuals.png" alt="grafico visual estudio" title="visual estudio"></div></li>
-              <li><div class="skill__image-item"><img src="assets/img/skill/tool/git.png" alt="grafico git" title="git"></div></li>                                
-                  <li><div class="skill__image-item"><img src="assets/img/skill/tool/GitHub.png" alt="grafico github" title="github">  </div></li>                  
-                  <li><div class="skill__image-item"><img src="assets/img/skill/tool/libreoffice.png" alt="grafico libreoffice" title="libreoffice"></div></li>
-                  <li><div class="skill__image-item"> <img src="assets/img/skill/tool/ms_office.png" alt="grafico ms office" title="ms office" ></div> </li>
-                  <li><div class="skill__image-item"><img src="assets/img/skill/tool/postman.png" alt="grafico postman" title="postman"></div></li>
-                  <li><div class="skill__image-item"><img src="assets/img/skill/tool/proxmox.png" alt="grafico proxmox" title="proxmox"></div></li>
-                  <li><div class="skill__image-item"><img src="assets/img/skill/tool/apache.png"  alt="grafico apache" title="apache"></div> </li>                                    
+            <ul class="align_graph">
+              <li ><div class="skill__image-item"><img src="assets/img/skill/tool/git.png" alt="grafico git" title="git"></div></li>    
+              <li><div class="skill__image-item"><img src="assets/img/skill/tool/postman.png" alt="grafico postman" title="postman"></div></li>                                      
               </ul>               
           </div>
       </div>       
       <div class="container">
         <p class="skill_aling">Data Base</p>
         <div class="top">
-            <ul>
-                <li><div class="skill__image-item"><img src="assets/img/skill/db/json.png"  alt="grafico json" title="json"></div> </li>
-                <li><div class="skill__image-item"><img src="assets/img/skill/db/rest_api.png" alt="grafico rest api" title="rest api"></div></li>                  
-                  <li><div class="skill__image-item"><img src="assets/img/skill/db/mysql.png" alt="grafico mysql" title="mysql">  </div></li>                  
-                  <li><div class="skill__image-item"><img src="assets/img/skill/db/postgres.png" alt="grafico postgresql" title="postgresql"></div></li>
-                  <li><div class="skill__image-item"> <img src="assets/img/skill/db/mssql.png"  alt="grafico mssql" title="mssql"></div> </li>
-                  <li><div class="skill__image-item"><img src="assets/img/skill/db/oracle.png" alt="grafico oracle" title="oracle"></div></li>                                  
+            <ul class="align_graph">
+              <li><div class="skill__image-item"><img src="assets/img/skill/db/rest_api.png" alt="grafico rest api" title="rest api"></div></li>                  
+              <li><div class="skill__image-item"><img src="assets/img/skill/db/mysql.png" alt="grafico mysql" title="mysql">  </div></li>                  
+              <li><div class="skill__image-item"><img src="assets/img/skill/db/oracle.png" alt="grafico oracle" title="oracle"></div></li>                                
               </ul>               
           </div>
       </div> 
       <div class="container">
         <p class="skill_aling">Operating Sistems</p>
         <div class="top">
-            <ul>
-              <li><div class="skill__image-item"><img src="assets/img/skill/so/ubuntu.png" alt="grafico ubuntu" title="ubuntu"></div></li>
-              <li><div class="skill__image-item"><img src="assets/img/skill/so/Red-Hat.png" alt="grafico red-hat" title="red-hat"></div></li>                                
-                  <li><div class="skill__image-item"><img src="assets/img/skill/so/debian.png" alt="grafico debian" title="debian">  </div></li>                  
-                  <li><div class="skill__image-item"><img src="assets/img/skill/so/win10.png" alt="grafico win10" title="win10"></div></li>                  
+            <ul class="align_graph">
+              <li><div class="skill__image-item"><img src="assets/img/skill/so/ubuntu.png" alt="grafico ubuntu" title="ubuntu"></div></li>                 
+              <li><div class="skill__image-item"><img src="assets/img/skill/so/win10.png" alt="grafico win10" title="win10"></div></li>                  
               </ul>               
           </div>
       </div>      
       <div class="container">
         <p class="skill_aling">Personal</p>
         <div class="top">
-            <ul>
+            <ul class="align_graph">
                 <li><div class="skill__image-item"><img src="assets/img/skill/soft/til.png"  alt="grafico soporte tecnico" title="soporte tecnico"></div> </li>
                 <li><div class="skill__image-item"><img src="assets/img/skill/soft/homenet.png" alt="grafico red hogar" title="red hogar"></div></li>                  
                   <li><div class="skill__image-item"><img src="assets/img/skill/soft/proactive.png" alt="grafico proactivo" title="proactivo">  </div></li>                  
@@ -320,145 +306,878 @@
                   <li><div class="skill__image-item"><img src="assets/img/skill/soft/puntualidad.png" alt="grafico puntualidad" title="puntualidad"></div></li>
               </ul>               
           </div>
-      </div>          
-
+      </div>   
 
     </section>    
+
+
+
+    <section id="servicios" class="servicios section">
+      
+     
+        <h2 class="section__title">Services</h2>
+
+        <div class="proyect_list">
+        <div class="parent">
+            <div class="card">
+                <div class="logo">
+                  
+                    <span class="circle circle4"></span>
+                    <span class="circle circle5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 839.862 839.862" class="svg">
+                            <path d="M565.79,704.734c-4.352-2.648-8.144-6.198-11.158-10.5c-1.392-1.984-2.568-4.082-3.542-6.25H56.564V200.552h671.248
+                                v318.276c14.33,1.294,26.354,10.706,31.402,23.594c4.47-2.45,9.452-3.964,14.688-4.426c3.542-0.308,7.06-0.088,10.472,0.586
+                                V79.122c0-25.992-21.142-47.138-47.132-47.138H47.136C21.146,31.984,0,53.13,0,79.122v618.292
+                                c0,25.992,21.146,47.138,47.136,47.138h514.358c-4.014-8.128-4.966-17.304-2.604-26.132
+                                C560.252,713.34,562.608,708.708,565.79,704.734z M676.05,111.138c0-9.612,7.792-17.406,17.404-17.406h17.404
+                                c9.614,0,17.406,7.792,17.406,17.406v19.726c0,9.612-7.792,17.404-17.406,17.404h-17.404c-9.614,0-17.404-7.792-17.404-17.404
+                                V111.138z M595.12,111.138c0-9.612,7.792-17.406,17.404-17.406h17.406c9.614,0,17.404,7.792,17.404,17.406v19.726
+                                c0,9.612-7.792,17.404-17.404,17.404h-17.406c-9.612,0-17.404-7.792-17.404-17.404V111.138z M514.188,111.138
+                                c0-9.612,7.794-17.406,17.404-17.406h17.404c9.614,0,17.406,7.792,17.406,17.406v19.726c0,9.612-7.792,17.404-17.406,17.404
+                                h-17.404c-9.61,0-17.404-7.792-17.404-17.404V111.138z"/>
+                            <path d="M839.75,671.54l-5.23-29.66c-0.706-3.994-4.512-6.662-8.51-5.958l-26.376,4.648
+                                c-3.166-7.43-7.21-14.39-12.01-20.76l17.228-20.536c1.252-1.488,1.862-3.418,1.694-5.36c-0.172-1.942-1.108-3.734-2.6-4.988
+                                l-23.068-19.36c-1.492-1.252-3.426-1.86-5.366-1.69c-1.942,0.17-3.734,1.104-4.986,2.596l-17.212,20.52
+                                c-7.066-3.6-14.624-6.376-22.542-8.208v-26.784c0-4.056-3.29-7.348-7.346-7.348h-30.12c-4.054,0-7.346,3.292-7.346,7.348
+                                v26.784c-7.922,1.83-15.472,4.608-22.542,8.208l-17.216-20.518c-2.608-3.108-7.24-3.512-10.35-0.906l-23.07,19.358
+                                c-1.492,1.254-2.426,3.046-2.598,4.988c-0.168,1.942,0.44,3.874,1.692,5.362l17.23,20.532c-4.792,6.368-8.844,13.332-12.01,20.76
+                                l-26.376-4.65c-3.988-0.702-7.804,1.964-8.51,5.958l-5.228,29.66c-0.338,1.918,0.1,3.89,1.214,5.488
+                                c1.122,1.598,2.82,2.684,4.74,3.022l26.396,4.652c0.43,8.178,1.854,16.09,4.146,23.624l-23.2,13.39
+                                c-1.688,0.97-2.918,2.578-3.424,4.458c-0.504,1.882-0.238,3.886,0.734,5.574l15.058,26.082c0.97,1.688,2.578,2.918,4.458,3.422
+                                c0.626,0.168,1.264,0.25,1.902,0.25c1.278,0,2.544-0.332,3.672-0.984l23.218-13.406c5.46,5.85,11.624,11.034,18.36,15.418
+                                l-9.168,25.186c-0.664,1.832-0.578,3.852,0.246,5.618c0.824,1.764,2.314,3.132,4.144,3.796l28.296,10.298
+                                c0.812,0.296,1.664,0.448,2.514,0.448c1.06,0,2.126-0.23,3.108-0.69c1.766-0.822,3.128-2.314,3.794-4.146l9.166-25.186
+                                c3.93,0.476,7.93,0.722,11.988,0.722s8.058-0.25,11.988-0.722l9.166,25.186c0.664,1.832,2.028,3.324,3.794,4.146
+                                c0.98,0.458,2.042,0.69,3.108,0.69c0.848,0,1.7-0.148,2.514-0.448l28.3-10.298c1.826-0.664,3.32-2.034,4.144-3.796
+                                c0.824-1.766,0.912-3.786,0.246-5.618l-9.168-25.182c6.73-4.384,12.894-9.568,18.36-15.418l23.218,13.406
+                                c1.126,0.648,2.394,0.984,3.672,0.984c0.636,0,1.28-0.086,1.902-0.25c1.882-0.504,3.488-1.738,4.458-3.422l15.058-26.084
+                                c0.972-1.684,1.238-3.69,0.734-5.572c-0.506-1.876-1.736-3.484-3.424-4.458l-23.196-13.39c2.292-7.534,3.712-15.446,4.146-23.624
+                                l26.396-4.654c1.92-0.338,3.628-1.424,4.74-3.022C839.65,675.43,840.088,673.458,839.75,671.54z M708.368,718.672
+                                c-22.31,0-40.4-18.09-40.4-40.402s18.092-40.4,40.4-40.4c22.312,0,40.402,18.088,40.402,40.4S730.68,718.672,708.368,718.672z"/>
+                            <path d="M329.39,470.746c0-9.504-5.57-18.234-14.192-22.238l-78.91-36.664l78.912-36.668c8.62-4.008,14.19-12.736,14.19-22.236
+                                v-0.638c0-8.42-4.238-16.15-11.33-20.668c-3.924-2.506-8.494-3.832-13.212-3.832c-3.556,0-7.126,0.782-10.32,2.266
+                                l-126.156,58.666c-8.618,4.008-14.184,12.736-14.184,22.234v1.754c0,9.486,5.564,18.208,14.186,22.236l126.168,58.672
+                                c3.262,1.51,6.736,2.276,10.324,2.276c4.676,0,9.238-1.328,13.194-3.848c7.096-4.536,11.334-12.266,11.334-20.67L329.39,470.746
+                                L329.39,470.746z"/>
+                            <path d="M453.864,268.024c-4.602-6.3-12.004-10.06-19.802-10.06h-0.628c-10.708,0-20.096,6.85-23.358,17.032L326.956,532.54
+                                c-2.366,7.436-1.034,15.626,3.562,21.924c4.602,6.296,12.004,10.058,19.802,10.058h0.63c10.704,0,20.086-6.852,23.344-17.032
+                                l83.11-257.524C458.76,282.532,457.43,274.336,453.864,268.024z"/>
+                            <path d="M616.002,388.732l-126.158-58.666c-3.184-1.48-6.748-2.262-10.304-2.262c-4.716,0-9.288,1.322-13.21,3.824
+                                c-7.104,4.526-11.342,12.254-11.342,20.674v0.638c0,9.492,5.566,18.222,14.194,22.226l78.908,36.66l-78.91,36.662
+                                c-8.622,4.004-14.192,12.734-14.192,22.238v0.642c0,8.41,4.238,16.132,11.338,20.672c3.948,2.516,8.508,3.846,13.19,3.846
+                                c3.584,0,7.054-0.766,10.338-2.282l126.164-58.672c8.614-4.018,14.176-12.742,14.176-22.228v-1.754
+                                C630.188,401.468,624.616,392.74,616.002,388.732z"/>
+                        </svg>
+                    </span>
+    
+                </div>
+                <div class="glass"></div>
+                <div class="content">
+                    <span class="title">Web Development </span>
+                    <span class="text"> I will provide my support in the development and maintenance of your website, ensuring a functional, interactive and efficient platform..</span>
+                </div>
+                <div class="bottom">                
+                    <div class="social-buttons-container">                    
+                          <button class="social-button .social-button2">
+                            <a href="https://uiverse.io/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.667 31.69" class="svg">
+                                    <path id="Path_6" data-name="Path 6" d="M12.827,1.628A1.561,1.561,0,0,1,14.31,0h2.964a1.561,1.561,0,0,1,1.483,1.628v11.9a9.252,9.252,0,0,1-2.432,6.852q-2.432,2.409-6.963,2.409T2.4,20.452Q0,18.094,0,13.669V1.628A1.561,1.561,0,0,1,1.483,0h2.98A1.561,1.561,0,0,1,5.947,1.628V13.191a5.635,5.635,0,0,0,.85,3.451,3.153,3.153,0,0,0,2.632,1.094,3.032,3.032,0,0,0,2.582-1.076,5.836,5.836,0,0,0,.816-3.486Z" transform="translate(0 0)"></path>
+                                    <path id="Path_7" data-name="Path 7" d="M75.207,20.857a1.561,1.561,0,0,1-1.483,1.628h-2.98a1.561,1.561,0,0,1-1.483-1.628V1.628A1.561,1.561,0,0,1,70.743,0h2.98a1.561,1.561,0,0,1,1.483,1.628Z" transform="translate(-45.91 0)"></path>
+                                    <path id="Path_8" data-name="Path 8" d="M0,80.018A1.561,1.561,0,0,1,1.483,78.39h26.7a1.561,1.561,0,0,1,1.483,1.628v2.006a1.561,1.561,0,0,1-1.483,1.628H1.483A1.561,1.561,0,0,1,0,82.025Z" transform="translate(0 -51.963)"></path>
+                                  </svg></a>
+                          </button>
+                          
+                          <button class="social-button .social-button3" onclick="handleCliDiscord">
+                            <a href="https://discord.com/channels/@me" target="_blank">
+                            <svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg" class="svg">
+                                <path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"></path>
+                              </svg> </a>
+                          </button>
+                    </div>
+                     
+                </div>             
+            </div>
+            </div>
+            <div class="parent">
+    
+            <div class="card card-1">
+                <div class="logo">             
+                    <span class="circle circle4"></span> 
+                    <span class="circle circle5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 490" class="svg">
+                            <path d="M245,314.021c-5.936,0-10.743,4.813-10.743,10.749s4.808,10.751,10.743,10.751c5.938,0,10.75-4.815,10.75-10.751
+                               S250.938,314.021,245,314.021z"/>
+                           <path d="M480,21.003H10c-5.523,0-10,4.477-10,10v327.456c0,5.522,4.477,10,10,10h174.711l-17.492,42.43h-32.88
+                               c-5.522,0-10,4.478-10,10v38.108c0,5.523,4.478,10,10,10h221.323c5.522,0,10-4.477,10-10v-38.108c0-5.522-4.478-10-10-10h-32.879
+                               l-17.493-42.43H480c5.522,0,10-4.478,10-10V31.003C490,25.479,485.522,21.003,480,21.003z M470,41.003v240.901H20V41.003H470z
+                                M345.662,448.997H144.339v-18.108h201.323V448.997z M301.149,410.889H188.852l17.492-42.43h77.312L301.149,410.889z M20,348.459
+                               v-46.555h450v46.555H20z"/>
+                           <path d="M323.206,161.089L323.206,161.089L323.206,161.089c0-5.522-4.478-10-10.001-9.999l-10.664,0.001
+                               c-0.603-3.473-1.497-6.846-2.686-10.08l9.221-5.324c4.782-2.763,6.421-8.879,3.658-13.661c-2.763-4.782-8.877-6.423-13.66-3.659
+                               l-9.248,5.342c-2.233-2.669-4.699-5.135-7.368-7.369l5.342-9.247c2.763-4.782,1.125-10.899-3.657-13.661
+                               c-4.782-2.764-10.898-1.125-13.661,3.657l-5.325,9.22c-3.234-1.189-6.607-2.084-10.08-2.688V92.962c0-5.523-4.477-10-10-10
+                               c-0.025,0-0.051,0.004-0.076,0.004s-0.051-0.004-0.076-0.004c-5.522,0-10,4.477-10,10v10.658c-3.473,0.604-6.846,1.498-10.08,2.688
+                               l-5.325-9.22c-2.763-4.782-8.879-6.421-13.661-3.657c-4.782,2.762-6.42,8.879-3.657,13.661l5.342,9.247
+                               c-2.669,2.234-5.135,4.7-7.368,7.369l-9.248-5.342c-4.783-2.764-10.897-1.123-13.66,3.659c-2.763,4.782-1.124,10.898,3.658,13.661
+                               l9.221,5.324c-1.189,3.234-2.083,6.607-2.686,10.08l-10.664-0.001c-5.523-0.001-10.001,4.477-10.001,9.999l0,0l0,0l0,0l0,0
+                               c0,5.523,4.478,10,10.001,10l10.664-0.001c0.602,3.472,1.497,6.845,2.686,10.079l-9.221,5.325
+                               c-4.782,2.763-6.421,8.878-3.658,13.661c2.763,4.781,8.877,6.422,13.66,3.658l9.248-5.342c2.233,2.67,4.699,5.136,7.368,7.369
+                               l-5.342,9.248c-2.763,4.782-1.125,10.898,3.657,13.66c4.782,2.764,10.898,1.125,13.661-3.656l5.325-9.221
+                               c3.234,1.189,6.607,2.085,10.08,2.688v10.658c0,5.523,4.478,10,10,10c0.025,0,0.051-0.004,0.076-0.004s0.051,0.004,0.076,0.004
+                               c5.523,0,10-4.477,10-10v-10.658c3.473-0.603,6.846-1.498,10.08-2.688l5.325,9.221c2.763,4.781,8.879,6.42,13.661,3.656
+                               c4.782-2.762,6.42-8.878,3.657-13.66l-5.342-9.248c2.669-2.233,5.135-4.699,7.368-7.369l9.248,5.342
+                               c4.783,2.764,10.898,1.123,13.66-3.658c2.763-4.783,1.124-10.898-3.658-13.661l-9.221-5.325c1.189-3.234,2.083-6.607,2.686-10.079
+                               l10.664,0.001C318.728,171.089,323.206,166.612,323.206,161.089L323.206,161.089L323.206,161.089z M245.076,199.433
+                               c-0.025,0-0.051-0.002-0.076-0.002s-0.051,0.002-0.076,0.002c-21.141,0-38.34-17.2-38.34-38.344
+                               c0-21.143,17.199-38.344,38.34-38.344c0.025,0,0.051,0.002,0.076,0.002s0.051-0.002,0.076-0.002
+                               c21.141,0,38.34,17.201,38.34,38.344C283.416,182.232,266.217,199.433,245.076,199.433z"/>
+                        </svg>
+                    </span>
+    
+                </div>
+                <div class="glass"></div>
+                <div class="content">
+                    <span class="title">Systems development</span>
+                    <span class="text">Following ISO standards, with a comprehensive approach that encompasses database design, data analysis and complete software development lifecycle management..</span>
+                </div>
+                <div class="bottom">                
+                    <div class="social-buttons-container">                    
+                          <button class="social-button .social-button2">
+                            <a href="https://uiverse.io/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.667 31.69" class="svg">
+                                    <path id="Path_6" data-name="Path 6" d="M12.827,1.628A1.561,1.561,0,0,1,14.31,0h2.964a1.561,1.561,0,0,1,1.483,1.628v11.9a9.252,9.252,0,0,1-2.432,6.852q-2.432,2.409-6.963,2.409T2.4,20.452Q0,18.094,0,13.669V1.628A1.561,1.561,0,0,1,1.483,0h2.98A1.561,1.561,0,0,1,5.947,1.628V13.191a5.635,5.635,0,0,0,.85,3.451,3.153,3.153,0,0,0,2.632,1.094,3.032,3.032,0,0,0,2.582-1.076,5.836,5.836,0,0,0,.816-3.486Z" transform="translate(0 0)"></path>
+                                    <path id="Path_7" data-name="Path 7" d="M75.207,20.857a1.561,1.561,0,0,1-1.483,1.628h-2.98a1.561,1.561,0,0,1-1.483-1.628V1.628A1.561,1.561,0,0,1,70.743,0h2.98a1.561,1.561,0,0,1,1.483,1.628Z" transform="translate(-45.91 0)"></path>
+                                    <path id="Path_8" data-name="Path 8" d="M0,80.018A1.561,1.561,0,0,1,1.483,78.39h26.7a1.561,1.561,0,0,1,1.483,1.628v2.006a1.561,1.561,0,0,1-1.483,1.628H1.483A1.561,1.561,0,0,1,0,82.025Z" transform="translate(0 -51.963)"></path>
+                                  </svg></a>
+                          </button>                      
+                          <button class="social-button .social-button3" onclick="handleCliDiscord">
+                            <a href="https://discord.com/channels/@me" target="_blank">
+                            <svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg" class="svg">
+                                <path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"></path>
+                              </svg> </a>
+                          </button>
+                    </div> 
+                </div> 
+                
+            </div>
+    
+        </div>
+    </div>
+    </div>
+  
+      </section>
+
     <section id="projects" class="projects section">
       <h2 class="section__title">Projects</h2>
+ 
+      <div class="projects__inner grid--container" > 
 
-      <div class="projects__container grid--container">
-        <div class="projects__project">
-          <div class="projects__inner grid--container">
-            <div class="projects__image">
-              <img src="assets/img/portfolio/proy1.png" alt="reactjs" title="react mysql hub" />
-            </div>
+        <div class=" proy_align">
+          <a class="tabs"  onclick="showTab('featured')">Featured </a>|
+          <a class="tabs"  onclick="showTab('all')"> All </a>|          
+          <a class="tabs"  onclick="showTab('crud')"> CRUDs </a>|
+          <a class="tabs"  onclick="showTab('systems')"> Sistems </a>          
+        </div>
+      
+        <div id="content"></div>
+      
+        <!-- Plantillas HTML ocultas -->
+        <template id="template-all"    >
+          <h3>All projects, a total of 13</h3>            
 
-            <div class="projects__info">
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
               <h3 class="projects__name">ReactMySQLHub</h3>
-              <p class="projects__description">
-                Full-stack development of a web application that allows to manage data through an intuitive dashboard. It uses PHP/MySQL for the backend and Node/React for the frontend. Includes CRUD, filtering, pagination and a RESTful API.
-              </p>
-
-              <div class="projects__buttons">
-                
-                <button class="btn projects__button" type="button">
-                  <a href="https://github.com/fabinnerself/CORERA" target="_blank" title="ReactMySQLHub">CODE</a>
-                </button>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy1.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                    Full-stack web application that facilitates data management through an intuitive control panel. It incorporates CRUD functionalities, filters, pagination in the product table and connects to a RESTful API..
+                </p>  
+                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
+                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span> 
+                    <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" />Easy-UI</span>
+                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button"  >
+                    <a href="https://github.com/fabinnerself/CORERA" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="projects__project">
-          <div class="projects__inner grid--container">
-            <div class="projects__image">
-              <img src="assets/img/portfolio/proy2.png" alt="angularjs" title="angular myql hub" />
-            </div>
-
-            <div class="projects__info">
+  
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
               <h3 class="projects__name">AngularMySQLHub</h3>
-              <p class="projects__description">
-                Full-stack development of a web application that allows to manage data through an intuitive dashboard. It uses PHP/MySQL for the backend and Node/React for the frontend. Includes CRUD, filtering, pagination and a RESTful API.
-              </p>
-
-              <div class="projects__buttons">
-                
-                <button class="btn projects__button" type="button">
-                  <a href="https://github.com/fabinnerself/coapra" target="_blank" title="ReactMySQLHub">CODE</a>
-                </button>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy2.png" alt="angularjs" title="angular myql hub" />
+              </div>  
+              <div class="projects__info">               
+                <p class="projects__description description_align_1">
+                    Full-stack web application that facilitates data management through an intuitive control panel. It incorporates CRUD functionalities, filters, pagination in the product table and connects to a RESTful API.
+                </p>
+                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-angular proy_icon_color' ></i>  AngularJS</span>  
+                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span> 
+                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" />Easy-UI</span>
+                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>                
+  
+                <div class="projects__buttons proy_align">
+                  
+                  <button class="btn projects__button"  >
+                    <a href="https://github.com/fabinnerself/coapra" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="projects__project">
-          <div class="projects__inner grid--container">
-            <div class="projects__image">
-              <img src="assets/img/portfolio/proy3.png" alt="vuejs" title="vue mysql hub" />
-            </div>
-
-            <div class="projects__info">
+  
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
               <h3 class="projects__name">VueMySQLHub</h3>
-              <p class="projects__description">
-                Full-stack development of a web application to manage data through an intuitive dashboard. It uses PHP/MySQL for the backend and Node/Vue for the frontend. Includes CRUD, filtering, pagination and a RESTful API.
-              </p>
-
-              <div class="projects__buttons">
-                 
-                <button class="btn projects__button" type="button">
-                  <a href="https://github.com/fabinnerself/covepra" target="_blank" title="ReactMySQLHub">CODE</a>
-                </button>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy3.png" alt="vuejs" title="vue mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                    Full-stack web application that facilitates data management through an intuitive control panel. It incorporates CRUD functionalities, filters, pagination in the product table and connects to a RESTful API.
+                </p>
+                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-vuejs proy_icon_color' ></i>  AngularJS</span>  
+                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span> 
+                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" />Easy-UI</span>
+                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>  
+                <div class="projects__buttons proy_align">                   
+                  <button class="btn projects__button" type="button">
+                    <a href="https://github.com/fabinnerself/covepra" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="projects__project">
-          <div class="projects__inner grid--container">
-            <div class="projects__image">
-              <img src="assets/img/portfolio/proy4.png" alt="cursoteka" title="E-Learning cursoteka" />
-            </div>
-
-            <div class="projects__info">
+  
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
               <h3 class="projects__name">Cursoteka</h3>
-              <p class="projects__description">
-                Full-stack development of a web application for an E-Learning Platform for Online Courses. It uses PHP/MySQL for the backend (api-restfull) and Node/React for the frontend. It includes CRUDs, filtering, pagination on person, user, courses and resources tables. Finally it has login and registration of students and administrators.
-              </p>
-
-              <div class="projects__buttons">
-                <button class="btn projects__button" type="button"> 
-                  <a href="https://test9-sepia.vercel.app/" target="_blank">SEE DEMO</a>
-                </button>
-                <button class="btn projects__button" type="button">
-                  <a href="https://github.com/No-Country-simulation/c20-32-n-php-react" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                </button>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy4.png" alt="cursoteka" title="E-Learning cursoteka" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                    Full-stack web application of an E-Learning Platform for Online Courses. It includes CRUDs, filtering, pagination on person, user, courses and resources tables. Finally it has login and registration of students and administrators.
+                </p>
+                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color' ></i>  ReactJS</span>  
+                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span> 
+                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" />Easy-UI</span>
+                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>  
+                <div class="projects__buttons proy_align">
+                  <button class="btn projects__button "  > 
+                    <a href="https://test9-sepia.vercel.app/" target="_blank">VIEW DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/No-Country-simulation/c20-32-n-php-react" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="projects__project">
-          <div class="projects__inner grid--container">
-            <div class="projects__image">
-              <img src="assets/img/portfolio/proy5.png" alt="echelon" title="echelon php bootstrap mysql" />
-            </div>
 
-            <div class="projects__info">
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
               <h3 class="projects__name">Echelon</h3>
-              <p class="projects__description">
-                Development of a web application that allows data management through an intuitive panel. It uses MYSQL in the backend and PHP/HTML/CSS/Boostrap/JQuery for the front end and includes CRUDs on person and User with filtering, paging and login to the system.
-              </p>
-
-              <div class="projects__buttons">
-                 
-                <button class="btn projects__button" type="button">
-                  <a href="https://github.com/fabinnerself/echelon-b" target="_blank" title="ReactMySQLHub">CODE</a>
-                </button>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy5.png" alt="echelon" title="echelon php bootstrap mysql" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                    Full-stack web application that facilitates data management through an intuitive control panel. It incorporates CRUD functionalities, filters, pagination, product and user table login and connects to a RESTful API.
+                </p>
+                <p class="projects__description proy_tech proy_align"> 
+                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
+                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span>                  
+                  <span >  <i class='bx bxl-bootstrap proy_icon_color' ></i>  Bootrap</span>                  
+                </p> 
+                <div class="projects__buttons proy_align">                   
+                  <button class="btn projects__button" type="button">
+                    <a href="https://github.com/fabinnerself/echelon-b" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">ReactMySQLHub II</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy6.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                    Full-stack web application that facilitates data management through an intuitive control panel. It incorporates CRUD functionalities, filters, pagination in the product table and connects to a RESTful API.
+                </p>  
+                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
+                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span>                     
+                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
+                    <span >  <i class='bx bxl-bootstrap proy_icon_color' ></i>  Bootrap</span>  </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button"  >
+                    <a href="https://github.com/fabinnerself/reactProdBootsHub" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>       
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Crud User APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy12.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">  
+                    Full-stack web application designed to manage data efficiently. It implements CRUD operations, filters and pagination on a user RESTful API, validating input data. It uses React hooks (useState, useEffect, useRef), along with validations via react-hook-form and Yup, as well as a custom hook to handle API connection and pagination. The interface is enriched with react-icons icons and a custom layout with CSS.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>CSS</span>  
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://crud-users-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/s04e04-crudUsers-fmg" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>   
+
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Portafolio Favian</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy7.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                    Modern and accessible web application offers a personalized and fluid user experience thanks to its responsive design, light and dark mode, and multi-language support. Developed with the latest technologies such as CSS, JavaScript and popular frameworks, it features attractive animations, interactive forms and intuitive navigation. Optimized for SEO and accessibility, this application ensures an optimal user experience on any device. In addition, its well-structured code facilitates maintenance and future updates.
+                </p>  
+                <p class="projects__description proy_tech proy_align"><span > <i class='bx bxl-html5 proy_icon_color' ></i>   Html</span>  
+                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span><img src="assets/img/emailJS_ico.png" height="20" width="20" class="projects__image1" />EmailJS</span> 
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button"  >
+                    <a href="https://github.com/fabinnerself/academlo_cv_fmg_page" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Ultimate Bruce Lee APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy8.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                    Web application that generates random Bruce Lee phrases. It uses hooks (UseState) and functional components. The layout is customized with CSS and the data is loaded from a local JSON file.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>CSS</span>  
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://e01-deivi-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/e01-deivi-fmg.git" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>        
+          
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Ultimate Weather APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy9.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                    Real-time weather web application that uses React Hooks (useState and useEffect) to consume the OpenWeatherMap API. It allows custom city searches and has a custom CSS layout.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://s02e02-weather-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/s02e02-weather-fmg" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button> 
+                </div>
+              </div>
+            </div>
+          </div>          
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Ultimate Rick and Morty APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy10.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                    Rick and Morty character and dimension finder. Uses React Hooks to consume the public API https://rickandmortyapi.com and display data such as name, species and dimension. Responsive modular design with pagination, reusable components and custom styles (CSS, Google Fonts). Includes themed graphics and icons for an immersive experience.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span>
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://s03e03-rm-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/s03e03-rm-fmg" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>                
+  
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Ultimate Pokedex APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy11.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">                  
+                    The web application 'Interactive Pokémon Character Finder' presents detailed information such as name, type, stats and moves, among others. It uses advanced hooks (useContext, React Router Dom) to offer a personalized, responsive and multilingual user experience (English, German, etc.), consuming data from the public API https://pokeapi.co. In addition, it features an adaptive and responsive design, reusable components and customization options that allow switching between light, dark and colorful themes. Finally, it includes pagination functionality for easy navigation.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://pokedex-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/E5-pokedex-fmg" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>          
+          
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Ultimate Booking APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy13.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1"> This web application offers an intuitive and customizable hotel search engine. It allows filtering results by city and name, displaying detailed information in multiple languages, such as German and English. Users can select the local currency and choose between different visual themes, such as light and dark. Hotel data is obtained through a REST API. The application manages both public and private routes, using reusable components to handle status and side effects, such as notifications for all actions. It also features a wide range of custom icons and a modern, adaptive and responsive design, optimizing the user experience.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span ><img src="assets/img/tailWind_ico.png" height="20" width="20" class="projects__image1" />TailWind CSS</span> </span>
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span>                   
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://6-booking-app-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/6BookingApp-fmg" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>             
+
+        </template>
+      
+        <template id="template-featured">
+          <h3>Proyectos Destacados</h3>
+      
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Ultimate Booking APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy13.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1"> This web application offers an intuitive and customizable hotel search engine. It allows filtering results by city and name, displaying detailed information in multiple languages, such as German and English. Users can select the local currency and choose between different visual themes, such as light and dark. Hotel data is obtained through a REST API. The application manages both public and private routes, using reusable components to handle status and side effects, such as notifications for all actions. It also features a wide range of custom icons and a modern, adaptive and responsive design, optimizing the user experience.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span ><img src="assets/img/tailWind_ico.png" height="20" width="20" class="projects__image1" />TailWind CSS</span> </span>
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                     
+                  <button class="btn projects__button "  > 
+                    <a href="https://6-booking-app-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/6BookingApp-fmg" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>        
+          
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">MySQLHub</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy1.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                    Full-stack web application that facilitates data management. It incorporates CRUD functionalities, filters, pagination in the product table and connects to a RESTful API. It also has versions that consume local JSON and uses different JavaScript frameworks, such as AngularJS and VueJS.
+                </p>  
+                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
+                    <span >  <i class='bx bxl-angular proy_icon_color' ></i>  AngularJS</span>  
+                    <span >  <i class='bx bxl-vuejs proy_icon_color' ></i>  VueJS</span> 
+                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span> 
+                    <span><img src="assets/img/json_ico.png" height="20" width="20" class="projects__image1" />Json</span>
+                    <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" />Easy-UI</span>
+                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button"  >
+                    <a href="https://github.com/fabinnerself/CORERA" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>          
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Crud User APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy12.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">  
+                    Full-stack web application designed to manage data efficiently. It implements CRUD operations, filters and pagination on a user RESTful API, validating input data. It uses React hooks (useState, useEffect, useRef), along with validations via react-hook-form and Yup, as well as a custom hook to handle API connection and pagination. The interface is enriched with react-icons icons and a custom layout with CSS.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://crud-users-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/s04e04-crudUsers-fmg" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>     
+          
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Cursoteka</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy4.png" alt="cursoteka" title="E-Learning cursoteka" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                    Full-stack web application of an E-Learning Platform for Online Courses. It includes CRUDs, filtering, pagination on person, user, courses and resources tables. Finally it has login and registration of students and administrators.
+                </p>
+                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color' ></i>  ReactJS</span>  
+                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span> 
+                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" />Easy-UI</span>
+                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>                  
+  
+                <div class="projects__buttons proy_align">
+                  <button class="btn projects__button "  > 
+                    <a href="https://test9-sepia.vercel.app/" target="_blank">VIEW DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/No-Country-simulation/c20-32-n-php-react" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>          
+                    
+           
+        </template>
+      
+        <template id="template-crud">
+          <h3>Projects CRUDs</h3> 
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Crud User APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy12.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">  
+                    Full-stack web application designed to manage data efficiently. It implements CRUD operations, filters and pagination on a user RESTful API, validating input data. It uses React hooks (useState, useEffect, useRef), along with validations via react-hook-form and Yup, as well as a custom hook to handle API connection and pagination. The interface is enriched with react-icons icons and a custom layout with CSS.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://crud-users-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/s04e04-crudUsers-fmg" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>    
+          
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">MySQLHub</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy1.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">
+                    Full-stack web application that facilitates data management. It incorporates CRUD functionalities, filters, pagination in the product table and connects to a RESTful API. It also has versions that consume local JSON and uses different JavaScript frameworks, such as AngularJS and VueJS.
+                </p>  
+                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
+                    <span >  <i class='bx bxl-angular proy_icon_color' ></i>  AngularJS</span>  
+                    <span >  <i class='bx bxl-vuejs proy_icon_color' ></i>  VueJS</span> 
+                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span> 
+                    <span><img src="assets/img/json_ico.png" height="20" width="20" class="projects__image1" />Json</span>
+                    <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" />Easy-UI</span>
+                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button"  >
+                    <a href="https://github.com/fabinnerself/CORERA" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>            
+
+
+        </template>
+      
+        <template id="template-systems">          
+          <h3>Projects Systems</h3>
+
+      
+
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Cursoteka</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy4.png" alt="cursoteka" title="E-Learning cursoteka" />
+              </div>
+  
+              <div class="projects__info">
+                
+                <p class="projects__description description_align_1">
+                    Full-stack web application of an E-Learning Platform for Online Courses. It includes CRUDs, filtering, pagination on person, user, courses and resources tables. Finally it has login and registration of students and administrators.
+                </p>
+                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color' ></i>  ReactJS</span>  
+                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span> 
+                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" />Easy-UI</span>
+                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>                  
+  
+                <div class="projects__buttons proy_align">
+                  <button class="btn projects__button "  > 
+                    <a href="https://test9-sepia.vercel.app/" target="_blank">VIEW DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/No-Country-simulation/c20-32-n-php-react" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Ultimate Booking APP</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy13.png" alt="reactjs" title="react mysql hub" />
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1"> engine. It allows filtering results by city and name, displaying detailed information in multiple languages, such as German and English. Users can select the local currency and choose between different visual themes, such as light and dark. Hotel data is obtained through a REST API. The application manages both public and private routes, using reusable components to handle status and side effects, such as notifications for all actions. It also features a wide range of custom icons and a modern, adaptive and responsive design, optimizing the user experience.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                  <span ><img src="assets/img/tailWind_ico.png" height="20" width="20" class="projects__image1" />TailWind CSS</span> </span>
+                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" />Vite</span> </span>
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" />rest-Api</span> 
+                  
+                        </p>
+                <div class="projects__buttons proy_align">   
+                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://6-booking-app-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/6BookingApp-fmg" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>           
+
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">Echelon</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/proy5.png" alt="echelon" title="echelon php bootstrap mysql" />
+              </div>
+  
+              <div class="projects__info">
+                
+                <p class="projects__description description_align_1">
+                    Full-stack web application that facilitates data management through an intuitive control panel. It incorporates CRUD functionalities, filters, pagination, product and user table login and connects to a RESTful API.
+                </p>
+
+                <p class="projects__description proy_tech proy_align"> 
+                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
+                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" /> MySQL</span>                  
+                  <span >  <i class='bx bxl-bootstrap proy_icon_color' ></i>  Bootrap</span>                 
+                  
+                </p> 
+                <div class="projects__buttons proy_align">
+                   
+                  <button class="btn projects__button" type="button">
+                    <a href="https://github.com/fabinnerself/echelon-b" target="_blank" title="ReactMySQLHub">SEE CODE</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </template>      
       </div>
     </section>
+
+
+    <!-- <section id="testimony" class="about section">
+      <h2 class="section__title">Testimonios</h2>          
+ 
+<div class="containerTestimonial"> 
+     
+  <input type="radio" name="nav" id="first" checked/>
+  <input type="radio" name="nav" id="second" />
+  <input type="radio" name="nav" id="third" />
+  <input type="radio" name="nav" id="four" />
+
+  <label for="first" class="first"></label>
+  <label for="second"  class="second"></label>
+  <label for="third" class="third"></label>
+  <label for="four" class="four"></label>
+
+
+<div class="one slide">
+  <blockquote>
+      <h2>Steve Kruger</h2>
+      <h6>UI/UX Designer at Woof Design Studio</h6>
+      <h6><a href="#" target="_blank">@red</a> </h6>        
+      <span class="justifyText">EN CONSTRUCCION -He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I was pleased with his creative design and will definitely be hiring him again. </span>   
+  </blockquote>       
+</div>
+
+<div class="two slide">
+  <blockquote>
+      <h2>John Doe</h2>
+      <h6>Developer Relations at Woof Studios</h6>
+      <h6><a href="#" target="_blank">@red</a> </h6>
+      <span class="justifyText">EN CONSTRUCCION 2- He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I recommend him to anyone who wants their work done professionally. The project ...</span>
+  </blockquote>    
+</div>
+
+<div class="three slide">
+  <blockquote>
+      <h2>Steve Stevenson</h2>
+      <h6>CEO Woof Web Design Studios</h6>
+      <h6><a href="#" target="_blank">@red</a> </h6>
+    <span class="justifyText">EN CONSTRUCCION 3- He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I was pleased with his creative design and will definitely be hiring him again.</span>
+  </blockquote>   
+</div>
+
+<div class="four slide"> 
+  <blockquote>
+      <h2>Yecid</h2>
+      <h6>CEO market</h6>
+      <h6><a href="#" target="_blank">@redddo</a> </h6>
+    <span class="justifyText"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, quod veritatis, facere debitis quidem modi ea voluptatum obcaecati, excepturi omnis blanditiis rerum! Ea, commodi cupiditate libero quia odio voluptatum quis.</span>
+  </blockquote>   
+</div>  
+
+</div>
+  
+
+    </section>   -->
+
+
     <section id="contact" class="contact section">
-      <h2 class="section__title">Contact</h2>
+      <h2 class="section__title">Contacto</h2>
 
       <div class="contact__container grid--container">
         <div class="contact__info">
           <h3 class="contact__info-title">Get in touch!</h3>
-          <p class="description_align">I am very approachable and would love to talk to you, feel free to send me an email, a message via Whatsapp or just fill out the inquiry form.</p>
-          <h3 class="contact__info-title">Contact Information</h3>
+          <p class="description_align">Ready to take your idea to the next level? I'm here to help you turn your dreams into a functional and attractive website. I'm very approachable and would love to talk to you, so feel free to send me an email, message me via WhatsApp or just fill out the inquiry form.</p>
+          <h3 class="contact__info-title">Contact information</h3>
 
           <address class="contact__info-data">
             <div class="contact__info-item">
               <i class="bx bxl-whatsapp"></i>
 
               <span class="contact__info-number">
-                <a href="https://api.whatsapp.com/send?phone=+59167023053&text=Hola,%20quiero%20consultar%20sobre%20tus%20servicios" target="_blank"
-                  rel="noreferrer nofollow">Send me a menssage to WhatsApp</a>
+                <a href="https://api.whatsapp.com/send?phone=+59167023053&text=Hello,%20I%20would%20like%20to%20inquire%20about%20your%20services" target="_blank"
+                  rel="noreferrer nofollow">Send me a message to WhatsApp</a>
               </span>
-            </div>
+            </div> 
 
             <div class="contact__info-item">
               <i class="bx bx-phone"></i>
@@ -483,24 +1202,24 @@
             <div class="contact__info-item">
               <i class="bx bx-map"></i>
 
-              <span class="contact__info-map"> La Paz, Bolivia-SouthAmerica.</span>
+              <span class="contact__info-map"> La Paz, Bolivia-South America.</span>
             </div>
           </address>
         </div>
 
         <div class="contact__form">
-          <h3 class="contact__form-title">Send Message</h3>
+          <h3 class="contact__form-title">Send message</h3>
 
 
-          <form id="form" class="contact__form-container">
+          <form id="form" class="contact__form-container" novalidate>
             <div class="contact__form-group">
               <label for="name" class="contact__form-label">Name</label>
-              <input type="text" id="name" name="name" class="contact__form-input" placeholder="Enter a name" />
+              <input type="text" id="name" name="name" class="contact__form-input" placeholder="Enter your name" />
             </div>
 
             <div class="contact__form-group">
-              <label for="email" class="contact__form-label">E-mail</label>
-              <input type="email" id="email" name="email" class="contact__form-input" placeholder="Enter an E-mail" />
+              <label for="email" class="contact__form-label">E-Mail</label>
+              <input type="email" id="email" name="email" class="contact__form-input" placeholder="Enter your E-mail" pattern="^[a-z0-9.%_+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"  />
             </div>
 
             <div class="contact__form-group">
@@ -509,13 +1228,13 @@
             </div>
 
             <div class="contact__form-group">
-              <label for="message" class="contact__form-label">Menssage</label>
+              <label for="message" class="contact__form-label">Message</label>
               <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input" placeholder="Enter a message"></textarea>
             </div>
             <dialog id="modal">
                 Form successfully submitted!
               <button type="reset" id="btn_close-modal">Close</button>
-            </dialog>
+            </dialog>                    
 
             <button type="submit" class="btn btn_container">
               Send
@@ -523,8 +1242,8 @@
           </form>
           <dialog id="modal_error">
             <p id="error_message"></p>
-            <button id="btn_close-modal_error">Cerrar</button>
-          </dialog>          
+            <button id="btn_close-modal_error">Close</button>
+          </dialog> 
         </div>
       </div>
     </section>
@@ -537,23 +1256,22 @@
             System design and web development. Simple and effective.
         </p>
       </div>
-      <div class="footer__social"> Follow me on my Social Networks</h3>
+      <div class="footer__social">Follow me on my Social Networks</h3>
 
-        <ul class="footer__social-list">
-          
+        <ul class="footer__social-list">          
 
           <li class="footer__social-item">
-            <a class="footer__social-link" href="https://api.whatsapp.com/send?phone=+59167023053&text=Hey,%20I%20want%20to%20consult%20about%20your%20services" target="_blank" rel="noreferrer nofollow"><i
+            <a class="footer__social-link" href="https://api.whatsapp.com/send?phone=+59167023053&text=Hello,%20I%20would%20like%20to%20inquire%20about%20your%20services" target="_blank" rel="noreferrer nofollow"><i
                 class="bx bxl-whatsapp"></i></a>
           </li>
 
           <li class="footer__social-item">
-            <a class="footer__social-link" href="mailto:favian.medina.gemio@gmail.com?subject=Consult%20about%20your%20project" target="_blank" rel="noreferrer nofollow"><i
+            <a class="footer__social-link" href="mailto:favian.medina.gemio@gmail.com?subject=Consulta%20sobre%20tu%20proyecto" target="_blank" rel="noreferrer nofollow"><i
                 class="bx bxl-gmail"></i></a>
           </li>
 
           <li class="footer__social-item">
-            <a class="footer__social-link" href="https://www.linkedin.com/in/favian-medina-35a5471a4/?locale=en_US" target="_blank" rel="noreferrer nofollow"><i
+            <a class="footer__social-link" href="https://www.linkedin.com/in/favian-medina-35a5471a4/" target="_blank" rel="noreferrer nofollow"><i
                 class="bx bxl-linkedin"></i></a>
           </li>
         </ul>
@@ -569,7 +1287,10 @@
           </li>           
           <li class="navbar__item">
             <a class="navbar__link" href="#skills">Skills</a>
-          </li>                    
+          </li>    
+          <li class="navbar__item">
+            <a class="navbar__link" href="#servicios">Services</a>
+          </li>                  
         </ul>         
       </div>
       <div class="footer__social">        

@@ -1,10 +1,26 @@
 function showSuccessToast() {
+
+  const languageToggle = document.getElementById('language-toggle');   
+
+  if (languageToggle.checked) {  
+    toast({
+      title: "¡It's time to transform your vision into reality!",
+      message: "I'm here to help you turn your expectations into a functional website. ",
+      type: "success",
+      duration: 5000
+    });      
+    
+  }else {
+
     toast({
       title: "¡Es hora de transformar tu visión en realidad!",
       message: "Estoy aquí para ayudarte a convertir tus expectativas en un sitio web funcional. ",
       type: "success",
       duration: 5000
     });
+
+     
+  }
   }
 
 
@@ -28,6 +44,16 @@ toast.onclick = function (e) {
   }
 };
 
+
+const languageToggle = document.getElementById('language-toggle');   
+let getInContactButton = ""
+
+if (languageToggle.checked) {  
+  getInContactButton = "Get in contact"
+}else{
+  getInContactButton = "Ponte en contacto"
+}
+
 const icons = {
   success: "fas fa-check-circle",
   info: "fas fa-info-circle",
@@ -47,7 +73,7 @@ toast.innerHTML = `
                 <div class="toast__body">
                     <h3 class="toast__title">${title}</h3>
                     <p class="toast__msg">${message}</p>
-                    <p class="toast__a" > <a  href="#contact" class="projects__image1" >  Ponte en contacto  </p>
+                    <p class="toast__a" > <a  href="#contact" class="projects__image1" >  ${getInContactButton}  </p>
                 </div>
                 <div class="toast__close">
                     <i class="fas fa-times"></i>
