@@ -28,6 +28,7 @@ Codepen - muchas ideas y desarrollos
 	--bg-color-section2: light-dark(#cce3de, #111);
 	--bg-color-buttons: light-dark(#e0e0e0, #6a6a6a);
 	--bg-color-extra: light-dark(#cdb4db, #ffafcc);
+	--bg-color-tech: light-dark(#e0e0e0, #d4a373);
 
 	/* Typografy */
 	--normal-font-size: 16px;
@@ -1407,14 +1408,15 @@ html {
 }
  
 
-.proy_tech span {
-    background-color: #ffffff85;
+.proy_tech span {    
+	background-color: var(--bg-color-tech);	
     padding: .1rem .3rem;
     border-radius: 1rem;
 }
 
 .proy_icon_color {
 	color: var(--bg-color-extra) ;
+	
 }
 
 .proy_align {
