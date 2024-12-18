@@ -7,6 +7,7 @@ import sendEmail from './helpers/send_form.js';
 import fLanguajeSwitch from './helpers/idiom.js';
 import showTab from './helpers/tab.js';
 import showSuccessToast from './helpers/toast.js'
+import copyClipboard from './helpers/copyClipboard.js'
 
 loader();
 
@@ -22,7 +23,8 @@ sendEmail();
 
 fLanguajeSwitch();   
 
-// showSuccessToast();
+copyClipboard();
+
 
 // Agregar eventos de clic a los enlaces
 document.querySelectorAll('.tabs').forEach(tab => {
