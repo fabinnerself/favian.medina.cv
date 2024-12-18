@@ -1964,3 +1964,19 @@ html {
 	  .tooltip:hover .tooltiptext {
 		visibility: visible;
 	  }
+
+	.about__download{
+		display: flex;
+		justify-content: center;
+		padding: 0 2.5rem ;
+		margin: 0 1rem ;
+	}
+
+
+
+.about__contact_button {		 	
+	&:hover {		
+		translate: 0px -4px;		
+		cursor: pointer;
+	}	
+}
