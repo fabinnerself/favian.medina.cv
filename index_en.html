@@ -191,39 +191,54 @@
          
 
 
-        <h3># Educación</h3>
+        <h3># Education</h3>
         <div class="skills__wrapper flex--container">
-          <div class="skills__cards flex--container">  
-            
-            <!--Card 3 -->
-            <details class="skills__cards-container"  >
-              <summary class="skills__cards-title flex--container">
-                <img src="assets/img/estudios/certificado.png" alt="Gráfico certificado" title="certificado" width="70" height="70" > 
-              </summary>
-              <div class="skills__card-container">
-                <h3 class="skills__card-title">Certifications</h3>
-
-                <p class="skills__card-description">
-                  LPIC-1 v5.0 101-500 Linux Administrator and LE-1 Linux Essentials / Linux Professional Institute -2021
-                </p>
-                <p class="flex--container"><a href="https://www.lpi.org/" target="_blank"><img src="assets/img/estudios/lpi.png" alt="Gráfico LPI"  class="umsa-img"></a></p>
-              </div>
-            </details>
-           
+          <div class="skills__cards flex--container">   
             <!--Card 5 -->
-            <details class="skills__cards-container"  >
+            <details class="skills__cards-container" open>
               <summary class="skills__cards-title flex--container">
                 <img src="assets/img/estudios/bootcamp.png" alt="Gráfico botcamp" title="bootcamp" width="170" height="100" > 
               </summary>
               <div class="skills__card-container">
-                <h3 class="skills__card-title">Bootcams</h3>
-
-                <p class="skills__card-description">
-                    Full-Stack Web Development and Computer Science in Academlo - 2024.
-                </p>
-                <p class="flex--container"><a href="https://www.academlo.com/" target="_blank"><img src="assets/img/estudios/academlo.png" alt="Gráfico Academlo" class="umsa-img" title="academlo" ></a></p>
+                <h3 class="skills__card-title">Bootcams</h3>                               
+                  <ul>
+                    <li><p class="skills__card-description">
+                      Full-Stack Web Development and Computer Science in Academlo - 2024.
+                      </p>
+                    </li>
+                    <li><p class="flex--container"><a href="https://www.academlo.com/" target="_blank"><img src="assets/img/estudios/academlo.png" alt="Gráfico Academlo" class="umsa-img" title="academlo" ></a></p>                      
+                    </li>
+                    <li class="navbar__item">
+                      <a class="navbar__link" href="https://certiwise.co/verify/5700" target="_blank">Online certificate</a>
+                    </li>
+                  </ul>                
               </div>
-            </details>              
+            </details>  
+
+
+            <!--Card 3 -->
+            <details class="skills__cards-container">
+              <summary class="skills__cards-title flex--container">
+                <img src="assets/img/estudios/certificado.png" alt="Gráfico certificado" title="bootcamp" width="70" height="70" > 
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Certificaciones</h3>                               
+                  <ul>
+                    <li><p class="skills__card-description">
+                      LPIC-1 v5.0 101-500 Linux Administrator and LE-1 Linux Essentials in Linux Professional Institute (LPI) -2021
+                      </p>
+                    </li>
+                    <li><p class="flex--container"><a href="https://www.lpi.org/"" target="_blank"><img src="assets/img/estudios/lpi.png" alt="Gráfico LPI" class="umsa-img" title="lpi" ></a></p>                      
+                    </li>
+                    <li class="navbar__item">
+                      <a class="navbar__link" href="https://www.lpi.org/v/LPI000484467/jubzeryzkk" target="_blank">Online certificate</a>
+                    </li>
+                  </ul>                
+              </div>
+            </details>             
+
+           
+                      
           </div>
         </div>
         <h3>  # Career Path</h3>
@@ -1241,7 +1256,7 @@
             </div>
             <dialog id="modal">
                 Form successfully submitted!
-              <button type="reset" id="btn_close-modal">Close</button>
+              <button type="reset" id="btn_close-modal" class="btn_modal">Close</button>
             </dialog>                    
 
             <button type="submit" class="btn btn_container">
@@ -1250,7 +1265,7 @@
           </form>
           <dialog id="modal_error">
             <p id="error_message"></p>
-            <button id="btn_close-modal_error">Close</button>
+            <button id="btn_close-modal_error" class="btn_modal">Close</button>
           </dialog> 
         </div>
       </div>

@@ -1980,3 +1980,12 @@ html {
 		cursor: pointer;
 	}	
 }
+
+.btn_modal{
+	background-color: var(--primary-color);
+	color: white;
+	cursor: pointer;
+	&:hover {		
+		translate: 0px -2px; 
+	}	
+}
