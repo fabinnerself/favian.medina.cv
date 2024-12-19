@@ -675,7 +675,7 @@ html {
 
 /* ============= Contact ============= */
 .contact {
-	background-color: var(--bg-color-section2);	
+	background-color: var(--bg-color-section1);	
 	font-family: "Marhey", sans-serif;	
 	.contact__container {
 		gap: 2rem;
@@ -1447,7 +1447,7 @@ html {
     border-radius: 2rem;
     width:590px;  
 	min-width: 550;
-    min-height:300px;
+    min-height:350px;
     margin:0 auto;
     position:relative;    
     overflow:hidden;   
@@ -1495,7 +1495,7 @@ html {
         color:#ffffff80;
         font-size:5em;
         position:absolute;
-        top:5rem;
+        top:7.5rem;
         left:-0.00001rem;
     }
 
@@ -1504,18 +1504,18 @@ html {
         color:#ffffff80;
         font-size:5em;
         position:absolute;
-        top:11rem;
+        top:15rem;
         right: 0.5rem;
         
     }
 
-    .justifyText {
-        text-align: justify;
-        display: block;
-        width: 100%;
-    }
+		.justifyText {
+			text-align: justify;
+			display: block;
+			width: 100%;
+		}
 
-    label.second{
+      label.second{
         left:calc(22% + 0.1rem);
       }
       label.third{
@@ -1526,12 +1526,25 @@ html {
         left:calc(66% + 0.1rem);
       }
        
-      .slide{
-        position:absolute;
-        left:-100%;
-        opacity:0;
-        transition: all 0.6s ease-in;
-      }
+	  .slide {
+		position: absolute;
+		left: -100%;
+		opacity: 0;
+		transition: all 0.6s ease-in;
+		pointer-events: none; 
+		z-index: 1;
+	}
+	
+	.slide.active {
+		left: 0;
+		opacity: 1;
+		pointer-events: auto; 
+		z-index: 2;
+		text-decoration: none;
+	}
+ 
+
+	 
       
       #first:checked ~ label.first {
         border-width:6px;
@@ -1564,8 +1577,9 @@ html {
       #four:checked ~ div.four {
           left:0;
           opacity:1;
-        }
+      }
 
+     
 }
   
 
@@ -1989,3 +2003,14 @@ html {
 		translate: 0px -2px; 
 	}	
 }
+	 
+
+.projects__description a {
+	color: inherit; /* Mantén el color del enlace igual que el texto circundante */
+	text-decoration: none; /* Elimina el subrayado por defecto del enlace */
+	pointer-events: auto; /* Asegúrate de que el enlace sea clicable */
+  }
+  
+  .projects__description a:hover {
+	text-decoration: underline; /* Añade un subrayado al pasar el cursor para indicar que es un enlace */
+  }	 
