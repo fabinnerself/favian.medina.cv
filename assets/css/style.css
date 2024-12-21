@@ -479,7 +479,7 @@ html {
 		.home__social {
 			position: absolute;
 			top: 2rem;
-			left: 25.2rem;
+			left: 18rem;
 			flex-direction: column;
 			row-gap: var(--mr-2);
 			.home__social-link {
@@ -961,14 +961,7 @@ html {
 		border-radius: 50rem;
 	}	
 }
-
-/* .home_layer--20-ico{
-	opacity: 1; 	
-	&:hover {
-		opacity: 1;
-	}
-} */
-
+ 
 
 .description_align {
 	text-align: justify;
