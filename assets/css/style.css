@@ -433,7 +433,7 @@ html {
 
 	.home__layer--8 {
 		top: 50%;
-		left: 12%;
+		left: 5%;
 	}
 
 	.home__layer--9 {
@@ -1140,7 +1140,7 @@ html {
 		top: 35px;
 		font-size: 15px;
 		padding: 4px 4px ;
-		text-align: justify;
+		text-align: center;
 		
 	}
 	
@@ -1765,6 +1765,14 @@ html {
 		margin-top: 20px;
 		text-align: justify;
 	  }
+
+	  .content .text-center {
+		display: block;
+		color: rgba(0, 137, 78, 0.7647058824);
+		font-size: 15px;
+		margin-top: 20px;
+		text-align: center;
+	  }	  
 	  
 	  .bottom {
 		padding: 10px 12px;
