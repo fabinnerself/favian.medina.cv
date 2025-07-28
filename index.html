@@ -169,7 +169,7 @@
         <p class="description_align"> Ofrezco soluciones integrales de desarrollo web full stack utilizando tecnologías modernas como React.js, Vue.js, HTML5, CSS3, JavaScript y PHP. Cuento con experiencia en el diseño, desarrollo y administración de bases de datos relacionales —tanto en software libre como propietario—, asegurando acceso eficiente y seguro a los datos, junto con estrategias de respaldo y recuperación. Desarrollo e integro API REST para una conectividad segura entre aplicaciones, mejorando la funcionalidad y la integridad de los datos. Aplico herramientas y buenas prácticas del sector, incluyendo control de versiones, entornos Linux y Windows, y gestión colaborativa de proyectos, orientadas al crecimiento de empresas públicas y privadas mediante tecnologías innovadoras y procesos eficientes. </p>
 
         <div class="about__download">
-          <a class="btn btn--primary skills__description" href="assets/doc/cv_fmg_2024.pdf" download="favian.medina.gemio.pdf" target="_blank">Descargar mi Curriculum</a> 
+          <a class="btn btn--primary skills__description" href="assets/doc/cv_fmg_2025.pdf" download="favian.medina.gemio.pdf" target="_blank">Descargar mi Curriculum</a> 
         </div>
       
           <p class="description_align_1">Cada gran proyecto comienza con una idea. Si tienes algo en mente, no dudes en escribirme; estaré encantado de ayudarte a materializarlo
@@ -195,7 +195,7 @@
                     <li><p class="flex--container"><a href="https://www.academlo.com/" target="_blank"><img src="assets/img/estudios/academlo.png" alt="Gráfico Academlo" class="umsa-img" title="academlo" ></a></p>                      
                     </li>
                     <li class="navbar__item">
-                      <a class="navbar__link" href="https://certiwise.co/verify/5700" target="_blank">Ver mi certificado en línea</a>
+                      <a class="navbar__link" href="https://certiwise.co/verify/6006" target="_blank">Ver mi certificado en línea</a>
                     </li>
                   </ul>                
               </div>
@@ -478,7 +478,8 @@
           <a class="tabs"  onclick="showTab('featured')">Destacado </a>|
           <a class="tabs"  onclick="showTab('all')"> Todo </a>|          
           <a class="tabs"  onclick="showTab('crud')"> CRUDs </a>|
-          <a class="tabs"  onclick="showTab('systems')"> Sistemas </a>          
+          <a class="tabs"  onclick="showTab('systems')"> Sistemas </a>|   
+          <a class="tabs"  onclick="showTab('api')"> Rest API </a>        
         </div>
       
         <div id="content"></div>
@@ -487,7 +488,7 @@
         <template id="template-all"    >
           <h3>Todos los proyectos, en total 13</h3>            
 
-          <div class="projects__project ">
+          <div class="projects__project projects_color_proy_even">
             <div class="projects__inner grid--container">
               <h3 class="projects__name">ProductHub React</h3>
               <div class="projects__image">
@@ -518,11 +519,8 @@
               </div>
             </div>
           </div>            
-
-
-
   
-          <div class="projects__project">
+          <div class="projects__project ">
             <div class="projects__inner grid--container">
               <h3 class="projects__name">AngularMySQLHub</h3>
               <div class="projects__image">
@@ -548,7 +546,7 @@
             </div>
           </div>
   
-          <div class="projects__project">
+          <div class="projects__project projects_color_proy_even">
             <div class="projects__inner grid--container">
               <h3 class="projects__name">VueMySQLHub</h3>
               <div class="projects__image">
@@ -599,7 +597,7 @@
             </div>
           </div>
 
-          <div class="projects__project">
+          <div class="projects__project projects_color_proy_even">
             <div class="projects__inner grid--container">
               <h3 class="projects__name">Echelon</h3>
               <div class="projects__image">
@@ -647,7 +645,7 @@
             </div>
           </div>       
 
-          <div class="projects__project ">
+          <div class="projects__project projects_color_proy_even">
             <div class="projects__inner grid--container">
               <h3 class="projects__name">Crud User APP</h3>
               <div class="projects__image">
@@ -700,7 +698,7 @@
             </div>
           </div>  
 
-          <div class="projects__project ">
+          <div class="projects__project projects_color_proy_even">
             <div class="projects__inner grid--container">
               <h3 class="projects__name">Ultimate Bruce Lee APP</h3>
               <div class="projects__image">
@@ -754,7 +752,7 @@
             </div>
           </div>          
 
-          <div class="projects__project ">
+          <div class="projects__project projects_color_proy_even">
             <div class="projects__inner grid--container">
               <h3 class="projects__name">Ultimate Rick and Morty APP</h3>
               <div class="projects__image">
@@ -811,7 +809,7 @@
             </div>
           </div>          
           
-          <div class="projects__project ">
+          <div class="projects__project projects_color_proy_even">
             <div class="projects__inner grid--container">
               <h3 class="projects__name">Ultimate Booking APP</h3>
               <div class="projects__image">
@@ -836,14 +834,121 @@
                 </div>
               </div>
             </div>
-          </div>             
+          </div>      
+          
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">UltimateLibraryBE</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/api0.png" alt="api" title="api mongo" >
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">  
+                  API REST en Node.js con Express, MongoDB (Mongoose), dotenv, uuid gestiona Libros. Ofrece CRUD, validación de datos y gestión detallada de errores. Probado y documentado en Postman, MERN stack.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span> 
+                  <span ><img src="assets/img/skill/db/mongodb-logo.png" height="20" width="20" class="projects__image1" >MongoDB</span>
+                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://tmp-seven-azure.vercel.app/api/v1/books/" target="_blank">VER DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/ultimateLibraryBE.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>    
+          
+          <div class="projects__project projects_color_proy_even">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">UltimateStoreBE</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/api1.png" alt="api" title="api mongo multineant" >
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">  
+                  API REST en Node.js con Express, MongoDB, dotenv, uuid, Multitenant gestiona clientes, productos y pedidos. Ofrece CRUD, validación de datos, manejo de estados y gestión detallada de errores. Probado y documentado en Postman MERN stack.
+                </p>  
+                <p class="projects__description proy_tech proy_align"><span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                  
+                  <span ><img src="assets/img/skill/db/mongodb-logo.png" height="20" width="20" class="projects__image1" >MongoDB</span>
+                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                   
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/ultimateStoreBE.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <div class="projects__project ">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">UltimateKeyMasterAPI</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/api2.png" alt="api" title="api mongo" >
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">  
+                  API REST de Node.js con TypeScript, dotenv y TypeORM gestiona usuarios, cajas de seguridad, credenciales y PIN. Ofrece operaciones CRUD, validación de datos, autenticación segura y gestión de contraseñas cifradas. Los usuarios pueden eliminar de forma suave sus cuentas y recursos, garantizando la recuperabilidad y la privacidad.
+                </p>  
+                <p class="projects__description proy_tech proy_align">                   
+                  <span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                
+                  <span ><img src="assets/img/skill/db/postgres.png" height="20" width="20" class="projects__image1" >PostgreSQL</span>
+                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">  
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/ultimateKeyMasterAPI-fmg.git" target="_blank" title="UltimateKeyMasterAPI">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <div class="projects__project projects_color_proy_even">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">RepairAPI</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/api3.png" alt="api" title="api postgres repair" >
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">  
+                  Node.js REST API gestiona usuarios y reparaciones de motos usando TypeScript, bcrypt, dotenv, y TypeORM. Operaciones CRUD completas con validaciones de datos y funciones de seguridad. Autenticación de usuarios, control de acceso basado en roles y manejo seguro de contraseñas. Los usuarios sólo pueden borrar suavemente sus propias cuentas. Las transiciones de estado de reparación están controladas.
+
+                </p>  
+                <p class="projects__description proy_tech proy_align"><span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                  
+                  <span ><img src="assets/img/skill/db/postgres.png" height="20" width="20" class="projects__image1" >PostgreSQL</span>
+                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                   
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/-repairAPI-fmg-V3.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>            
 
         </template>
       
         <template id="template-featured">
           <h3>Proyectos Destacados</h3>
       
-          <div class="projects__project ">
+          <div class="projects__project projects_color_proy_odd">
             <div class="projects__inner grid--container">
               <h3 class="projects__name">Ultimate Booking APP</h3>
               <div class="projects__image">
@@ -902,7 +1007,7 @@
             </div>
           </div>          
 
-          <div class="projects__project ">
+          <div class="projects__project projects_color_proy_odd">
             <div class="projects__inner grid--container">
               <h3 class="projects__name">Crud User APP</h3>
               <div class="projects__image">
@@ -956,6 +1061,86 @@
                 </div>
               </div>
             </div>
+          </div>    
+          
+          <div class="projects__project projects_color_proy_odd">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">UltimateLibraryBE</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/api0.png" alt="api" title="api mongo" >
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">  
+                  API REST en Node.js con Express, MongoDB (Mongoose), dotenv, uuid gestiona Libros. Ofrece CRUD, validación de datos y gestión detallada de errores. Probado y documentado en Postman, MERN stack.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span> 
+                  <span ><img src="assets/img/skill/db/mongodb-logo.png" height="20" width="20" class="projects__image1" >MongoDB</span>
+                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://tmp-seven-azure.vercel.app/api/v1/books/" target="_blank">VER DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/ultimateLibraryBE.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>    
+          
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">UltimateStoreBE</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/api1.png" alt="api" title="api mongo multineant" >
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">  
+                  API REST en Node.js con Express, MongoDB, dotenv, uuid, Multitenant gestiona clientes, productos y pedidos. Ofrece CRUD, validación de datos, manejo de estados y gestión detallada de errores. Probado y documentado en Postman MERN stack.
+                </p>  
+                <p class="projects__description proy_tech proy_align"><span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                  
+                  <span ><img src="assets/img/skill/db/mongodb-logo.png" height="20" width="20" class="projects__image1" >MongoDB</span>
+                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                   
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/ultimateStoreBE.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <div class="projects__project projects_color_proy_odd">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">UltimateKeyMasterAPI</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/api2.png" alt="api" title="api mongo" >
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">  
+                  API REST de Node.js con TypeScript, dotenv y TypeORM gestiona usuarios, cajas de seguridad, credenciales y PIN. Ofrece operaciones CRUD, validación de datos, autenticación segura y gestión de contraseñas cifradas. Los usuarios pueden eliminar de forma suave sus cuentas y recursos, garantizando la recuperabilidad y la privacidad.
+                </p>  
+                <p class="projects__description proy_tech proy_align">                   
+                  <span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                
+                  <span ><img src="assets/img/skill/db/postgres.png" height="20" width="20" class="projects__image1" >PostgreSQL</span>
+                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">  
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/ultimateKeyMasterAPI-fmg.git" target="_blank" title="UltimateKeyMasterAPI">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
           </div>          
                     
            
@@ -992,7 +1177,7 @@
             </div>
           </div>    
           
-          <div class="projects__project ">
+          <div class="projects__project projects_color_proy_even">
             <div class="projects__inner grid--container">
               <h3 class="projects__name">ProductHub</h3>
               <div class="projects__image">
@@ -1022,8 +1207,7 @@
                 </div>
               </div>
             </div>
-          </div>             
-
+          </div> 
 
         </template>
       
@@ -1032,7 +1216,7 @@
 
       
 
-          <div class="projects__project">
+          <div class="projects__project projects_color_proy_odd">
             <div class="projects__inner grid--container">
               <h3 class="projects__name">Cursoteka</h3>
               <div class="projects__image">
@@ -1091,7 +1275,7 @@
             </div>
           </div>           
 
-          <div class="projects__project">
+          <div class="projects__project projects_color_proy_odd">
             <div class="projects__inner grid--container">
               <h3 class="projects__name">Echelon</h3>
               <div class="projects__image">
@@ -1120,7 +1304,120 @@
             </div>
           </div>
 
-        </template>      
+        </template>  
+        
+        <template id="template-api">
+          <h3>Resftull API's</h3> 
+
+          <div class="projects__project projects_color_proy_even">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">UltimateLibraryBE</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/api0.png" alt="api" title="api mongo" >
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">  
+                  API REST en Node.js con Express, MongoDB (Mongoose), dotenv, uuid gestiona Libros. Ofrece CRUD, validación de datos y gestión detallada de errores. Probado y documentado en Postman, MERN stack.
+                </p>  
+                <p class="projects__description proy_tech proy_align"> <span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span> 
+                  <span ><img src="assets/img/skill/db/mongodb-logo.png" height="20" width="20" class="projects__image1" >MongoDB</span>
+                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                  <button class="btn projects__button "  > 
+                    <a href="https://tmp-seven-azure.vercel.app/api/v1/books/" target="_blank">VER DEMO</a>
+                  </button>
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/ultimateLibraryBE.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>    
+          
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">UltimateStoreBE</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/api1.png" alt="api" title="api mongo multineant" >
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">  
+                  API REST en Node.js con Express, MongoDB, dotenv, uuid, Multitenant gestiona clientes, productos y pedidos. Ofrece CRUD, validación de datos, manejo de estados y gestión detallada de errores. Probado y documentado en Postman MERN stack.
+                </p>  
+                <p class="projects__description proy_tech proy_align"><span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                  
+                  <span ><img src="assets/img/skill/db/mongodb-logo.png" height="20" width="20" class="projects__image1" >MongoDB</span>
+                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                   
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/ultimateStoreBE.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <div class="projects__project projects_color_proy_even">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">UltimateKeyMasterAPI</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/api2.png" alt="api" title="api mongo" >
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">  
+                  API REST de Node.js con TypeScript, dotenv y TypeORM gestiona usuarios, cajas de seguridad, credenciales y PIN. Ofrece operaciones CRUD, validación de datos, autenticación segura y gestión de contraseñas cifradas. Los usuarios pueden eliminar de forma suave sus cuentas y recursos, garantizando la recuperabilidad y la privacidad.
+                </p>  
+                <p class="projects__description proy_tech proy_align">                   
+                  <span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                
+                  <span ><img src="assets/img/skill/db/postgres.png" height="20" width="20" class="projects__image1" >PostgreSQL</span>
+                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">  
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/ultimateKeyMasterAPI-fmg.git" target="_blank" title="UltimateKeyMasterAPI">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <h3 class="projects__name">RepairAPI</h3>
+              <div class="projects__image">
+                <img src="assets/img/portfolio/api3.png" alt="api" title="api postgres repair" >
+              </div>  
+              <div class="projects__info">                
+                <p class="projects__description description_align_1">  
+                  Node.js REST API gestiona usuarios y reparaciones de motos usando TypeScript, bcrypt, dotenv, y TypeORM. Operaciones CRUD completas con validaciones de datos y funciones de seguridad. Autenticación de usuarios, control de acceso basado en roles y manejo seguro de contraseñas. Los usuarios sólo pueden borrar suavemente sus propias cuentas. Las transiciones de estado de reparación están controladas.
+
+                </p>  
+                <p class="projects__description proy_tech proy_align"><span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                  
+                  <span ><img src="assets/img/skill/db/postgres.png" height="20" width="20" class="projects__image1" >PostgreSQL</span>
+                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                        </p>
+                <div class="projects__buttons proy_align">                  
+                   
+                  <button class="btn projects__button proy_align"  >
+                    <a href="https://github.com/fabinnerself/-repairAPI-fmg-V3.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
+                  </button>                    
+                </div>
+              </div>
+            </div>
+          </div>           
+          
+        </template>        
+
       </div>
     </section>
 

@@ -30,6 +30,9 @@ Codepen - muchas ideas y desarrollos
 	--bg-color-extra: light-dark(#cdb4db, #ffafcc);
 	--bg-color-tech: light-dark(#e0e0e0, #d4a373);
 
+	--bg-color-section2A: light-dark( #eaece6, #c2c5aa);
+	--bg-color-section1A: light-dark(#dfe4d3, #a4ac86);
+
 	/* Typografy */
 	--normal-font-size: 16px;
 	--small-font-size: 12px;
@@ -2037,3 +2040,12 @@ html {
   .projects__description a:hover {
 	text-decoration: underline; /* Añade un subrayado al pasar el cursor para indicar que es un enlace */
   }	 
+
+
+  /* clase para que en la seccion proyectos cada proyecto tenga 1 coloracion*/
+  .projects_color_proy_even {
+	background-color: var(--bg-color-section2A);	
+  }
+  .projects_color_proy_odd {
+	background-color: var(--bg-color-section1A);	
+  }
