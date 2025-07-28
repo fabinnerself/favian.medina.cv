@@ -478,658 +478,960 @@
   
       </section>
 
-    <section id="projects" class="projects section">
-      <h2 class="section__title">Projects</h2>
- 
-      <div class="projects__inner grid--container" > 
-
-        <div class=" proy_align">
-          <a class="tabs"  onclick="showTab('featured')">Featured </a>|
-          <a class="tabs"  onclick="showTab('all')"> All </a>|          
-          <a class="tabs"  onclick="showTab('crud')"> CRUDs </a>|
-          <a class="tabs"  onclick="showTab('systems')"> Systems </a>          
-        </div>
-      
-        <div id="content"></div>
-      
-        <!-- Plantillas HTML ocultas -->
-        <template id="template-all"    >
-          <h3>All projects, a total of 13</h3>      
-
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">ProductHub React</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy1.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">Full-stack web application that facilitates data management through an intuitive control panel. It incorporates CRUD functionalities, filters, pagination in the product table and connects to a RESTful API.
-                </p>  
-                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
-                    <span >  <i class='bx bxl-angular proy_icon_color' ></i>  AngularJS</span>  
-                    <span >  <i class='bx bxl-vuejs proy_icon_color' ></i>  VueJS</span> 
-                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
-                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
-                    <span><img src="assets/img/json_ico.png" height="20" width="20" class="projects__image1" >Json</span>
-                    <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
-                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
-                    <span><img src="assets/img/skill/tech/expressNode-Icon.png" height="20" width="20" class="projects__image1" >Express/Node</span>                    
-                  </p>
-                  
-                <div class="projects__buttons proy_align">   
-                  <button class="btn projects__button "  > 
-                    <a href="https://product-hu-bre.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>               
-                  <button class="btn projects__button"  >
-                    <a href="https://github.com/fabinnerself/ProductHUBre.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>    
-
+      <section id="projects" class="projects section">
+        <h2 class="section__title">Proyectos</h2>
+   
+        <div class="projects__inner grid--container" > 
   
-          <div class="projects__project">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">AngularMySQLHub</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy2.png" alt="angularjs" title="angular myql hub" >
-              </div>  
-              <div class="projects__info">               
-                <p class="projects__description description_align_1">
-                    Full-stack web application that facilitates data management through an intuitive control panel. It incorporates CRUD functionalities, filters, pagination in the product table and connects to a RESTful API.
-                </p>
-                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-angular proy_icon_color' ></i>  AngularJS</span>  
-                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
-                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
-                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>                
-  
-                <div class="projects__buttons proy_align">
-                  
-                  <button class="btn projects__button"  >
-                    <a href="https://github.com/fabinnerself/coapra" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button>
-                </div>
-              </div>
-            </div>
+          <div class=" proy_align">
+            <a class="tabs"  onclick="showTab('featured')">Featured </a>|
+            <a class="tabs"  onclick="showTab('all')"> All </a>|          
+            <a class="tabs"  onclick="showTab('crud')"> CRUDs </a>|
+            <a class="tabs"  onclick="showTab('systems')"> Systems </a>|   
+            <a class="tabs"  onclick="showTab('api')"> Rest API </a>        
           </div>
+        
+          <div id="content"></div>
+        
+          <!-- Plantillas HTML ocultas -->
+          <template id="template-all"    >
+            <h3>All projects: 17 in total</h3>            
   
-          <div class="projects__project">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">VueMySQLHub</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy3.png" alt="vuejs" title="vue mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">
-                    Full-stack web application that facilitates data management through an intuitive control panel. It incorporates CRUD functionalities, filters, pagination in the product table and connects to a RESTful API.
-                </p>
-                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-vuejs proy_icon_color' ></i>  AngularJS</span>  
-                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
-                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
-                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>  
-                <div class="projects__buttons proy_align">                   
-                  <button class="btn projects__button" type="button">
-                    <a href="https://github.com/fabinnerself/covepra" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="projects__project">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Cursoteka</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy4.png" alt="cursoteka" title="E-Learning cursoteka" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">
-                    Full-stack web application of an E-Learning Platform for Online Courses. It includes CRUDs, filtering, pagination on person, user, courses and resources tables. Finally, it has login and registration of students and administrators.
-                </p>
-                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color' ></i>  ReactJS</span>  
-                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
-                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
-                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>  
-                <div class="projects__buttons proy_align">
-                  <button class="btn projects__button "  > 
-                    <a href="https://test9-sepia.vercel.app/" target="_blank">VIEW DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/No-Country-simulation/c20-32-n-php-react" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="projects__project">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Echelon</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy5.png" alt="echelon" title="echelon php bootstrap mysql" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">
-                    Full-stack web application that facilitates data management through an intuitive control panel. It incorporates CRUD functionalities, filters, pagination, product and user table login and connects to a RESTful API.
-                </p>
-                <p class="projects__description proy_tech proy_align"> 
-                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
-                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span>                  
-                  <span >  <i class='bx bxl-bootstrap proy_icon_color' ></i>  Bootrap</span>                  
-                </p> 
-                <div class="projects__buttons proy_align">                   
-                  <button class="btn projects__button" type="button">
-                    <a href="https://github.com/fabinnerself/echelon-b" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">ReactMySQLHub II</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy6.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">
-                    Full-stack web application that facilitates data management through an intuitive control panel. It incorporates CRUD functionalities, filters, pagination in the product table and connects to a RESTful API.
-                </p>  
-                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
-                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
-                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                     
-                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
-                    <span >  <i class='bx bxl-bootstrap proy_icon_color' ></i>  Bootrap</span>  </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button"  >
-                    <a href="https://github.com/fabinnerself/reactProdBootsHub" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>       
-
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Crud User APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy12.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">  
-                    Full-stack web application designed to manage data efficiently. It implements CRUD operations, filters and pagination on a user RESTful API, validating input data. It uses React hooks (useState, useEffect, useRef), along with validations via react-hook-form and Yup, as well as a custom hook to handle API connection and pagination. The interface is enriched with react-icons icons and a custom layout with CSS.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://crud-users-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/s04e04-crudUsers-fmg" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div>   
-
-
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Favián's Portfolio</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy7.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">
-                    Modern and accessible web application offers a personalized and fluid user experience thanks to its responsive design, light and dark mode, and multi-language support. Developed with the latest technologies such as CSS, JavaScript and popular frameworks, it features attractive animations, interactive forms and intuitive navigation. Optimized for SEO and accessibility, this application ensures an optimal user experience on any device. In addition, its well-structured code facilitates maintenance and future updates.
-                </p>  
-                <p class="projects__description proy_tech proy_align"><span > <i class='bx bxl-html5 proy_icon_color' ></i>   Html</span>  
-                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span><img src="assets/img/emailJS_ico.png" height="20" width="20" class="projects__image1" >EmailJS</span> 
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button"  >
-                    <a href="https://github.com/fabinnerself/academlo_cv_fmg_page" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>  
-
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Ultimate Bruce Lee APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy8.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">
-                    Web application that generates random Bruce Lee phrases. It uses hooks (UseState) and functional components. The layout is customized with CSS and the data is loaded from a local JSON file.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>                    
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://e01-deivi-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/e01-deivi-fmg.git" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>        
-          
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Ultimate Weather APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy9.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">
-                    Real-time weather web application that uses React Hooks (useState and useEffect) to consume the OpenWeatherMap API. It allows custom city searches and has a custom CSS layout.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>                   
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://s02e02-weather-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/s02e02-weather-fmg" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button> 
-                </div>
-              </div>
-            </div>
-          </div>          
-
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Ultimate Rick and Morty APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy10.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">
-                    Rick and Morty character and dimension finder. Uses React Hooks to consume the public API https://rickandmortyapi.com and display data such as name, species and dimension. Responsive modular design with pagination, reusable components and custom styles (CSS, Google Fonts). Includes themed graphics and icons for an immersive experience.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>  
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://s03e03-rm-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/s03e03-rm-fmg" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div>                
-  
-
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Ultimate Pokedex APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy11.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">                  
-                    The web application 'Interactive Pokémon Character Finder' presents detailed information such as name, type, stats and moves, among others. It uses advanced hooks (useContext, React Router Dom) to offer a personalized, responsive and multilingual user experience (English, German, etc.), consuming data from the public API https://pokeapi.co. In addition, it features an adaptive and responsive design, reusable components and customization options that allow switching between light, dark and colorful themes. Finally, it includes pagination functionality for easy navigation.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>  
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://pokedex-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/E5-pokedex-fmg" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div>          
-          
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Ultimate Booking APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy13.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1"> This web application offers an intuitive and customizable hotel search engine. It allows filtering results by city and name, displaying detailed information in multiple languages, such as German and English. Users can select the local currency and choose between different visual themes, such as light and dark. Hotel data is obtained through a REST API. The application manages both public and private routes, using reusable components to handle status and side effects, such as notifications for all actions. It also features a wide range of custom icons and a modern, adaptive and responsive design, optimizing the user experience.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span ><img src="assets/img/tailWind_ico.png" height="20" width="20" class="projects__image1" >TailWind CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                   
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://6-booking-app-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/6BookingApp-fmg" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div>             
-
-        </template>
-      
-        <template id="template-featured">
-          <h3>Featured Projects</h3>
-      
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Ultimate Booking APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy13.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1"> This web application offers an intuitive and customizable hotel search engine. It allows filtering results by city and name, displaying detailed information in multiple languages, such as German and English. Users can select the local currency and choose between different visual themes, such as light and dark. Hotel data is obtained through a REST API. The application manages both public and private routes, using reusable components to handle status and side effects, such as notifications for all actions. It also features a wide range of custom icons and a modern, adaptive and responsive design, optimizing the user experience.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span ><img src="assets/img/tailWind_ico.png" height="20" width="20" class="projects__image1" >TailWind CSS</span> 
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>  
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                     
-                  <button class="btn projects__button "  > 
-                    <a href="https://6-booking-app-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/6BookingApp-fmg" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div>        
-          
-          
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">ProductHub</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy1.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">Full-stack web application that simplifies data management. It incorporates CRUD functionalities, as well as filtering and pagination in the product table, and connects to a RESTful API (with backends in PHP/MySQL or Node/Express-JSON). Additionally, there are versions that utilize different JavaScript frameworks, such as AngularJS and VueJS.
-                </p>  
-                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
-                    <span >  <i class='bx bxl-angular proy_icon_color' ></i>  AngularJS</span>  
-                    <span >  <i class='bx bxl-vuejs proy_icon_color' ></i>  VueJS</span> 
-                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
-                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
-                    <span><img src="assets/img/json_ico.png" height="20" width="20" class="projects__image1" >Json</span>
-                    <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
-                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
-                    <span><img src="assets/img/skill/tech/expressNode-Icon.png" height="20" width="20" class="projects__image1" >Express/Node</span>                    
-                  </p>
-                  
-                <div class="projects__buttons proy_align">   
-                  <button class="btn projects__button "  > 
-                    <a href="https://product-hu-bre.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>               
-                  <button class="btn projects__button"  >
-                    <a href="https://github.com/fabinnerself/ProductHUBre.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>          
-       
-
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Crud User APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy12.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">  
-                    Full-stack web application designed to manage data efficiently. It implements CRUD operations, filters and pagination on a user RESTful API, validating input data. It uses React hooks (useState, useEffect, useRef), along with validations via react-hook-form and Yup, as well as a custom hook to handle API connection and pagination. The interface is enriched with react-icons icons and a custom layout with CSS.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://crud-users-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/s04e04-crudUsers-fmg" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div>     
-          
-          <div class="projects__project">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Cursoteka</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy4.png" alt="cursoteka" title="E-Learning cursoteka" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">
-                    Full-stack web application of an E-Learning Platform for Online Courses. It includes CRUDs, filtering, pagination on person, user, courses and resources tables. Finally, it has login and registration of students and administrators.
-                </p>
-                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color' ></i>  ReactJS</span>  
-                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
-                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
-                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>                  
-  
-                <div class="projects__buttons proy_align">
-                  <button class="btn projects__button "  > 
-                    <a href="https://test9-sepia.vercel.app/" target="_blank">VIEW DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/No-Country-simulation/c20-32-n-php-react" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>          
+            <div class="projects__project projects_color_proy_even">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">ProductHub React</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy1.png" alt="reactjs" title="react mysql hub" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1"> Full-stack web application that facilitates data management through an intuitive dashboard. It includes CRUD functionalities, filters, product table pagination, and connects to a RESTful API.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
+                      <span >  <i class='bx bxl-angular proy_icon_color' ></i>  AngularJS</span>  
+                      <span >  <i class='bx bxl-vuejs proy_icon_color' ></i>  VueJS</span> 
+                      <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
+                      <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
+                      <span><img src="assets/img/json_ico.png" height="20" width="20" class="projects__image1" >Json</span>
+                      <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
+                      <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
+                      <span><img src="assets/img/skill/tech/expressNode-Icon.png" height="20" width="20" class="projects__image1" >Express/Node</span>                    
+                    </p>
                     
-           
-        </template>
-      
-        <template id="template-crud">
-          <h3>Projects CRUDs</h3> 
-
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Crud User APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy12.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">  
-                    Full-stack web application designed to manage data efficiently. It implements CRUD operations, filters and pagination on a user RESTful API, validating input data. It uses React hooks (useState, useEffect, useRef), along with validations via react-hook-form and Yup, as well as a custom hook to handle API connection and pagination. The interface is enriched with react-icons icons and a custom layout with CSS.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://crud-users-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/s04e04-crudUsers-fmg" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button>                    
+                  <div class="projects__buttons proy_align">   
+                    <button class="btn projects__button "  > 
+                      <a href="https://product-hu-bre.vercel.app/" target="_blank">VIEW DEMO</a>
+                    </button>               
+                    <button class="btn projects__button"  >
+                      <a href="https://github.com/fabinnerself/ProductHUBre.git" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>    
-          
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">ProductHub</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy1.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">Full-stack web application that simplifies data management. It incorporates CRUD functionalities, as well as filtering and pagination in the product table, and connects to a RESTful API (with backends in PHP/MySQL or Node/Express-JSON). Additionally, there are versions that utilize different JavaScript frameworks, such as AngularJS and VueJS.
-                </p>  
-                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
-                    <span >  <i class='bx bxl-angular proy_icon_color' ></i>  AngularJS</span>  
-                    <span >  <i class='bx bxl-vuejs proy_icon_color' ></i>  VueJS</span> 
+            </div>            
+    
+            <div class="projects__project ">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">AngularMySQLHub</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy2.png" alt="angularjs" title="angular myql hub" >
+                </div>  
+                <div class="projects__info">               
+                  <p class="projects__description description_align_1">
+                    Full-stack web application that facilitates data management through an intuitive dashboard. It includes CRUD functionalities, filters, product table pagination, and connects to a RESTful API.
+                  </p>
+                  <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-angular proy_icon_color' ></i>  AngularJS</span>  
                     <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
                     <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
-                    <span><img src="assets/img/json_ico.png" height="20" width="20" class="projects__image1" >Json</span>
                     <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
-                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
-                    <span><img src="assets/img/skill/tech/expressNode-Icon.png" height="20" width="20" class="projects__image1" >Express/Node</span>                    
+                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>                
+    
+                  <div class="projects__buttons proy_align">
+                    
+                    <button class="btn projects__button"  >
+                      <a href="https://github.com/fabinnerself/coapra" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="projects__project projects_color_proy_even">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">VueMySQLHub</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy3.png" alt="vuejs" title="vue mysql hub" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">
+                    Full-stack web application that facilitates data management through an intuitive dashboard. It includes CRUD functionalities, filters, product table pagination, and connects to a RESTful API.
                   </p>
-                  
-                <div class="projects__buttons proy_align">   
-                  <button class="btn projects__button "  > 
-                    <a href="https://product-hu-bre.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>               
-                  <button class="btn projects__button"  >
-                    <a href="https://github.com/fabinnerself/ProductHUBre.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>
+                  <p class="projects__description proy_tech proy_align">
+                    <span><img src="assets/img/skill/tech/vue.png" height="20" width="20" class="projects__image1" >VueJS</span>                     
+                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
+                    <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
+                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>  
+                  <div class="projects__buttons proy_align">                   
+                    <button class="btn projects__button" type="button">
+                      <a href="https://github.com/fabinnerself/covepra" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>            
-
-
-        </template>
-      
-        <template id="template-systems">          
-          <h3>Projects Systems</h3>      
-
-          <div class="projects__project">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Cursoteka</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy4.png" alt="cursoteka" title="E-Learning cursoteka" >
+    
+            <div class="projects__project">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">Cursoteka</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy4.png" alt="cursoteka" title="E-Learning cursoteka" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">
+                    Full-stack web application for an E-Learning Platform for Online Courses. Includes CRUD operations, filtering, and pagination on tables for people, users, courses, and resources. It also features login and registration for students and administrators.
+                  </p>
+                  <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
+                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
+                    <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
+                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>  
+                  <div class="projects__buttons proy_align">
+                    <button class="btn projects__button "  > 
+                      <a href="https://test9-sepia.vercel.app/" target="_blank">VIEW DEMO</a>
+                    </button>
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/No-Country-simulation/c20-32-n-php-react" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>
+                  </div>
+                </div>
               </div>
+            </div>
   
-              <div class="projects__info">
-                
-                <p class="projects__description description_align_1">
-                    Full-stack web application of an E-Learning Platform for Online Courses. It includes CRUDs, filtering, pagination on person, user, courses and resources tables. Finally, it has login and registration of students and administrators.
-                </p>
-                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color' ></i>  ReactJS</span>  
-                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
-                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
-                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>                  
+            <div class="projects__project projects_color_proy_even">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">Echelon</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy5.png" alt="echelon" title="echelon php bootstrap mysql" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">
+                    Full-stack web application that facilitates data management through an intuitive dashboard. It includes CRUD functionalities, filters, pagination, login for the product and user tables, and connects to a RESTful API.
+                  </p>
+                  <p class="projects__description proy_tech proy_align"> 
+                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
+                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span>                  
+                    <span >  <i class='bx bxl-bootstrap proy_icon_color' ></i>  Bootrap</span>                  
+                  </p> 
+                  <div class="projects__buttons proy_align">                   
+                    <button class="btn projects__button" type="button">
+                      <a href="https://github.com/fabinnerself/echelon-b" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
   
-                <div class="projects__buttons proy_align">
-                  <button class="btn projects__button "  > 
-                    <a href="https://test9-sepia.vercel.app/" target="_blank">VIEW DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/No-Country-simulation/c20-32-n-php-react" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button>
+            <div class="projects__project ">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">ReactMySQLHub II</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy6.png" alt="reactjs" title="react mysql hub" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">
+                    Full-stack web application that facilitates data management through an intuitive dashboard. It includes CRUD functionalities, filters, pagination on the product table, and connects to a RESTful API.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
+                      <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
+                      <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                     
+                      <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
+                      <span >  <i class='bx bxl-bootstrap proy_icon_color' ></i>  Bootrap</span>  </p>
+                  <div class="projects__buttons proy_align">                  
+                    <button class="btn projects__button"  >
+                      <a href="https://github.com/fabinnerself/reactProdBootsHub" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Ultimate Booking APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy13.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1"> engine. It allows filtering results by city and name, displaying detailed information in multiple languages, such as German and English. Users can select the local currency and choose between different visual themes, such as light and dark. Hotel data is obtained through a REST API. The application manages both public and private routes, using reusable components to handle status and side effects, such as notifications for all actions. It also features a wide range of custom icons and a modern, adaptive and responsive design, optimizing the user experience.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span ><img src="assets/img/tailWind_ico.png" height="20" width="20" class="projects__image1" >TailWind CSS</span>
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
-                  
-                        </p>
-                <div class="projects__buttons proy_align">   
-                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://6-booking-app-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/6BookingApp-fmg" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div>           
-
-          <div class="projects__project">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Echelon</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy5.png" alt="echelon" title="echelon php bootstrap mysql" >
-              </div>
+            </div>       
   
-              <div class="projects__info">
-                
-                <p class="projects__description description_align_1">
-                    Full-stack web application that facilitates data management through an intuitive control panel. It incorporates CRUD functionalities, filters, pagination, product and user table login and connects to a RESTful API.
-                </p>
-
-                <p class="projects__description proy_tech proy_align"> 
-                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
-                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span>                  
-                  <span >  <i class='bx bxl-bootstrap proy_icon_color' ></i>  Bootrap</span>                 
+            <div class="projects__project projects_color_proy_even">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">Crud User APP</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy12.png" alt="reactjs" title="react mysql hub" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">  
+                    Full-stack web application designed to manage data efficiently. It implements CRUD operations, filters, and pagination in a RESTful API for users, validating input data. It uses React hooks (useState, useEffect, useRef), along with validations through react-hook-form and Yup, as well as a custom hook to manage API connection and pagination. The interface is enhanced with react-icons and a custom CSS design.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                    <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                    <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                    <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>  
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                  
+                          </p>
+                  <div class="projects__buttons proy_align">                  
+                    <button class="btn projects__button "  > 
+                      <a href="https://crud-users-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                    </button>
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/s04e04-crudUsers-fmg" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div>   
+  
+  
+            <div class="projects__project ">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">Favián's Portfolio</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy7.png" alt="reactjs" title="react mysql hub" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">
+                    Modern and accessible web application offering a personalized and seamless user experience through its responsive design, light and dark modes, and multi-language support. Developed with the latest technologies such as CSS, JavaScript, and popular frameworks, it features engaging animations, interactive forms, and intuitive navigation. Optimized for SEO and accessibility, this application ensures an optimal user experience on any device. Additionally, its well-structured code facilitates maintenance and future updates.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"><span > <i class='bx bxl-html5 proy_icon_color' ></i>Html</span>  
+                    <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                    <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                    <span><img src="assets/img/emailJS_ico.png" height="20" width="20" class="projects__image1" >EmailJS</span> 
+                          </p>
+                  <div class="projects__buttons proy_align">                  
+                    <button class="btn projects__button"  >
+                      <a href="https://github.com/fabinnerself/academlo_cv_fmg_page" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>  
+  
+            <div class="projects__project projects_color_proy_even">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">Ultimate Bruce Lee APP</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy8.png" alt="reactjs" title="react mysql hub" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">
+                    Web application that generates random Bruce Lee quotes. It uses hooks (useState) and functional components. The design is customized with CSS, and the data is loaded from a local JSON file.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                    <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                    <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                    <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>                   
+                          </p>
+                  <div class="projects__buttons proy_align">                  
+                    <button class="btn projects__button "  > 
+                      <a href="https://e01-deivi-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                    </button>
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/e01-deivi-fmg.git" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>        
+            
+            <div class="projects__project ">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">Ultimate Weather APP</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy9.png" alt="reactjs" title="react mysql hub" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">
+                    Real-time weather web application that uses React Hooks (useState and useEffect) to consume the OpenWeatherMap API. It allows customized city searches and features a custom CSS design.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                    <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                    <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                    <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>                  
+                          </p>
+                  <div class="projects__buttons proy_align">                  
+                    <button class="btn projects__button "  > 
+                      <a href="https://s02e02-weather-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                    </button>
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/s02e02-weather-fmg" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button> 
+                  </div>
+                </div>
+              </div>
+            </div>          
+  
+            <div class="projects__project projects_color_proy_even">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">Ultimate Rick and Morty APP</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy10.png" alt="reactjs" title="react mysql hub" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">
+                    Rick and Morty character and dimension search engine. Uses React Hooks to consume the public API https://rickandmortyapi.com and display data such as name, species, and dimension. Features a modular, responsive design with pagination, reusable components, and custom styles (CSS, Google Fonts). Includes thematic graphics and icons for an immersive experience.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                    <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                    <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                    <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>  
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>
+                          </p>
+                  <div class="projects__buttons proy_align">                  
+                    <button class="btn projects__button "  > 
+                      <a href="https://s03e03-rm-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                    </button>
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/s03e03-rm-fmg" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div>                
+    
+  
+            <div class="projects__project ">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">Ultimate Pokedex APP</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy11.png" alt="reactjs" title="react mysql hub" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">                  
+                    The web application "Interactive Pokémon Series Character Search" displays detailed information such as name, type, stats, and moves, among others. It uses advanced hooks (useContext, React Router Dom) to provide a personalized, responsive, and multilingual (English, German, etc.) user experience, consuming data from the public API https://pokeapi.co. Additionally, it features an adaptable and responsive design, reusable components, and customization options allowing users to switch between light, dark, and colorful themes. Finally, it includes pagination functionality to facilitate navigation.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                    <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                    <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                    <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>  
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                  
+                          </p>
+                  <div class="projects__buttons proy_align">                  
+                    <button class="btn projects__button "  > 
+                      <a href="https://pokedex-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                    </button>
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/E5-pokedex-fmg" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div>          
+            
+            <div class="projects__project projects_color_proy_even">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">Ultimate Booking APP</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy13.png" alt="reactjs" title="react mysql hub" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1"> 
+                    This web application offers an intuitive and customizable hotel search engine. It allows filtering results by city and name, displaying detailed information in multiple languages, such as German and English. Users can select the local currency and choose between different visual themes, such as light and dark. Hotel data is retrieved through a REST API. The application manages both public and private routes, using reusable components to handle state and side effects, such as notifications for all actions. Additionally, it features a wide range of custom icons and a modern, adaptable, and responsive design, optimizing the user experience.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                    <span ><img src="assets/img/tailWind_ico.png" height="20" width="20" class="projects__image1" >TailWind CSS</span>  
+                    <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                    <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>  
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                   
+                          </p>
+                  <div class="projects__buttons proy_align">                  
+                    <button class="btn projects__button "  > 
+                      <a href="https://6-booking-app-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                    </button>
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/6BookingApp-fmg" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div>      
+            
+            <div class="projects__project ">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">UltimateLibraryBE</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/api0.png" alt="api" title="api mongo" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">  
+                    REST API in Node.js with Express, MongoDB (Mongoose), dotenv, and uuid for managing Books. Offers CRUD operations, data validation, and detailed error handling. Tested and documented in Postman, built with the MERN stack.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"> <span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span> 
+                    <span ><img src="assets/img/skill/db/mongodb-logo.png" height="20" width="20" class="projects__image1" >MongoDB</span>
+                    <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                    <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                          </p>
+                  <div class="projects__buttons proy_align">                  
+                    <button class="btn projects__button "  > 
+                      <a href="https://tmp-seven-azure.vercel.app/api/v1/books/" target="_blank">VIEW DEMO</a>
+                    </button>
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/ultimateLibraryBE.git" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div>    
+            
+            <div class="projects__project projects_color_proy_even">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">UltimateStoreBE</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/api1.png" alt="api" title="api mongo multineant" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">  
+                    REST API in Node.js with Express, MongoDB, dotenv, uuid, and Multitenant architecture for managing clients, products, and orders. Offers CRUD operations, data validation, state management, and detailed error handling. Tested and documented in Postman, built with the MERN stack.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"><span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                  
+                    <span ><img src="assets/img/skill/db/mongodb-logo.png" height="20" width="20" class="projects__image1" >MongoDB</span>
+                    <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                    <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                          </p>
+                  <div class="projects__buttons proy_align">                  
+                     
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/ultimateStoreBE.git" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div> 
+  
+            <div class="projects__project ">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">UltimateKeyMasterAPI</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/api2.png" alt="api" title="api mongo" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">  
+                    Node.js REST API with TypeScript, dotenv, and TypeORM manages users, safety deposit boxes, credentials, and PINs. Offers CRUD operations, data validation, secure authentication, and encrypted password management. Users can softly delete their accounts and resources, ensuring recoverability and privacy.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align">                   
+                    <span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                
+                    <span ><img src="assets/img/skill/db/postgres.png" height="20" width="20" class="projects__image1" >PostgreSQL</span>
+                    <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                    <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                          </p>
+                  <div class="projects__buttons proy_align">  
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/ultimateKeyMasterAPI-fmg.git" target="_blank" title="UltimateKeyMasterAPI">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div> 
+  
+            <div class="projects__project projects_color_proy_even">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">RepairAPI</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/api3.png" alt="api" title="api postgres repair" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">  
+                    Node.js REST API manages users and motorcycle repairs using TypeScript, bcrypt, dotenv, and TypeORM. Provides full CRUD operations with data validations and security features. Includes user authentication, role-based access control, and secure password management. Users can only soft-delete their own accounts. Repair state transitions are controlled.
+  
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"><span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                  
+                    <span ><img src="assets/img/skill/db/postgres.png" height="20" width="20" class="projects__image1" >PostgreSQL</span>
+                    <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                    <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                          </p>
+                  <div class="projects__buttons proy_align">                  
+                     
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/-repairAPI-fmg-V3.git" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div>            
+  
+          </template>
+        
+          <template id="template-featured">
+            <h3>Featured Projects</h3>
+        
+            <div class="projects__project projects_color_proy_odd">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">Ultimate Booking APP</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy13.png" alt="reactjs" title="react mysql hub" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1"> 
+                    This web application offers an intuitive and customizable hotel search engine. It allows filtering results by city and name, displaying detailed information in multiple languages, such as German and English. Users can select the local currency and choose between different visual themes, such as light and dark. Hotel data is retrieved through a REST API. The application manages both public and private routes, using reusable components to handle state and side effects, such as notifications for all actions. Additionally, it features a wide range of custom icons and a modern, adaptable, and responsive design, optimizing the user experience.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                    <span ><img src="assets/img/tailWind_ico.png" height="20" width="20" class="projects__image1" >TailWind CSS</span>  
+                    <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                    <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                  
+                          </p>
+                  <div class="projects__buttons proy_align">                     
+                    <button class="btn projects__button "  > 
+                      <a href="https://6-booking-app-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                    </button>
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/6BookingApp-fmg" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div>        
+            
+            <div class="projects__project ">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">ProductHub</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy1.png" alt="reactjs" title="react mysql hub" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">
+                    Full-stack web application that facilitates data management through an intuitive dashboard. It includes CRUD functionalities, filters, product table pagination, and connects to a RESTful API.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
+                      <span >  <i class='bx bxl-angular proy_icon_color' ></i>  AngularJS</span>  
+                      <span >  <i class='bx bxl-vuejs proy_icon_color' ></i>  VueJS</span> 
+                      <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
+                      <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
+                      <span><img src="assets/img/json_ico.png" height="20" width="20" class="projects__image1" >Json</span>
+                      <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
+                      <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
+                      <span><img src="assets/img/skill/tech/expressNode-Icon.png" height="20" width="20" class="projects__image1" >Express/Node</span>                    
+                    </p>
+                    
+                  <div class="projects__buttons proy_align">   
+                    <button class="btn projects__button "  > 
+                      <a href="https://product-hu-bre.vercel.app/" target="_blank">VIEW DEMO</a>
+                    </button>               
+                    <button class="btn projects__button"  >
+                      <a href="https://github.com/fabinnerself/ProductHUBre.git" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>          
+  
+            <div class="projects__project projects_color_proy_odd">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">Crud User APP</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy12.png" alt="reactjs" title="react mysql hub" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">  
+                    Full-stack web application designed to manage data efficiently. It implements CRUD operations, filters, and pagination in a RESTful API for users, validating input data. It uses React hooks (useState, useEffect, useRef), along with validations through react-hook-form and Yup, as well as a custom hook to manage API connection and pagination. The interface is enhanced with react-icons and a custom CSS design.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                    <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                    <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                    <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                  
+                          </p>
+                  <div class="projects__buttons proy_align">                  
+                    <button class="btn projects__button "  > 
+                      <a href="https://crud-users-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                    </button>
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/s04e04-crudUsers-fmg" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div>     
+            
+            <div class="projects__project">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">Cursoteka</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy4.png" alt="cursoteka" title="E-Learning cursoteka" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">
+                    Full-stack web application for an E-Learning Platform for Online Courses. Includes CRUD operations, filtering, and pagination on tables for people, users, courses, and resources. It also features login and registration for students and administrators.
+                  </p>
+                  <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color' ></i>  ReactJS</span>  
+                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
+                    <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
+                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>                  
+    
+                  <div class="projects__buttons proy_align">
+                    <button class="btn projects__button "  > 
+                      <a href="https://test9-sepia.vercel.app/" target="_blank">VIEW DEMO</a>
+                    </button>
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/No-Country-simulation/c20-32-n-php-react" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>    
+            
+            <div class="projects__project projects_color_proy_odd">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">UltimateLibraryBE</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/api0.png" alt="api" title="api mongo" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">  
+                    REST API in Node.js with Express, MongoDB (Mongoose), dotenv, and uuid for managing Books. Offers CRUD operations, data validation, and detailed error handling. Tested and documented in Postman, built with the MERN stack.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"> <span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span> 
+                    <span ><img src="assets/img/skill/db/mongodb-logo.png" height="20" width="20" class="projects__image1" >MongoDB</span>
+                    <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                    <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                          </p>
+                  <div class="projects__buttons proy_align">                  
+                    <button class="btn projects__button "  > 
+                      <a href="https://tmp-seven-azure.vercel.app/api/v1/books/" target="_blank">VIEW DEMO</a>
+                    </button>
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/ultimateLibraryBE.git" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div>    
+            
+            <div class="projects__project">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">UltimateStoreBE</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/api1.png" alt="api" title="api mongo multineant" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">  
+                    REST API in Node.js with Express, MongoDB, dotenv, uuid, and Multitenant architecture for managing clients, products, and orders. Offers CRUD operations, data validation, state management, and detailed error handling. Tested and documented in Postman, built with the MERN stack.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"><span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                  
+                    <span ><img src="assets/img/skill/db/mongodb-logo.png" height="20" width="20" class="projects__image1" >MongoDB</span>
+                    <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                    <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                          </p>
+                  <div class="projects__buttons proy_align">                  
+                     
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/ultimateStoreBE.git" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div> 
+  
+            <div class="projects__project projects_color_proy_odd">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">UltimateKeyMasterAPI</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/api2.png" alt="api" title="api mongo" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">  
+                    Node.js REST API with TypeScript, dotenv, and TypeORM manages users, safety deposit boxes, credentials, and PINs. Offers CRUD operations, data validation, secure authentication, and encrypted password management. Users can softly delete their accounts and resources, ensuring recoverability and privacy.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align">                   
+                    <span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                
+                    <span ><img src="assets/img/skill/db/postgres.png" height="20" width="20" class="projects__image1" >PostgreSQL</span>
+                    <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                    <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                          </p>
+                  <div class="projects__buttons proy_align">  
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/ultimateKeyMasterAPI-fmg.git" target="_blank" title="UltimateKeyMasterAPI">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div>          
+                      
+             
+          </template>
+        
+          <template id="template-crud">
+            <h3>CRUD Projects</h3> 
+  
+            <div class="projects__project ">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">Crud User APP</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy12.png" alt="reactjs" title="react mysql hub" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">  
+                    Full-stack web application designed to manage data efficiently. It implements CRUD operations, filters, and pagination in a RESTful API for users, validating input data. It uses React hooks (useState, useEffect, useRef), along with validations through react-hook-form and Yup, as well as a custom hook to manage API connection and pagination. The interface is enhanced with react-icons and a custom CSS design.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                    <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
+                    <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                    <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                  
+                          </p>
+                  <div class="projects__buttons proy_align">                  
+                    <button class="btn projects__button "  > 
+                      <a href="https://crud-users-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                    </button>
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/s04e04-crudUsers-fmg" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div>    
+            
+            <div class="projects__project projects_color_proy_even">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">ProductHub</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy1.png" alt="reactjs" title="react mysql hub" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">
+                    Full-stack web application that facilitates data management through an intuitive dashboard. It includes CRUD functionalities, filters, product table pagination, and connects to a RESTful API.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
+                      <span >  <i class='bx bxl-angular proy_icon_color' ></i>  AngularJS</span>  
+                      <span >  <i class='bx bxl-vuejs proy_icon_color' ></i>  VueJS</span> 
+                      <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
+                      <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
+                      <span><img src="assets/img/json_ico.png" height="20" width="20" class="projects__image1" >Json</span>
+                      <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
+                      <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
+                      <span><img src="assets/img/skill/tech/expressNode-Icon.png" height="20" width="20" class="projects__image1" >Express/Node</span>                    
+                    </p>
+                    
+                  <div class="projects__buttons proy_align">   
+                    <button class="btn projects__button "  > 
+                      <a href="https://product-hu-bre.vercel.app/" target="_blank">VIEW DEMO</a>
+                    </button>               
+                    <button class="btn projects__button"  >
+                      <a href="https://github.com/fabinnerself/ProductHUBre.git" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+  
+          </template>
+        
+          <template id="template-systems">          
+            <h3>Proyectos Full-Stack</h3> 
+            <div class="projects__project projects_color_proy_odd">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">Cursoteka</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy4.png" alt="cursoteka" title="E-Learning cursoteka" >
+                </div>
+    
+                <div class="projects__info">
                   
-                </p> 
-                <div class="projects__buttons proy_align">
-                   
-                  <button class="btn projects__button" type="button">
-                    <a href="https://github.com/fabinnerself/echelon-b" target="_blank" title="ReactMySQLHub">SEE CODE</a>
-                  </button>
+                  <p class="projects__description description_align_1">
+                    Full-stack web application for an E-Learning Platform for Online Courses. Includes CRUD operations, filtering, and pagination on tables for people, users, courses, and resources. It also features login and registration for students and administrators.
+                  </p>
+                  <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color' ></i>  ReactJS</span>  
+                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
+                    <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
+                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>                  
+    
+                  <div class="projects__buttons proy_align">
+                    <button class="btn projects__button "  > 
+                      <a href="https://test9-sepia.vercel.app/" target="_blank">VIEW DEMO</a>
+                    </button>
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/No-Country-simulation/c20-32-n-php-react" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-        </template>      
-      </div>
-    </section>
+  
+            <div class="projects__project ">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">Ultimate Booking APP</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy13.png" alt="reactjs" title="react mysql hub" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1"> 
+                    This web application offers an intuitive and customizable hotel search engine. It allows filtering results by city and name, displaying detailed information in multiple languages, such as German and English. Users can select the local currency and choose between different visual themes, such as light and dark. Hotel data is retrieved through a REST API. The application manages both public and private routes, using reusable components to handle state and side effects, such as notifications for all actions. Additionally, it features a wide range of custom icons and a modern, adaptable, and responsive design, optimizing the user experience.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
+                    <span ><img src="assets/img/tailWind_ico.png" height="20" width="20" class="projects__image1" >TailWind CSS</span>
+                    <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
+                    <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
+                    
+                          </p>
+                  <div class="projects__buttons proy_align">   
+                    
+                    <button class="btn projects__button "  > 
+                      <a href="https://6-booking-app-fmg.vercel.app/" target="_blank">VIEW DEMO</a>
+                    </button>
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/6BookingApp-fmg" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div>           
+  
+            <div class="projects__project projects_color_proy_odd">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">Echelon</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/proy5.png" alt="echelon" title="echelon php bootstrap mysql" >
+                </div>
+    
+                <div class="projects__info">
+                  
+                  <p class="projects__description description_align_1">
+                    Full-stack web application that facilitates data management through an intuitive dashboard. It includes CRUD functionalities, filters, pagination, login for the product and user tables, and connects to a RESTful API.
+                  </p>
+  
+                  <p class="projects__description proy_tech proy_align"> 
+                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
+                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span>                  
+                    <span >  <i class='bx bxl-bootstrap proy_icon_color' ></i> Bootrap</span>                 
+                    
+                  </p> 
+                  <div class="projects__buttons proy_align">
+                     
+                    <button class="btn projects__button" type="button">
+                      <a href="https://github.com/fabinnerself/echelon-b" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </template>  
+          
+          <template id="template-api">
+            <h3>Resftull API's</h3> 
+  
+            <div class="projects__project projects_color_proy_even">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">UltimateLibraryBE</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/api0.png" alt="api" title="api mongo" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">  
+                    REST API in Node.js with Express, MongoDB (Mongoose), dotenv, and uuid for managing Books. Offers CRUD operations, data validation, and detailed error handling. Tested and documented in Postman, built with the MERN stack.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"> <span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span> 
+                    <span ><img src="assets/img/skill/db/mongodb-logo.png" height="20" width="20" class="projects__image1" >MongoDB</span>
+                    <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                    <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                          </p>
+                  <div class="projects__buttons proy_align">                  
+                    <button class="btn projects__button "  > 
+                      <a href="https://tmp-seven-azure.vercel.app/api/v1/books/" target="_blank">VIEW DEMO</a>
+                    </button>
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/ultimateLibraryBE.git" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div>    
+            
+            <div class="projects__project">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">UltimateStoreBE</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/api1.png" alt="api" title="api mongo multineant" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">  
+                    REST API in Node.js with Express, MongoDB, dotenv, uuid, and Multitenant architecture for managing clients, products, and orders. Offers CRUD operations, data validation, state management, and detailed error handling. Tested and documented in Postman, built with the MERN stack.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"><span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                  
+                    <span ><img src="assets/img/skill/db/mongodb-logo.png" height="20" width="20" class="projects__image1" >MongoDB</span>
+                    <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                    <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                          </p>
+                  <div class="projects__buttons proy_align">                  
+                     
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/ultimateStoreBE.git" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div> 
+  
+            <div class="projects__project projects_color_proy_even">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">UltimateKeyMasterAPI</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/api2.png" alt="api" title="api mongo" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">  
+                    Node.js REST API with TypeScript, dotenv, and TypeORM manages users, safety deposit boxes, credentials, and PINs. Offers CRUD operations, data validation, secure authentication, and encrypted password management. Users can softly delete their accounts and resources, ensuring recoverability and privacy.
+                  </p>  
+                  <p class="projects__description proy_tech proy_align">                   
+                    <span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                
+                    <span ><img src="assets/img/skill/db/postgres.png" height="20" width="20" class="projects__image1" >PostgreSQL</span>
+                    <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                    <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                          </p>
+                  <div class="projects__buttons proy_align">  
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/ultimateKeyMasterAPI-fmg.git" target="_blank" title="UltimateKeyMasterAPI">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div> 
+  
+            <div class="projects__project">
+              <div class="projects__inner grid--container">
+                <h3 class="projects__name">RepairAPI</h3>
+                <div class="projects__image">
+                  <img src="assets/img/portfolio/api3.png" alt="api" title="api postgres repair" >
+                </div>  
+                <div class="projects__info">                
+                  <p class="projects__description description_align_1">  
+                    Node.js REST API manages users and motorcycle repairs using TypeScript, bcrypt, dotenv, and TypeORM. Provides full CRUD operations with data validations and security features. Includes user authentication, role-based access control, and secure password management. Users can only soft-delete their own accounts. Repair state transitions are controlled.
+  
+                  </p>  
+                  <p class="projects__description proy_tech proy_align"><span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                  
+                    <span ><img src="assets/img/skill/db/postgres.png" height="20" width="20" class="projects__image1" >PostgreSQL</span>
+                    <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
+                    <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
+                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
+                          </p>
+                  <div class="projects__buttons proy_align">                  
+                     
+                    <button class="btn projects__button proy_align"  >
+                      <a href="https://github.com/fabinnerself/-repairAPI-fmg-V3.git" target="_blank" title="ReactMySQLHub">VIEW CODE</a>
+                    </button>                    
+                  </div>
+                </div>
+              </div>
+            </div>           
+            
+          </template>        
+  
+        </div>
+      </section>
 
  
     - <section id="testimony" class="about section">
