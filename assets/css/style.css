@@ -23,15 +23,19 @@ Codepen - muchas ideas y desarrollos
 	--header-height: 60px;
 
 	/* Colors */
-	--primary-color: light-dark(#6b9080, #cce3de);
-	--bg-color-section1: light-dark(#fafafa, #6a6a6a);
-	--bg-color-section2: light-dark(#cce3de, #111);
+	--primary-color: light-dark(#023047, #FCC37B);
+	--bg-color-section1: light-dark(#219EBC, #6a6a6a);
+	--bg-color-section2: light-dark(#FB8500, #111);
 	--bg-color-buttons: light-dark(#e0e0e0, #6a6a6a);
 	--bg-color-extra: light-dark(#cdb4db, #ffafcc);
 	--bg-color-tech: light-dark(#e0e0e0, #d4a373);
 
 	--bg-color-section2A: light-dark( #eaece6, #c2c5aa);
 	--bg-color-section1A: light-dark(#dfe4d3, #a4ac86);
+	--bg-color-footer :light-dark(#3A86FF, #a4ac86);
+
+ 
+	
 
 	/* Typografy */
 	--normal-font-size: 16px;
@@ -747,7 +751,7 @@ html {
 }
 /* ============= Footer ============= */
 .footer {
-	background-color: light-dark(#4c956c, #aaaaaa); 
+	background-color:  var(--bg-color-footer);
 	color: #efefef;
 	padding-bottom: 2rem;
 	.footer__container {
@@ -1159,7 +1163,7 @@ html {
 	.maincontainer > .front	{
 		position: absolute;
 		transform: perspective(600px) rotateY(0deg);
-		background: #3a5a40;
+		background: var(--primary-color);
 		color: white;
 		border-radius: 2px;
 		
@@ -1173,7 +1177,7 @@ html {
 	.maincontainer > .back	{
 		position: absolute;
 		transform: perspective(600px) rotateY(180deg);
-		background: #3a5a40;
+		background: var(--primary-color);
 		color: #fff;
 		width: 302px;
 		height: 250px;
@@ -1730,7 +1734,7 @@ html {
 	  .card {
 		height: 100%;
 		border-radius: 50px;
-		background: linear-gradient(135deg, #00ffd6 0%, #08e260 100%);
+		background: linear-gradient(135deg, #219EBC 0%, #3A86FF 100%);
 		transition: all 0.5s ease-in-out;
 		transform-style: preserve-3d;
 		box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, #05471133 0px 25px 25px -5px;
@@ -1756,14 +1760,14 @@ html {
 	  
 	  .content .title {
 		display: block;
-		color: #00894d;
+		color: #3A86FF;
 		font-weight: 900;
 		font-size: 20px;
 	  }
 	  
 	  .content .text {
 		display: block;
-		color: rgba(0, 137, 78, 0.7647058824);
+		color: #3A86FF;
 		font-size: 15px;
 		margin-top: 20px;
 		text-align: justify;
@@ -1771,7 +1775,7 @@ html {
 
 	  .content .text-center {
 		display: block;
-		color: rgba(0, 137, 78, 0.7647058824);
+		color: #3A86FF;
 		font-size: 15px;
 		margin-top: 20px;
 		text-align: center;
@@ -1805,14 +1809,14 @@ html {
 	  .bottom .view-more .view-more-button {
 		background: none;
 		border: none;
-		color: #00c37b;
+		color: #3A86FF;
 		font-weight: bolder;
 		font-size: 12px;
 	  }
 	  
 	  .bottom .view-more .svg {
 		fill: none;
-		stroke: #00c37b;
+		stroke: #3A86FF;
 		stroke-width: 3px;
 		max-height: 15px;
 	  }
@@ -1832,7 +1836,7 @@ html {
 		border: none;
 		display: grid;
 		place-content: center;
-		box-shadow: rgba(5, 71, 17, 0.5) 0px 7px 5px -5px;
+		box-shadow: rgb(58, 134, 255) 0px 7px 5px -5px;
 	  }
 	  
 	  .bottom .social-buttons-container .social-button:first-child {
@@ -1849,7 +1853,7 @@ html {
 	  
 	  .bottom .social-buttons-container .social-button .svg {
 		width: 15px;
-		fill: #00894d;
+		fill: #3a86ff;
 	  }
 	  
 	  .bottom .social-buttons-container .social-button:hover {
@@ -1885,7 +1889,7 @@ html {
 		box-shadow: rgba(100, 100, 111, 0.2) -10px 10px 20px 0px;
 		-webkit-backdrop-filter: blur(5px);
 		backdrop-filter: blur(5px);
-		background: rgba(0, 249, 203, 0.2);
+		background: rgba(58, 134, 255, 0.2);
 		transition: all 0.5s ease-in-out;
 	  }
 	  
@@ -1921,17 +1925,17 @@ html {
 	  
 	  .parent:hover .card {
 		transform: rotate3d(1, 1, 0, 30deg);
-		box-shadow: rgba(5, 71, 17, 0.3) 30px 50px 25px -40px, rgba(5, 71, 17, 0.1) 0px 25px 30px 0px;
+		box-shadow: rgba(58, 134, 255, 0.302) 30px 50px 25px -40px, rgba(58, 134, 255, 0.102) 0px 25px 30px 0px;
 	  }
 	
 	  .parent:hover .card-1 {
 		transform: rotate3d(1, 1, 0, 30deg);
-		box-shadow: rgba(5, 71, 17, 0.3) 30px 50px 25px -40px, rgba(5, 71, 17, 0.1) 0px 25px 30px 0px;
+		box-shadow: rgba(58, 134, 255, 0.3) 30px 50px 25px -40px, rgba(58, 134, 255, 0.1) 0px 25px 30px 0px;
 	  }
 	  
 	  .parent:hover .card .bottom .social-buttons-container .social-button {
 		transform: translate3d(0, 0, 50px);
-		box-shadow: rgba(5, 71, 17, 0.2) -5px 20px 10px 0px;
+		box-shadow: rgba(58, 134, 255, 0.2) -5px 20px 10px 0px;
 	  }
 		
 	  .parent:hover .card .logo .circle2 {
@@ -2035,11 +2039,38 @@ html {
 	color: inherit; /* Mantén el color del enlace igual que el texto circundante */
 	text-decoration: none; /* Elimina el subrayado por defecto del enlace */
 	pointer-events: auto; /* Asegúrate de que el enlace sea clicable */
+	
   }
+  .projects__description a:link{
+	color: var(--bg-color-section2); 
+  }
+
+  .projects__description a:visited {
+    color: var(--bg-color-extra);
+	}
   
   .projects__description a:hover {
 	text-decoration: underline; /* Añade un subrayado al pasar el cursor para indicar que es un enlace */
   }	 
+
+  /* CSS rules for links inside project buttons */
+  .projects__button a {
+	color: var(--bg-color-section2);
+	text-decoration: none;
+	pointer-events: auto;
+  }
+
+  .projects__button a:link {
+	color: var(--bg-color-section2);
+  }
+
+  .projects__button a:visited {
+	color: var(--bg-color-extra);
+  }
+
+  .projects__button a:hover {
+	text-decoration: underline;
+  }
 
 
   /* clase para que en la seccion proyectos cada proyecto tenga 1 coloracion*/
