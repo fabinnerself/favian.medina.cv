@@ -2075,8 +2075,199 @@ html {
 
   /* clase para que en la seccion proyectos cada proyecto tenga 1 coloracion*/
   .projects_color_proy_even {
-	background-color: var(--bg-color-section2A);	
+ background-color: var(--bg-color-section2A);
   }
   .projects_color_proy_odd {
-	background-color: var(--bg-color-section1A);	
+ background-color: var(--bg-color-section1A);
+  }
+  
+  /* Carousel Styles */
+  #project-carousel {
+    position: relative;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    
+    /* Variables de color - fáciles de sobrescribir */
+    --color-primary: #023047;
+    --color-secondary: #219EBC;
+    --color-background: #FB8500;
+    --color-text-light: #fff;
+    --color-text-dark: #000;
+    --color-accent: #ffafcc;
+    --border-radius-md: 8px;
+    --transition-fast: 0.3s ease-in-out;
+  }
+  
+  #project-carousel .carousel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 1rem;
+	background-color: #ddd;
+  }
+  
+  #project-carousel .carousel-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #project-carousel .card {
+    flex: 0 0 300px;
+    height: 400px;
+    margin: 0 10px;
+    perspective: 1000px;
+  }
+  
+  #project-carousel .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  
+  #project-carousel .card.flipped .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  #project-carousel .card-front,
+  #project-carousel .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+	
+  }
+  
+  #project-carousel .card-front {
+    background-color: var(--color-text-light);
+  }
+  
+  #project-carousel .card-front img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: var(--border-radius-md);
+  }
+  
+  #project-carousel .tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  
+  #project-carousel .tech-icons i,
+  #project-carousel .tech-icons img {
+    font-size: 1.2em;
+    width: 1.2em;
+    height: 1.2em;
+    object-fit: contain;
+    color: var(--color-primary);
+  }
+  #project-carousel .card-back {
+    background-color: var(--color-secondary);
+    color: var(--color-text-light);
+    transform: rotateY(180deg);
+    text-align: center;
+  }
+  
+  #project-carousel .card-back p {
+    margin-bottom: 2rem;
+  }
+  
+  #project-carousel .card-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  #project-carousel .btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  #project-carousel .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  #project-carousel .nav-btn-left,
+  #project-carousel .nav-btn-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+  }
+  
+  #project-carousel .nav-btn-left {
+    left: -20px;
+  }
+  
+  #project-carousel .nav-btn-right {
+    right: -20px;
+  }
+  
+  #project-carousel:hover .nav-btn-left,
+  #project-carousel:hover .nav-btn-right {
+    opacity: 1;
+  }
+  
+  #project-carousel .nav-btn-left i,
+  #project-carousel .nav-btn-right i {
+    font-size: 1.2rem;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 767px) {
+    #project-carousel .card {
+      flex: 0 0 100%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #project-carousel .card {
+      flex: 0 0 calc(50% - 20px);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    #project-carousel .card {
+      flex: 0 0 calc(33.333% - 20px);
+    }
+  }
+  
+  /* Fix for touch devices */
+  @media (hover: none) {
+    #project-carousel .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
   }

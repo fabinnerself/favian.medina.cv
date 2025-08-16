@@ -1,3 +1,4 @@
+import initCarousel from './components/carousel.js';
 import parallax from './components/parallax.js';
 import activeMenu from './components/selected_menu.js';
 import updateDateYear from './helpers/date_updater.js';
@@ -26,19 +27,29 @@ fLanguajeSwitch();
 copyClipboard();
 
 
+
+
+
 // Agregar eventos de clic a los enlaces
 document.querySelectorAll('.tabs').forEach(tab => {
     tab.addEventListener('click', function() {
         const tabName = this.getAttribute('onclick').match(/'([^']+)'/)[1];
         showTab(tabName);
+        // Initialize carousel after tab change
+        setTimeout(() => {
+            initCarousel();
+        }, 100);
     });
-
-    
+});
+// Show featured tab by default and initialize its carousel
+document.addEventListener('DOMContentLoaded', () => {
+    showTab('featured');
+    setTimeout(() => {
+        initCarousel();
+    }, 100);
 });
 
-showTab('featured');
 
- 
 const showToastOnSkillsVisible = () => {
     const skillsSection = document.getElementById('skills');
     

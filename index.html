@@ -13,6 +13,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Marhey:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <!-- Iconos https://boxicons.com/?query  -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Font Awesome 6 https://fontawesome.com/search -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
  
   <!-- animate.css de https://animate.style/  -->
   <link
@@ -157,6 +159,7 @@
         </div> 
       </div>
     </section>
+
     <section id="about" class="about section">
       <h2 class="section__title">Acerca de MÍ</h2>
 
@@ -318,7 +321,6 @@
 
     </section>    
 
-
     <section id="servicios" class="servicios section">
       
      
@@ -468,9 +470,7 @@
             </div>
     
         </div>
-    </div>
-    
-  
+      </div>
       </section>
 
     <section id="projects" class="projects section">
@@ -483,7 +483,8 @@
           <a class="tabs"  onclick="showTab('all')"> Todo </a>|          
           <a class="tabs"  onclick="showTab('crud')"> CRUDs </a>|
           <a class="tabs"  onclick="showTab('systems')"> Sistemas </a>|   
-          <a class="tabs"  onclick="showTab('api')"> Rest API </a>        
+          <a class="tabs"  onclick="showTab('api')"> Rest API </a>     
+
         </div>
       
         <div id="content"></div>
@@ -492,936 +493,870 @@
         <template id="template-all"    >
           <h3>Todos los proyectos, en total 17</h3>            
 
-          <div class="projects__project projects_color_proy_even">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">ProductHub React</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy1.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1"> Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación en la tabla de productos y se conecta a una API RESTful.
-                </p>  
-                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
-                    <span >  <i class='bx bxl-angular proy_icon_color' ></i>  AngularJS</span>  
-                    <span >  <i class='bx bxl-vuejs proy_icon_color' ></i>  VueJS</span> 
-                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
-                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
-                    <span><img src="assets/img/json_ico.png" height="20" width="20" class="projects__image1" >Json</span>
-                    <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
-                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
-                    <span><img src="assets/img/skill/tech/expressNode-Icon.png" height="20" width="20" class="projects__image1" >Express/Node</span>                    
-                  </p>
-                  
-                <div class="projects__buttons proy_align">   
-                  <button class="btn projects__button "  > 
-                    <a href="https://product-hu-bre.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>               
-                  <button class="btn projects__button"  >
-                    <a href="https://github.com/fabinnerself/ProductHUBre.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>
+          <section id="project-carousel">
+            <!-- Flecha izquierda -->
+            <button class="nav-btn-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="carousel-container">
+              <!-- Tarjetas del carrusel -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy1.png" alt="ProductHub">
+                    <h3  class="skills__description">ProductHub ReactJS / VueJS</h3>
+                    <div class="tech-icons">                       
+                      <i class="fab fa-react" title="ReactJS"></i>
+                      <i class="fab fa-vuejs" title="Vue.js"></i>
+                      <i class="fas fa-database" title="MySQL"></i>                      
+                      <i class="fas fa-table" title="EasyUI"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación en la tabla de productos y se conecta a una API RESTful.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/ProductHUBre.git" class="btn btn-code" target="_blank">Código</a>                      
+                      <a href="https://product-hu-bre.vercel.app/" class="btn btn-demo" target="_blank">Demo</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>            
-  
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">AngularMySQLHub</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy2.png" alt="angularjs" title="angular myql hub" >
-              </div>  
-              <div class="projects__info">               
-                <p class="projects__description description_align_1">
-                  Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación en la tabla de productos y se conecta a una API RESTful.
-                </p>
-                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-angular proy_icon_color' ></i>  AngularJS</span>  
-                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
-                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
-                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>                
-  
-                <div class="projects__buttons proy_align">
-                  
-                  <button class="btn projects__button"  >
-                    <a href="https://github.com/fabinnerself/coapra" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>
+              
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy2.png" alt="ProductHub angular">
+                    <h3  class="skills__description">ProductHub AngularJS</h3>
+                    <div class="tech-icons">                     
+                      <i class="fab fa-angular" title="AngularJS"></i>                     
+                      <i class="fas fa-database" title="MySQL"></i>                      
+                      <i class="fas fa-table" title="EasyUI"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación en la tabla de productos y se conecta a una API RESTful.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/coapra.git" class="btn btn-code">Código</a>                      
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-  
-          <div class="projects__project projects_color_proy_even">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">VueMySQLHub</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy3.png" alt="vuejs" title="vue mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">
-                  Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación en la tabla de productos y se conecta a una API RESTful.
-                </p>
-                <p class="projects__description proy_tech proy_align"><span >  
-                  <span><img src="assets/img/skill/tech/vue.png" height="20" width="20" class="projects__image1" >VueJS</span>                    
-                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
-                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
-                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>  
-                <div class="projects__buttons proy_align">                   
-                  <button class="btn projects__button" type="button">
-                    <a href="https://github.com/fabinnerself/covepra" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>
+              
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy4.png" alt="Cursoteka 4">
+                    <h3  class="skills__description">Cursoteka</h3>
+                    <div class="tech-icons">
+                      <i class="fab fa-html5" title="HTML5"></i>
+                      <i class="fab fa-css3-alt" title="CSS3"></i>
+                      <i class="fab fa-js" title="JavaScript"></i>                      
+                      <i class="fab fa-react" title="ReactJS"></i>                      
+                      <i class="fas fa-database" title="MySQL"></i>                      
+                      <i class="fas fa-table" title="EasyUI"></i>
+                      <i class="fab fa-php" title="PHP"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web full-stack de una Plataforma E-Learning para Cursos Online. Incluye CRUDs, filtrado, paginación sobre las tablas persona, usuario, cursos y recursos Finalmente tiene login y registro de estudiantes y administradore.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/No-Country-simulation/c20-32-n-php-react.git" class="btn btn-code">Código</a>
+                      <a href="https://test9-sepia.vercel.app/" class="btn btn-demo">Demo</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-  
-          <div class="projects__project">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Cursoteka</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy4.png" alt="cursoteka" title="E-Learning cursoteka" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">
-                  Aplicación web full-stack de una Plataforma E-Learning para Cursos Online. Incluye CRUDs, filtrado, paginación sobre las tablas persona, usuario, cursos y recursos Finalmente tiene login y registro de estudiantes y administradores.
-                </p>
-                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
-                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
-                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
-                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>  
-                <div class="projects__buttons proy_align">
-                  <button class="btn projects__button "  > 
-                    <a href="https://test9-sepia.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/No-Country-simulation/c20-32-n-php-react" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>
+              
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy5.png" alt="Echelon">
+                    <h3  class="skills__description">Echelon</h3>
+                    <div class="tech-icons">
+                      <i class="fab fa-html5" title="HTML5"></i>
+                      <i class="fab fa-css3-alt" title="CSS3"></i>
+                      <i class="fab fa-js" title="JavaScript"></i>
+                      <i class="fab fa-php" title="PHP"></i>
+                      <i class="fa-duotone fa-solid fa-database"></i>
+                      <i class="fa-brands fa-bootstrap"></i>
+                       
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación, login en la tabla de productos e usuario y se conecta a una API RESTful.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/echelon-b.git" class="btn btn-code">Código</a>                      
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+              
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy6.png" alt="ReactMySQLHub II">
+                    <h3  class="skills__description">ReactMySQLHub II</h3>
+                    <div class="tech-icons">
+                      <i class="fab fa-html5" title="HTML5"></i>
+                      <i class="fab fa-css3-alt" title="CSS3"></i>
+                      <i class="fab fa-js" title="JavaScript"></i>
+                      <i class="fab fa-php" title="PHP"></i>
+                      <i class="fa-duotone fa-solid fa-database"></i>
+                      <i class="fa-brands fa-bootstrap"></i>                                          
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación en la tabla de productos y se conecta a una API RESTful.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/reactProdBootsHub.git" class="btn btn-code">Código</a>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+             
+              
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy7.png" alt="Portafolio">
+                    <h3  class="skills__description">Portafolio FMG</h3>
+                    <div class="tech-icons">
+                      <i class="fab fa-html5" title="HTML5"></i>
+                      <i class="fab fa-css3-alt" title="CSS3"></i>
+                      <i class="fab fa-js" title="JavaScript"></i>                                                               
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web moderna diseño responsivo, modo claro y oscuro, y soporte multi-idioma.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/academlo_cv_fmg_page.git" class="btn btn-code">Código</a>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-          <div class="projects__project projects_color_proy_even">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Echelon</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy5.png" alt="echelon" title="echelon php bootstrap mysql" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">
-                  Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación, login en la tabla de productos e usuario y se conecta a una API RESTful.
-                </p>
-                <p class="projects__description proy_tech proy_align"> 
-                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
-                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span>                  
-                  <span >  <i class='bx bxl-bootstrap proy_icon_color' ></i>  Bootrap</span>                  
-                </p> 
-                <div class="projects__buttons proy_align">                   
-                  <button class="btn projects__button" type="button">
-                    <a href="https://github.com/fabinnerself/echelon-b" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy8.png" alt="Bruce Lee APP">
+                    <h3  class="skills__description">Ultimate Bruce Lee APP</h3>
+                    <div class="tech-icons">                      
+                      <i class="fab fa-css3-alt" title="CSS3"></i>                                            
+                      <i class="fab fa-react" title="ReactJS"></i>  
+                      <i class="fa-brands fa-vine"></i>   
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web que genera frases aleatorias de Bruce Lee. Utiliza hooks (UseState) y componentes funcionales. El diseño es personalizado con CSS y los datos se cargan desde un archivo JSON local.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/e01-deivi-fmg.git" class="btn btn-code">Código</a>
+                      <a href="https://e01-deivi-fmg.vercel.app/" class="btn btn-demo">Demo</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+              
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy9.png" alt="Ultimate Weather APP">
+                    <h3  class="skills__description">Ultimate Weather APP</h3>
+                    <div class="tech-icons">
+                      <i class="fab fa-css3-alt" title="CSS3"></i>                                            
+                      <i class="fab fa-react" title="ReactJS"></i>
+                      <i class="fa-brands fa-vine"></i>  
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web meteorológica en tiempo real que utiliza React Hooks (useState y useEffect) para consumir la API de OpenWeatherMap. Permite búsquedas personalizadas de ciudades y cuenta con un diseño CSS personalizado.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/s02e02-weather-fmg.git" class="btn btn-code">Código</a>
+                      <a href="https://s02e02-weather-fmg.vercel.app/" class="btn btn-demo">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy10.png" alt="Ultimate Rick and Morty APP">
+                    <h3  class="skills__description">Ultimate Rick and Morty APP</h3>
+                    <div class="tech-icons">                      
+                      <i class="fab fa-css3-alt" title="CSS3"></i>                                            
+                      <i class="fab fa-react" title="ReactJS"></i>
+                      <i class="fa-brands fa-vine"></i> 
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Buscador de personajes y dimensiones, consume la API publica y mostra datos. Diseño modular responsivo con paginación,  gráficos e iconos temáticos para una experiencia inmersiva.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/s03e03-rm-fmg.git" class="btn btn-code">Código</a>
+                      <a href="https://s03e03-rm-fmg.vercel.app/" class="btn btn-demo">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy12.png" alt="Crud User APP">
+                    <h3  class="skills__description">Crud User APP</h3>
+                    <div class="tech-icons">                           
+                      <i class="fab fa-css3-alt" title="CSS3"></i>                      
+                      <i class="fab fa-react" title="ReactJS"></i>
+                      <i class="fa-solid fa-cloud-sun"></i>                      
+                      <i class="fa-brands fa-vine"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web full-stack gestiona datos de usuario. Implementa operaciones CRUD, filtros y paginación, validando datos de entrada. Diseño personalizado con CSS.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/s04e04-crudUsers-fmg.git" class="btn btn-code">Código</a>
+                      <a href="https://crud-users-fmg.vercel.app/" class="btn btn-demo">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">ReactMySQLHub II</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy6.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">
-                  Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación en la tabla de productos y se conecta a una API RESTful.
-                </p>  
-                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
-                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
-                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                     
-                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
-                    <span >  <i class='bx bxl-bootstrap proy_icon_color' ></i>  Bootrap</span>  </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button"  >
-                    <a href="https://github.com/fabinnerself/reactProdBootsHub" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy11.png" alt="Ultimate Pokedex APP">
+                    <h3  class="skills__description">Ultimate Pokedex APP</h3>
+                    <div class="tech-icons">                      
+                      <i class="fab fa-css3-alt" title="CSS3"></i>                                            
+                      <i class="fab fa-react" title="ReactJS"></i>
+                      <i class="fa-brands fa-vine"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>La aplicación web 'Buscador interactivo de personajes' ofrece experiencia personalizada, responsiva y multilingüe, consumie datos de la API pública, diseño adaptable y responsivo, permiten cambiar temas, función de paginación .</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/E5-pokedex-fmg.git" class="btn btn-code">Código</a>
+                      <a href="https://pokedex-fmg.vercel.app/" class="btn btn-demo">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+              
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy13.png" alt="Ultimate Booking APP">
+                    <h3  class="skills__description">Ultimate Booking APP</h3>
+                    <div class="tech-icons">
+                      <i class="fab fa-css3-alt" title="CSS3"></i>                                            
+                      <i class="fab fa-react" title="ReactJS"></i>
+                      <i class="fa-brands fa-vine"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web con buscador de hoteles, personalizacion de idiomas, moneda y temas, consume una API REST. gestiona  rutas públicas como privadas, íconos personalizados y un diseño moderno, adaptable y responsivo.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/6BookingApp-fmg" class="btn btn-code">Código</a>
+                      <a href="https://6-booking-app-fmg.vercel.app/" class="btn btn-demo">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/api0.png" alt="UltimateLibraryBE">
+                    <h3  class="skills__description">UltimateLibraryBE</h3>
+                    <div class="tech-icons">
+                      <i class="fa-brands fa-node"></i>
+                      <i class="fa-brands fa-envira"></i>                      
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>API REST en Node.js con Express, MongoDB (Mongoose), dotenv, uuid gestiona Libros. Ofrece CRUD, validación de datos y gestión detallada de errores. Probado y documentado en Postman, MERN stack.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/ultimateLibraryBE" class="btn btn-code">Código</a>
+                      <a href="https://tmp-seven-azure.vercel.app/api/v1/books/" class="btn btn-demo">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/api1.png" alt="UltimateStoreBE">
+                    <h3  class="skills__description">UltimateStoreBE</h3>
+                    <div class="tech-icons">
+                      <i class="fa-brands fa-node"></i>
+                      <i class="fa-brands fa-envira"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>API REST en Node.js con Express, MongoDB, dotenv, uuid, Multitenant gestiona clientes, productos y pedidos. Ofrece CRUD, validación de datos, manejo de estados y gestión detallada de errores. Probado y documentado en Postman MERN stack.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/ultimateStoreBE" class="btn btn-code">Código</a>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/api2.png" alt="UltimateKeyMasterAPI">
+                    <h3  class="skills__description">UltimateKeyMasterAPI</h3>
+                    <div class="tech-icons">
+                      <i class="fa-brands fa-node"></i>
+                      <i class="fa-duotone fa-solid fa-database"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>API REST de Node.js con TypeScript, dotenv y TypeORM gestiona usuarios, cajas de seguridad, credenciales y PIN. Operaciones CRUD, validación , autenticación,  eliminación de datos de forma logica.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/ultimateKeyMasterAPI-fmg" class="btn btn-code">Código</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/api3.png" alt="RepairAPI">
+                    <h3  class="skills__description">RepairAPI</h3>
+                    <div class="tech-icons">
+                      <i class="fa-brands fa-node"></i>
+                      <i class="fa-duotone fa-solid fa-database"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Node.js REST API gestiona usuarios y reparaciones de motos usando TypeScript, bcrypt, dotenv, y TypeORM. Operaciones CRUD, validaciones, seguridad. Autenticación,control de acceso segun roles, borrar logico.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/-repairAPI-fmg-V3" class="btn btn-code">Código</a> 
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>       
-
-          <div class="projects__project projects_color_proy_even">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Crud User APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy12.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">  
-                  Aplicación web full-stack diseñada para gestionar datos de manera eficiente. Implementa operaciones CRUD, filtros y paginación en una API RESTful de usuarios, validando los datos de entrada. Utiliza hooks de React (useState, useEffect, useRef), junto con validaciones mediante react-hook-form y Yup, así como un hook personalizado para gestionar la conexión a la API y la paginación. La interfaz se enriquece con íconos de react-icons y un diseño personalizado con CSS.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>  
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://crud-users-fmg.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/s04e04-crudUsers-fmg" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div>   
-
-
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Portafolio de Favián</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy7.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">
-                  Aplicación web moderna y accesible ofrece una experiencia de usuario personalizada y fluida gracias a su diseño responsivo, modo claro y oscuro, y soporte multi-idioma. Desarrollada con las últimas tecnologías como CSS, JavaScript y frameworks populares, cuenta con animaciones atractivas, formularios interactivos y una navegación intuitiva. Optimizada para SEO y accesibilidad, esta aplicación garantiza una experiencia de usuario óptima en cualquier dispositivo. Además, su código bien estructurado facilita el mantenimiento y futuras actualizaciones.
-                </p>  
-                <p class="projects__description proy_tech proy_align"><span > <i class='bx bxl-html5 proy_icon_color' ></i>   Html</span>  
-                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span><img src="assets/img/emailJS_ico.png" height="20" width="20" class="projects__image1" >EmailJS</span> 
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button"  >
-                    <a href="https://github.com/fabinnerself/academlo_cv_fmg_page" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>  
-
-          <div class="projects__project projects_color_proy_even">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Ultimate Bruce Lee APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy8.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">
-                  Aplicación web que genera frases aleatorias de Bruce Lee. Utiliza hooks (UseState) y componentes funcionales. El diseño es personalizado con CSS y los datos se cargan desde un archivo JSON local.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>                   
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://e01-deivi-fmg.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/e01-deivi-fmg.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>        
-          
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Ultimate Weather APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy9.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">
-                  Aplicación web meteorológica en tiempo real que utiliza React Hooks (useState y useEffect) para consumir la API de OpenWeatherMap. Permite búsquedas personalizadas de ciudades y cuenta con un diseño CSS personalizado.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://s02e02-weather-fmg.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/s02e02-weather-fmg" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button> 
-                </div>
-              </div>
-            </div>
-          </div>          
-
-          <div class="projects__project projects_color_proy_even">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Ultimate Rick and Morty APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy10.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">
-                  Buscador de personajes y dimensiones de Rick y Morty. Utiliza React Hooks para consumir la API publica https://rickandmortyapi.com y mostrar datos como nombre, especie y dimensión. Diseño modular responsivo con paginación, componentes reutilizables y estilos personalizados (CSS, Google Fonts). Incluye gráficos e iconos temáticos para una experiencia inmersiva.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>  
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://s03e03-rm-fmg.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/s03e03-rm-fmg" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div>                
-  
-
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Ultimate Pokedex APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy11.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">                  
-                  La aplicación web 'Buscador interactivo de personajes de la serie Pokémon' presenta información detallada, como nombre, tipo, estadísticas y movimientos, entre otros. Utiliza hooks avanzados (useContext, React Router Dom) para ofrecer una experiencia de usuario personalizada, responsiva y multilingüe (inglés, alemán, etc.), consumiendo datos de la API pública https://pokeapi.co. Además, cuenta con un diseño adaptable y responsivo, componentes reutilizables y opciones de personalización que permiten cambiar entre temas claros, oscuros y coloridos. Finalmente, incluye la función de paginación para facilitar la navegación.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>  
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://pokedex-fmg.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/E5-pokedex-fmg" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div>          
-          
-          <div class="projects__project projects_color_proy_even">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Ultimate Booking APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy13.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1"> Esta aplicación web ofrece un buscador de hoteles intuitivo y personalizable. Permite filtrar resultados por ciudad y nombre, mostrando información detallada en múltiples idiomas, como alemán e inglés. Los usuarios pueden seleccionar la moneda local y elegir entre diferentes temas visuales, como claro y oscuro. Los datos de los hoteles se obtienen a través de una API REST. La aplicación gestiona tanto rutas públicas como privadas, utilizando componentes reutilizables para manejar el estado y los efectos secundarios, como notificaciones para todas las acciones. Además, cuenta con una amplia gama de íconos personalizados y un diseño moderno, adaptable y responsivo, lo que optimiza la experiencia del usuario.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span ><img src="assets/img/tailWind_ico.png" height="20" width="20" class="projects__image1" >TailWind CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>  
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                   
-                        </p>
-                <div class="projects__buttons proy_align">                   
-                  <button class="btn projects__button "  > 
-                    <a href="https://6-booking-app-fmg.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/6BookingApp-fmg" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div>      
-          
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">UltimateLibraryBE</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/api0.png" alt="api" title="api mongo" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">  
-                  API REST en Node.js con Express, MongoDB (Mongoose), dotenv, uuid gestiona Libros. Ofrece CRUD, validación de datos y gestión detallada de errores. Probado y documentado en Postman, MERN stack.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span> 
-                  <span ><img src="assets/img/skill/db/mongodb-logo.png" height="20" width="20" class="projects__image1" >MongoDB</span>
-                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
-                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://tmp-seven-azure.vercel.app/api/v1/books/" target="_blank">VER DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/ultimateLibraryBE.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div>    
-          
-          <div class="projects__project projects_color_proy_even">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">UltimateStoreBE</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/api1.png" alt="api" title="api mongo multineant" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">  
-                  API REST en Node.js con Express, MongoDB, dotenv, uuid, Multitenant gestiona clientes, productos y pedidos. Ofrece CRUD, validación de datos, manejo de estados y gestión detallada de errores. Probado y documentado en Postman MERN stack.
-                </p>  
-                <p class="projects__description proy_tech proy_align"><span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                  
-                  <span ><img src="assets/img/skill/db/mongodb-logo.png" height="20" width="20" class="projects__image1" >MongoDB</span>
-                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
-                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                   
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/ultimateStoreBE.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div> 
-
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">UltimateKeyMasterAPI</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/api2.png" alt="api" title="api mongo" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">  
-                  API REST de Node.js con TypeScript, dotenv y TypeORM gestiona usuarios, cajas de seguridad, credenciales y PIN. Ofrece operaciones CRUD, validación de datos, autenticación segura y gestión de contraseñas cifradas. Los usuarios pueden eliminar de forma suave sus cuentas y recursos, garantizando la recuperabilidad y la privacidad.
-                </p>  
-                <p class="projects__description proy_tech proy_align">                   
-                  <span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                
-                  <span ><img src="assets/img/skill/db/postgres.png" height="20" width="20" class="projects__image1" >PostgreSQL</span>
-                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
-                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">  
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/ultimateKeyMasterAPI-fmg.git" target="_blank" title="UltimateKeyMasterAPI">VER CÓDIGO</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div> 
-
-          <div class="projects__project projects_color_proy_even">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">RepairAPI</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/api3.png" alt="api" title="api postgres repair" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">  
-                  Node.js REST API gestiona usuarios y reparaciones de motos usando TypeScript, bcrypt, dotenv, y TypeORM. Operaciones CRUD completas con validaciones de datos y funciones de seguridad. Autenticación de usuarios, control de acceso basado en roles y manejo seguro de contraseñas. Los usuarios sólo pueden borrar suavemente sus propias cuentas. Las transiciones de estado de reparación están controladas.
-
-                </p>  
-                <p class="projects__description proy_tech proy_align"><span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                  
-                  <span ><img src="assets/img/skill/db/postgres.png" height="20" width="20" class="projects__image1" >PostgreSQL</span>
-                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
-                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                   
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/-repairAPI-fmg-V3.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div>            
+            
+            <!-- Flecha derecha -->
+            <button class="nav-btn-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </section>    
 
         </template>
       
         <template id="template-featured">
-          <h3>Proyectos Destacados</h3>
+          <h3>7 Proyectos Destacados</h3>
       
-          <div class="projects__project projects_color_proy_odd">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Ultimate Booking APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy13.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1"> Esta aplicación web ofrece un buscador de hoteles intuitivo y personalizable. Permite filtrar resultados por ciudad y nombre, mostrando información detallada en múltiples idiomas, como alemán e inglés. Los usuarios pueden seleccionar la moneda local y elegir entre diferentes temas visuales, como claro y oscuro. Los datos de los hoteles se obtienen a través de una API REST. La aplicación gestiona tanto rutas públicas como privadas, utilizando componentes reutilizables para manejar el estado y los efectos secundarios, como notificaciones para todas las acciones. Además, cuenta con una amplia gama de íconos personalizados y un diseño moderno, adaptable y responsivo, lo que optimiza la experiencia del usuario.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span ><img src="assets/img/tailWind_ico.png" height="20" width="20" class="projects__image1" >TailWind CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                     
-                  <button class="btn projects__button "  > 
-                    <a href="https://6-booking-app-fmg.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/6BookingApp-fmg" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div>        
-          
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">ProductHub</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy1.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">Aplicación web full-stack que simplifica la gestión de datos. Incorpora funcionalidades CRUD, así como filtros y paginación en la tabla de productos, y se conecta a una API RESTful (con backends en PHP/MySQL o Node/Express-JSON). Además, se cuentan con versiones que utilizan diferentes frameworks de JavaScript, como AngularJS y VueJS.
-                </p>  
-                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
-                    <span >  <i class='bx bxl-angular proy_icon_color' ></i>  AngularJS</span>  
-                    <span >  <i class='bx bxl-vuejs proy_icon_color' ></i>  VueJS</span> 
-                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
-                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
-                    <span><img src="assets/img/json_ico.png" height="20" width="20" class="projects__image1" >Json</span>
-                    <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
-                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
-                    <span><img src="assets/img/skill/tech/expressNode-Icon.png" height="20" width="20" class="projects__image1" >Express/Node</span>                    
-                  </p>
-                  
-                <div class="projects__buttons proy_align">   
-                  <button class="btn projects__button "  > 
-                    <a href="https://product-hu-bre.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>               
-                  <button class="btn projects__button"  >
-                    <a href="https://github.com/fabinnerself/ProductHUBre.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>          
+          <section id="project-carousel">
+            <!-- Flecha izquierda -->
+            <button class="nav-btn-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="carousel-container">
+              <!-- Tarjetas del carrusel featured -->
 
-          <div class="projects__project projects_color_proy_odd">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Crud User APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy12.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">  
-                  Aplicación web full-stack diseñada para gestionar datos de manera eficiente. Implementa operaciones CRUD, filtros y paginación en una API RESTful de usuarios, validando los datos de entrada. Utiliza hooks de React (useState, useEffect, useRef), junto con validaciones mediante react-hook-form y Yup, así como un hook personalizado para gestionar la conexión a la API y la paginación. La interfaz se enriquece con iconos de react-icons y un diseño personalizado con CSS.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://crud-users-fmg.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/s04e04-crudUsers-fmg" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>                    
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy13.png" alt="Ultimate Booking APP">
+                    <h3  class="skills__description">Ultimate Booking APP</h3>
+                    <div class="tech-icons">
+                      <i class="fab fa-css3-alt" title="CSS3"></i>                                            
+                      <i class="fab fa-react" title="ReactJS"></i>
+                      <i class="fa-brands fa-vine"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web con buscador de hoteles, personalizacion de idiomas, moneda y temas, consume una API REST. gestiona  rutas públicas como privadas, íconos personalizados y un diseño moderno, adaptable y responsivo.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/6BookingApp-fmg" class="btn btn-code">Código</a>
+                      <a href="https://6-booking-app-fmg.vercel.app/" class="btn btn-demo">Demo</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>     
-          
-          <div class="projects__project">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Cursoteka</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy4.png" alt="cursoteka" title="E-Learning cursoteka" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">
-                  Aplicación web full-stack de una Plataforma E-Learning para Cursos Online. Incluye CRUDs, filtrado, paginación sobre las tablas persona, usuario, cursos y recursos Finalmente tiene login y registro de estudiantes y administradores.
-                </p>
-                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color' ></i>  ReactJS</span>  
-                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
-                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
-                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>                  
-  
-                <div class="projects__buttons proy_align">
-                  <button class="btn projects__button "  > 
-                    <a href="https://test9-sepia.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/No-Country-simulation/c20-32-n-php-react" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>    
-          
-          <div class="projects__project projects_color_proy_odd">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">UltimateLibraryBE</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/api0.png" alt="api" title="api mongo" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">  
-                  API REST en Node.js con Express, MongoDB (Mongoose), dotenv, uuid gestiona Libros. Ofrece CRUD, validación de datos y gestión detallada de errores. Probado y documentado en Postman, MERN stack.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span> 
-                  <span ><img src="assets/img/skill/db/mongodb-logo.png" height="20" width="20" class="projects__image1" >MongoDB</span>
-                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
-                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://tmp-seven-azure.vercel.app/api/v1/books/" target="_blank">VER DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/ultimateLibraryBE.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div>    
-          
-          <div class="projects__project">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">UltimateStoreBE</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/api1.png" alt="api" title="api mongo multineant" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">  
-                  API REST en Node.js con Express, MongoDB, dotenv, uuid, Multitenant gestiona clientes, productos y pedidos. Ofrece CRUD, validación de datos, manejo de estados y gestión detallada de errores. Probado y documentado en Postman MERN stack.
-                </p>  
-                <p class="projects__description proy_tech proy_align"><span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                  
-                  <span ><img src="assets/img/skill/db/mongodb-logo.png" height="20" width="20" class="projects__image1" >MongoDB</span>
-                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
-                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                   
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/ultimateStoreBE.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div> 
 
-          <div class="projects__project projects_color_proy_odd">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">UltimateKeyMasterAPI</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/api2.png" alt="api" title="api mongo" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">  
-                  API REST de Node.js con TypeScript, dotenv y TypeORM gestiona usuarios, cajas de seguridad, credenciales y PIN. Ofrece operaciones CRUD, validación de datos, autenticación segura y gestión de contraseñas cifradas. Los usuarios pueden eliminar de forma suave sus cuentas y recursos, garantizando la recuperabilidad y la privacidad.
-                </p>  
-                <p class="projects__description proy_tech proy_align">                   
-                  <span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                
-                  <span ><img src="assets/img/skill/db/postgres.png" height="20" width="20" class="projects__image1" >PostgreSQL</span>
-                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
-                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">  
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/ultimateKeyMasterAPI-fmg.git" target="_blank" title="UltimateKeyMasterAPI">VER CÓDIGO</a>
-                  </button>                    
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/api2.png" alt="UltimateKeyMasterAPI">
+                    <h3  class="skills__description">UltimateKeyMasterAPI</h3>
+                    <div class="tech-icons">
+                      <i class="fa-brands fa-node"></i>
+                      <i class="fa-duotone fa-solid fa-database"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>API REST de Node.js con TypeScript, dotenv y TypeORM gestiona usuarios, cajas de seguridad, credenciales y PIN. Operaciones CRUD, validación , autenticación,  eliminación de datos de forma logica.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/ultimateKeyMasterAPI-fmg" class="btn btn-code">Código</a>
+                    </div>
+                  </div>
                 </div>
               </div>
+
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/api0.png" alt="UltimateLibraryBE">
+                    <h3  class="skills__description">UltimateLibraryBE</h3>
+                    <div class="tech-icons">
+                      <i class="fa-brands fa-node"></i>
+                      <i class="fa-brands fa-envira"></i>                      
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>API REST en Node.js con Express, MongoDB (Mongoose), dotenv, uuid gestiona Libros. Ofrece CRUD, validación de datos y gestión detallada de errores. Probado y documentado en Postman, MERN stack.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/ultimateLibraryBE" class="btn btn-code">Código</a>
+                      <a href="https://tmp-seven-azure.vercel.app/api/v1/books/" class="btn btn-demo">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy4.png" alt="Cursoteka">
+                    <h3  class="skills__description">Cursoteka</h3>
+                    <div class="tech-icons">
+                      <i class="fab fa-html5" title="HTML5"></i>
+                      <i class="fab fa-css3-alt" title="CSS3"></i>
+                      <i class="fab fa-js" title="JavaScript"></i>                      
+                      <i class="fab fa-react" title="ReactJS"></i>                      
+                      <i class="fas fa-database" title="MySQL"></i>                      
+                      <i class="fas fa-table" title="EasyUI"></i>
+                      <i class="fab fa-php" title="PHP"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web full-stack de una Plataforma E-Learning para Cursos Online. Incluye CRUDs, filtrado, paginación sobre las tablas persona, usuario, cursos y recursos Finalmente tiene login y registro de estudiantes y administradore.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/No-Country-simulation/c20-32-n-php-react.git" class="btn btn-code">Código</a>
+                      <a href="https://test9-sepia.vercel.app/" class="btn btn-demo">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy12.png" alt="Crud User APP">
+                    <h3  class="skills__description">Crud User APP</h3>
+                    <div class="tech-icons">                           
+                      <i class="fab fa-css3-alt" title="CSS3"></i>                      
+                      <i class="fab fa-react" title="ReactJS"></i>
+                      <i class="fa-solid fa-cloud-sun"></i>                      
+                      <i class="fa-brands fa-vine"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web full-stack gestiona datos de usuario. Implementa operaciones CRUD, filtros y paginación, validando datos de entrada. Diseño personalizado con CSS.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/s04e04-crudUsers-fmg.git" class="btn btn-code">Código</a>
+                      <a href="https://crud-users-fmg.vercel.app/" class="btn btn-demo">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy1.png" alt="ProductHub">
+                    <h3  class="skills__description">ProductHub ReactJS / VueJS / AngularJS</h3>
+                    <div class="tech-icons">                       
+                      <i class="fab fa-react" title="ReactJS"></i>
+                      <i class="fab fa-vuejs" title="Vue.js"></i>
+                      <i class="fas fa-database" title="MySQL"></i>                      
+                      <i class="fas fa-table" title="EasyUI"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación en la tabla de productos y se conecta a una API RESTful.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/ProductHUBre.git" class="btn btn-code" target="_blank">Código</a>                      
+                      <a href="https://product-hu-bre.vercel.app/" class="btn btn-demo" target="_blank">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy5.png" alt="Echelon">
+                    <h3  class="skills__description">Echelon</h3>
+                    <div class="tech-icons">
+                      <i class="fab fa-html5" title="HTML5"></i>
+                      <i class="fab fa-css3-alt" title="CSS3"></i>
+                      <i class="fab fa-js" title="JavaScript"></i>
+                      <i class="fab fa-php" title="PHP"></i>
+                      <i class="fa-duotone fa-solid fa-database"></i>
+                      <i class="fa-brands fa-bootstrap"></i>                       
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación, login en la tabla de productos e usuario y se conecta a una API RESTful.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/echelon-b.git" class="btn btn-code">Código</a>                      
+                    </div>
+                  </div>
+                </div>
+              </div>      
+              
+              
+               
             </div>
-          </div>          
-                    
+            
+            <!-- Flecha derecha -->
+            <button class="nav-btn-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </section>
            
         </template>
       
         <template id="template-crud">
-          <h3>Proyectos CRUDs</h3> 
+          <h3>4 Proyectos CRUDs</h3> 
 
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Crud User APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy12.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">  
-                  Aplicación web full-stack diseñada para gestionar datos de manera eficiente. Implementa operaciones CRUD, filtros y paginación en una API RESTful de usuarios, validando los datos de entrada. Utiliza hooks de React (useState, useEffect, useRef), junto con validaciones mediante react-hook-form y Yup, así como un hook personalizado para gestionar la conexión a la API y la paginación. La interfaz se enriquece con íconos de react-icons y un diseño personalizado con CSS.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span >   <i class='bx bxl-css3 proy_icon_color' ></i>  CSS</span>  
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://crud-users-fmg.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/s04e04-crudUsers-fmg" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>                    
+          <section id="project-carousel">
+            <!-- Flecha izquierda -->
+            <button class="nav-btn-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="carousel-container">
+              <!-- Tarjetas del carrusel crud --> 
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy12.png" alt="Crud User APP">
+                    <h3  class="skills__description">Crud User APP</h3>
+                    <div class="tech-icons">                           
+                      <i class="fab fa-css3-alt" title="CSS3"></i>                      
+                      <i class="fab fa-react" title="ReactJS"></i>
+                      <i class="fa-solid fa-cloud-sun"></i>                      
+                      <i class="fa-brands fa-vine"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web full-stack gestiona datos de usuario. Implementa operaciones CRUD, filtros y paginación, validando datos de entrada. Diseño personalizado con CSS.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/s04e04-crudUsers-fmg.git" class="btn btn-code">Código</a>
+                      <a href="https://crud-users-fmg.vercel.app/" class="btn btn-demo">Demo</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>    
-          
-          <div class="projects__project projects_color_proy_even">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">ProductHub</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy1.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">Aplicación web full-stack que simplifica la gestión de datos. Incorpora funcionalidades CRUD, así como filtros y paginación en la tabla de productos, y se conecta a una API RESTful (con backends en PHP/MySQL o Node/Express-JSON). Además, se cuentan con versiones que utilizan diferentes frameworks de JavaScript, como AngularJS y VueJS.
-                </p>  
-                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span>  
-                    <span >  <i class='bx bxl-angular proy_icon_color' ></i>  AngularJS</span>  
-                    <span >  <i class='bx bxl-vuejs proy_icon_color' ></i>  VueJS</span> 
-                    <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
-                    <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
-                    <span><img src="assets/img/json_ico.png" height="20" width="20" class="projects__image1" >Json</span>
-                    <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
-                    <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
-                    <span><img src="assets/img/skill/tech/expressNode-Icon.png" height="20" width="20" class="projects__image1" >Express/Node</span>                    
-                  </p>
-                  
-                <div class="projects__buttons proy_align">   
-                  <button class="btn projects__button "  > 
-                    <a href="https://product-hu-bre.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>               
-                  <button class="btn projects__button"  >
-                    <a href="https://github.com/fabinnerself/ProductHUBre.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>
+              </div> 
+ 
+
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy4.png" alt="Cursoteka">
+                    <h3  class="skills__description">Cursoteka</h3>
+                    <div class="tech-icons">
+                      <i class="fab fa-html5" title="HTML5"></i>
+                      <i class="fab fa-css3-alt" title="CSS3"></i>
+                      <i class="fab fa-js" title="JavaScript"></i>                      
+                      <i class="fab fa-react" title="ReactJS"></i>                      
+                      <i class="fas fa-database" title="MySQL"></i>                      
+                      <i class="fas fa-table" title="EasyUI"></i>
+                      <i class="fab fa-php" title="PHP"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web full-stack de una Plataforma E-Learning para Cursos Online. Incluye CRUDs, filtrado, paginación sobre las tablas persona, usuario, cursos y recursos Finalmente tiene login y registro de estudiantes y administradore.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/No-Country-simulation/c20-32-n-php-react.git" class="btn btn-code">Código</a>
+                      <a href="https://test9-sepia.vercel.app/" class="btn btn-demo">Demo</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </div> 
+
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy1.png" alt="ProductHub">
+                    <h3  class="skills__description">ProductHub ReactJS / VueJS / AngularJS</h3>
+                    <div class="tech-icons">                       
+                      <i class="fab fa-react" title="ReactJS"></i>
+                      <i class="fab fa-vuejs" title="Vue.js"></i>
+                      <i class="fas fa-database" title="MySQL"></i>                      
+                      <i class="fas fa-table" title="EasyUI"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación en la tabla de productos y se conecta a una API RESTful.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/ProductHUBre.git" class="btn btn-code" target="_blank">Código</a>                      
+                      <a href="https://product-hu-bre.vercel.app/" class="btn btn-demo" target="_blank">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy5.png" alt="Echelon">
+                    <h3  class="skills__description">Echelon</h3>
+                    <div class="tech-icons">
+                      <i class="fab fa-html5" title="HTML5"></i>
+                      <i class="fab fa-css3-alt" title="CSS3"></i>
+                      <i class="fab fa-js" title="JavaScript"></i>
+                      <i class="fab fa-php" title="PHP"></i>
+                      <i class="fa-duotone fa-solid fa-database"></i>
+                      <i class="fa-brands fa-bootstrap"></i>                       
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación, login en la tabla de productos e usuario y se conecta a una API RESTful.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/echelon-b.git" class="btn btn-code">Código</a>                      
+                    </div>
+                  </div>
+                </div>
+              </div>      
+              
+              
+               
             </div>
-          </div> 
+            
+            <!-- Flecha derecha -->
+            <button class="nav-btn-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </section> 
 
         </template>
       
         <template id="template-systems">          
-          <h3>Proyectos Sistemas</h3>
+          <h3>5 Proyectos Sistemas</h3>
 
-      
+          <section id="project-carousel">
+            <!-- Flecha izquierda -->
+            <button class="nav-btn-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="carousel-container">
+              <!-- Tarjetas del carrusel featured -->
 
-          <div class="projects__project projects_color_proy_odd">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Cursoteka</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy4.png" alt="cursoteka" title="E-Learning cursoteka" >
-              </div>
-  
-              <div class="projects__info">
-                
-                <p class="projects__description description_align_1">
-                  Aplicación web full-stack de una Plataforma E-Learning para Cursos Online. Incluye CRUDs, filtrado, paginación sobre las tablas persona, usuario, cursos y recursos Finalmente tiene login y registro de estudiantes y administradores.
-                </p>
-                <p class="projects__description proy_tech proy_align"><span >  <i class='bx bxl-react proy_icon_color' ></i>  ReactJS</span>  
-                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
-                  <span><img src="assets/img/skill/tech/easyui.png" height="20" width="20" class="projects__image1" >Easy-UI</span>
-                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span></p>                  
-  
-                <div class="projects__buttons proy_align">
-                  <button class="btn projects__button "  > 
-                    <a href="https://test9-sepia.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/No-Country-simulation/c20-32-n-php-react" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy4.png" alt="Cursoteka">
+                    <h3  class="skills__description">Cursoteka</h3>
+                    <div class="tech-icons">
+                      <i class="fab fa-html5" title="HTML5"></i>
+                      <i class="fab fa-css3-alt" title="CSS3"></i>
+                      <i class="fab fa-js" title="JavaScript"></i>                      
+                      <i class="fab fa-react" title="ReactJS"></i>                      
+                      <i class="fas fa-database" title="MySQL"></i>                      
+                      <i class="fas fa-table" title="EasyUI"></i>
+                      <i class="fab fa-php" title="PHP"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web full-stack de una Plataforma E-Learning para Cursos Online. Incluye CRUDs, filtrado, paginación sobre las tablas persona, usuario, cursos y recursos Finalmente tiene login y registro de estudiantes y administradore.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/No-Country-simulation/c20-32-n-php-react.git" class="btn btn-code">Código</a>
+                      <a href="https://test9-sepia.vercel.app/" class="btn btn-demo">Demo</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div class="projects__project ">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Ultimate Booking APP</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy13.png" alt="reactjs" title="react mysql hub" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1"> Esta aplicación web ofrece un buscador de hoteles intuitivo y personalizable. Permite filtrar resultados por ciudad y nombre, mostrando información detallada en múltiples idiomas, como alemán e inglés. Los usuarios pueden seleccionar la moneda local y elegir entre diferentes temas visuales, como claro y oscuro. Los datos de los hoteles se obtienen a través de una API REST. La aplicación gestiona tanto rutas públicas como privadas, utilizando componentes reutilizables para manejar el estado y los efectos secundarios, como notificaciones para todas las acciones. Además, cuenta con una amplia gama de íconos personalizados y un diseño moderno, adaptable y responsivo, lo que optimiza la experiencia del usuario.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span >  <i class='bx bxl-react proy_icon_color'></i>  ReactJS</span> 
-                  <span ><img src="assets/img/tailWind_ico.png" height="20" width="20" class="projects__image1" >TailWind CSS</span>
-                  <span >  <i class='bx bxl-javascript proy_icon_color' ></i>   JavaScript</span>  
-                  <span ><img src="assets/img/vite_icon.jpeg" height="20" width="20" class="projects__image1" >Vite</span>
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >rest-Api</span> 
-                  
-                        </p>
-                <div class="projects__buttons proy_align">   
-                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://6-booking-app-fmg.vercel.app/" target="_blank">VER DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/6BookingApp-fmg" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>                    
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy13.png" alt="Ultimate Booking APP">
+                    <h3  class="skills__description">Ultimate Booking APP</h3>
+                    <div class="tech-icons">
+                      <i class="fab fa-css3-alt" title="CSS3"></i>                                            
+                      <i class="fab fa-react" title="ReactJS"></i>
+                      <i class="fa-brands fa-vine"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web con buscador de hoteles, personalizacion de idiomas, moneda y temas, consume una API REST. gestiona  rutas públicas como privadas, íconos personalizados y un diseño moderno, adaptable y responsivo.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/6BookingApp-fmg" class="btn btn-code">Código</a>
+                      <a href="https://6-booking-app-fmg.vercel.app/" class="btn btn-demo">Demo</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>           
 
-          <div class="projects__project projects_color_proy_odd">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">Echelon</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/proy5.png" alt="echelon" title="echelon php bootstrap mysql" >
-              </div>
-  
-              <div class="projects__info">
-                
-                <p class="projects__description description_align_1">
-                  Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación, login en la tabla de productos e usuario y se conecta a una API RESTful.
-                </p>
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/api2.png" alt="UltimateKeyMasterAPI">
+                    <h3  class="skills__description">UltimateKeyMasterAPI</h3>
+                    <div class="tech-icons">
+                      <i class="fa-brands fa-node"></i>
+                      <i class="fa-duotone fa-solid fa-database"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>API REST de Node.js con TypeScript, dotenv y TypeORM gestiona usuarios, cajas de seguridad, credenciales y PIN. Operaciones CRUD, validación , autenticación,  eliminación de datos de forma logica.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/ultimateKeyMasterAPI-fmg" class="btn btn-code">Código</a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
 
-                <p class="projects__description proy_tech proy_align"> 
-                  <span><i class='bx bxl-php proy_icon_color' ></i>Php</span>
-                  <span>    <img src="assets/img/mysql.png" height="20" width="20" class="projects__image1" >MySQL</span>                  
-                  <span >  <i class='bx bxl-bootstrap proy_icon_color' ></i> Bootrap</span>                 
-                  
-                </p> 
-                <div class="projects__buttons proy_align">
-                   
-                  <button class="btn projects__button" type="button">
-                    <a href="https://github.com/fabinnerself/echelon-b" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/api3.png" alt="RepairAPI">
+                    <h3  class="skills__description">RepairAPI</h3>
+                    <div class="tech-icons">
+                      <i class="fa-brands fa-node"></i>
+                      <i class="fa-duotone fa-solid fa-database"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Node.js REST API gestiona usuarios y reparaciones de motos usando TypeScript, bcrypt, dotenv, y TypeORM. Operaciones CRUD, validaciones, seguridad. Autenticación,control de acceso segun roles, borrar logico.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/-repairAPI-fmg-V3" class="btn btn-code">Código</a> 
+                    </div>
+                  </div>
                 </div>
               </div>
+              
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/proy5.png" alt="Echelon">
+                    <h3  class="skills__description">Echelon</h3>
+                    <div class="tech-icons">
+                      <i class="fab fa-html5" title="HTML5"></i>
+                      <i class="fab fa-css3-alt" title="CSS3"></i>
+                      <i class="fab fa-js" title="JavaScript"></i>
+                      <i class="fab fa-php" title="PHP"></i>
+                      <i class="fa-duotone fa-solid fa-database"></i>
+                      <i class="fa-brands fa-bootstrap"></i>                       
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Aplicación web full-stack que facilita la gestión de datos mediante un panel de control intuitivo. Incorpora funcionalidades CRUD, filtros, paginación, login en la tabla de productos e usuario y se conecta a una API RESTful.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/echelon-b.git" class="btn btn-code">Código</a>                      
+                    </div>
+                  </div>
+                </div>
+              </div>    
+               
             </div>
-          </div>
+            
+            <!-- Flecha derecha -->
+            <button class="nav-btn-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </section>
+
+           
 
         </template>  
         
         <template id="template-api">
-          <h3>Resftull API's</h3> 
+          <h3>3 Proyectos Resftull API's</h3> 
 
-          <div class="projects__project projects_color_proy_even">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">UltimateLibraryBE</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/api0.png" alt="api" title="api mongo" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">  
-                  API REST en Node.js con Express, MongoDB (Mongoose), dotenv, uuid gestiona Libros. Ofrece CRUD, validación de datos y gestión detallada de errores. Probado y documentado en Postman, MERN stack.
-                </p>  
-                <p class="projects__description proy_tech proy_align"> <span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span> 
-                  <span ><img src="assets/img/skill/db/mongodb-logo.png" height="20" width="20" class="projects__image1" >MongoDB</span>
-                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
-                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                  <button class="btn projects__button "  > 
-                    <a href="https://tmp-seven-azure.vercel.app/api/v1/books/" target="_blank">VER DEMO</a>
-                  </button>
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/ultimateLibraryBE.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>                    
+          <section id="project-carousel">
+            <!-- Flecha izquierda -->
+            <button class="nav-btn-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="carousel-container">
+              <!-- Tarjetas del carrusel featured -->
+ 
+
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/api2.png" alt="UltimateKeyMasterAPI">
+                    <h3  class="skills__description">UltimateKeyMasterAPI</h3>
+                    <div class="tech-icons">
+                      <i class="fa-brands fa-node"></i>
+                      <i class="fa-duotone fa-solid fa-database"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>API REST de Node.js con TypeScript, dotenv y TypeORM gestiona usuarios, cajas de seguridad, credenciales y PIN. Operaciones CRUD, validación , autenticación,  eliminación de datos de forma logica.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/ultimateKeyMasterAPI-fmg" class="btn btn-code">Código</a>
+                    </div>
+                  </div>
                 </div>
               </div>
+
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/api0.png" alt="UltimateLibraryBE">
+                    <h3  class="skills__description">UltimateLibraryBE</h3>
+                    <div class="tech-icons">
+                      <i class="fa-brands fa-node"></i>
+                      <i class="fa-brands fa-envira"></i>                      
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>API REST en Node.js con Express, MongoDB (Mongoose), dotenv, uuid gestiona Libros. Ofrece CRUD, validación de datos y gestión detallada de errores. Probado y documentado en Postman, MERN stack.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/ultimateLibraryBE" class="btn btn-code">Código</a>
+                      <a href="https://tmp-seven-azure.vercel.app/api/v1/books/" class="btn btn-demo">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+ 
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="assets/img/portfolio/api3.png" alt="RepairAPI">
+                    <h3  class="skills__description">RepairAPI</h3>
+                    <div class="tech-icons">
+                      <i class="fa-brands fa-node"></i>
+                      <i class="fa-duotone fa-solid fa-database"></i>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p>Node.js REST API gestiona usuarios y reparaciones de motos usando TypeScript, bcrypt, dotenv, y TypeORM. Operaciones CRUD, validaciones, seguridad. Autenticación,control de acceso segun roles, borrar logico.</p>
+                    <div class="card-buttons">
+                      <a href="https://github.com/fabinnerself/-repairAPI-fmg-V3" class="btn btn-code">Código</a> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
             </div>
-          </div>    
+            
+            <!-- Flecha derecha -->
+            <button class="nav-btn-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </section>
+
+                 
           
-          <div class="projects__project">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">UltimateStoreBE</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/api1.png" alt="api" title="api mongo multineant" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">  
-                  API REST en Node.js con Express, MongoDB, dotenv, uuid, Multitenant gestiona clientes, productos y pedidos. Ofrece CRUD, validación de datos, manejo de estados y gestión detallada de errores. Probado y documentado en Postman MERN stack.
-                </p>  
-                <p class="projects__description proy_tech proy_align"><span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                  
-                  <span ><img src="assets/img/skill/db/mongodb-logo.png" height="20" width="20" class="projects__image1" >MongoDB</span>
-                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
-                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                   
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/ultimateStoreBE.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div> 
-
-          <div class="projects__project projects_color_proy_even">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">UltimateKeyMasterAPI</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/api2.png" alt="api" title="api mongo" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">  
-                  API REST de Node.js con TypeScript, dotenv y TypeORM gestiona usuarios, cajas de seguridad, credenciales y PIN. Ofrece operaciones CRUD, validación de datos, autenticación segura y gestión de contraseñas cifradas. Los usuarios pueden eliminar de forma suave sus cuentas y recursos, garantizando la recuperabilidad y la privacidad.
-                </p>  
-                <p class="projects__description proy_tech proy_align">                   
-                  <span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                
-                  <span ><img src="assets/img/skill/db/postgres.png" height="20" width="20" class="projects__image1" >PostgreSQL</span>
-                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
-                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">  
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/ultimateKeyMasterAPI-fmg.git" target="_blank" title="UltimateKeyMasterAPI">VER CÓDIGO</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div> 
-
-          <div class="projects__project">
-            <div class="projects__inner grid--container">
-              <h3 class="projects__name">RepairAPI</h3>
-              <div class="projects__image">
-                <img src="assets/img/portfolio/api3.png" alt="api" title="api postgres repair" >
-              </div>  
-              <div class="projects__info">                
-                <p class="projects__description description_align_1">  
-                  Node.js REST API gestiona usuarios y reparaciones de motos usando TypeScript, bcrypt, dotenv, y TypeORM. Operaciones CRUD completas con validaciones de datos y funciones de seguridad. Autenticación de usuarios, control de acceso basado en roles y manejo seguro de contraseñas. Los usuarios sólo pueden borrar suavemente sus propias cuentas. Las transiciones de estado de reparación están controladas.
-
-                </p>  
-                <p class="projects__description proy_tech proy_align"><span ><img src="assets/img/skill/tech/node.png" height="20" width="20" class="projects__image1" >NodeJS</span>                  
-                  <span ><img src="assets/img/skill/db/postgres.png" height="20" width="20" class="projects__image1" >PostgreSQL</span>
-                  <span ><img src="assets/img/skill/tech/expresJS.png" height="20" width="20" class="projects__image1" >Express</span>
-                  <span ><img src="assets/img/skill/tool/postman.png" height="20" width="20" class="projects__image1" >Postman</span> 
-                  <span><img src="assets/img/skill/db/rest_api.png" height="20" width="20" class="projects__image1" >Rest-Api</span>                  
-                        </p>
-                <div class="projects__buttons proy_align">                  
-                   
-                  <button class="btn projects__button proy_align"  >
-                    <a href="https://github.com/fabinnerself/-repairAPI-fmg-V3.git" target="_blank" title="ReactMySQLHub">VER CÓDIGO</a>
-                  </button>                    
-                </div>
-              </div>
-            </div>
-          </div>           
-          
-        </template>        
+        </template>   
+         
 
       </div>
     </section>
