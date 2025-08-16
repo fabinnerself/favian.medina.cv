@@ -3,8 +3,8 @@
 
 ### Descripcion
 
-Este proyecto implementa mi Curriculm con frontend responsive (HTML, CSS, JavaScript), ofreciendo una interfaz intuitiva y adaptable a diferentes dispositivos. Incluye funcionalidades como modo oscuro, carga dinámica, soporte para múltiples idiomas y envío de formularios. Utiliza CSS personalizado para crear un diseño atractivo y coherente, y JavaScript para agregar interactividad y mejorar la experiencia del usuario, fuente google fonts, variables CSS, finalmente tiene validacion del formulario con mensajes de error para cada campo.
-![main](main_fmg.png) 
+ Este proyecto presenta una implementación de mi currículum mediante un frontend responsivo desarrollado con tecnologías como HTML, CSS y JavaScript, brindando una interfaz intuitiva y completamente adaptable a diferentes dispositivos. El diseño incluye características modernas como modo oscuro, carga dinámica de contenido, soporte para múltiples idiomas y un sistema de envío de formularios optimizado. Se ha utilizado CSS personalizado con variables y tipografía de Google Fonts para garantizar un diseño visualmente atractivo, coherente y profesional. Además, se han integrado funciones interactivas mediante JavaScript, mejorando la experiencia del usuario, junto con validaciones robustas en los formularios que proporcionan mensajes de error específicos para cada campo.
+![main](/assets/img/portfolio/proy7.png) 
 
 Puedes visitar la plataforma en línea en https://favian-medina-cv.vercel.app/
 
