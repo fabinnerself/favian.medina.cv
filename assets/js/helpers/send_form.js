@@ -42,7 +42,7 @@ function sendEmail() {
 
 		if (params.name && params.email && params.subject && params.message) {
 			emailjs
-				.send('service_bsxbi7w', 'template_academlo', params)
+				.send('service_dgco51k', 'template_academlo', params)
 				.then(openModal());
 		}
 		else{
