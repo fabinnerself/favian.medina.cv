@@ -748,6 +748,11 @@ html {
 .btn_container {
 	font-family: "Marhey", sans-serif;	
 	font-size: 1.2rem; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 50%;
+	margin: 2rem auto 0;
 }
 /* ============= Footer ============= */
 .footer {
